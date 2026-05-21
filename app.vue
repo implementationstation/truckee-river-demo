@@ -2,20 +2,14 @@
 
   <!--
   ========================
-  ROOT VUETIFY APP
+  GLOBAL APP LAYOUT
   ========================
   -->
 
-  <v-app>
-
-    <!--
-    ========================
-    NUXT ROUTES RENDER HERE
-    ========================
-    -->
+  <NuxtLayout>
 
     <NuxtPage />
 
-  </v-app>
+  </NuxtLayout>
 
 </template>
