@@ -1,58 +1,56 @@
 <template>
 
-  <v-main>
+  <v-container class="py-16">
 
-    <!--
-    ========================
-    HERO SECTION
-    ========================
-    -->
+    <v-row align="center">
 
-    <v-container class="py-10">
+      <!--
+      ========================
+      HERO TEXT
+      ========================
+      -->
 
-      <v-row align="center">
+      <v-col cols="12" md="6">
 
-        <v-col cols="12" md="6">
+        <h1 class="text-h2 font-weight-bold mb-6">
+          Adventure Starts On The Truckee River
+        </h1>
 
-          <h1 class="text-h2 font-weight-bold mb-4">
-            IRIE River Rafting (laptop)v1.0
-          </h1>
+        <p class="text-h6 mb-6">
+          Experience guided rafting adventures near Lake Tahoe
+          with experienced local guides.
+        </p>
 
-          <p class="text-h6 mb-6">
-            Guided rafting adventures in Northern California near Lake Tahoe.
-          </p>
+        <v-btn
+          color="primary"
+          size="x-large"
+          to="/contact"
+        >
+          Book Your Adventure
+        </v-btn>
 
-          <v-btn
-            size="large"
-            color="primary"
-            to="/contact"
-          >
-            Book Your Adventure
-          </v-btn>
+      </v-col>
 
-        </v-col>
+      <!--
+      ========================
+      HERO IMAGE
+      ========================
+      -->
 
-        <!--
-        ========================
-        HERO IMAGE
-        ========================
-        -->
+      <v-col cols="12" md="6">
 
-        <v-col cols="12" md="6">
+        <v-img
+          src="/images/rafting-hero.jpg"
+          rounded="xl"
+          cover
+        />
 
-          <v-img
-            src="/images/rafting-hero.jpg"
-            rounded="xl"
-            elevation="4"
-          />
+      </v-col>
 
-        </v-col>
+    </v-row>
 
-      </v-row>
+  </v-container>
 
-    </v-container>
-
-  </v-main>
 </template>
 
 <script setup>
@@ -71,7 +69,7 @@ useSeoMeta({
 
   ogTitle: 'Truckee River Rafting',
 
-  ogDescription: 'Adventure rafting in Northern California.',
+  ogDescription: 'Adventure rafting in Northern California.'
 
 })
 
