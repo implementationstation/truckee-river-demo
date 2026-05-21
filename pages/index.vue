@@ -1,48 +1,56 @@
 <template>
 
+  <!--
+  ========================
+  HERO SECTION
+  ========================
+  -->
+
+  <HeroSection />
+
+  <!--
+  ========================
+  FEATURED TRIPS
+  ========================
+  -->
+
   <v-container class="py-16">
 
-    <v-row align="center">
+    <h2 class="text-h3 mb-10 text-center">
+      Featured Adventures
+    </h2>
 
-      <!-- REFACTOR START 
-      ========================
-      HERO TEXT
-      ========================
-      -->
+    <v-row>
 
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="4">
 
-        <h1 class="text-h2 font-weight-bold mb-6">
-          Adventure Starts On The Truckee River
-        </h1>
-
-        <p class="text-h6 mb-6">
-          Experience guided rafting adventures near Lake Tahoe
-          with experienced local guides.
-        </p>
-
-        <v-btn
-          color="primary"
-          size="x-large"
-          to="/contact"
-        >
-          Book Your Adventure
-        </v-btn>
+        <TripCard
+          title="Family Float Trips"
+          description="Relaxed scenic rafting adventures for families."
+          image="/images/family-trip.webp"
+          link="/family-rafting"
+        />
 
       </v-col>
 
-      <!--
-      ========================
-      HERO IMAGE
-      ========================
-      -->
+      <v-col cols="12" md="4">
 
-      <v-col cols="12" md="6">
+        <TripCard
+          title="Whitewater Adventures"
+          description="Exciting rapids and unforgettable memories."
+          image="/images/california-whitewater.webp"
+          link="/california-whitewater"
+        />
 
-        <v-img
-          src="/images/rafting-hero.jpg"
-          rounded="xl"
-          cover
+      </v-col>
+
+      <v-col cols="12" md="4">
+
+        <TripCard
+          title="Tahoe Guided Tours"
+          description="Explore the Truckee River with local experts."
+          image="/images/tahoe-trip.webp"
+          link="/rafting-near-tahoe"
         />
 
       </v-col>
@@ -50,6 +58,67 @@
     </v-row>
 
   </v-container>
+
+  <!--
+  ========================
+  TESTIMONIALS
+  ========================
+  -->
+
+  <v-container class="py-16">
+
+    <h2 class="text-h3 mb-10 text-center">
+      What Guests Are Saying
+    </h2>
+
+    <v-row>
+
+      <v-col cols="12" md="4">
+
+        <TestimonialCard
+          quote="One of the best Tahoe experiences we've ever had."
+          author="Sarah M"
+        />
+
+      </v-col>
+
+      <v-col cols="12" md="4">
+
+        <TestimonialCard
+          quote="Amazing guides and incredible scenery."
+          author="Daniel R"
+        />
+
+      </v-col>
+
+      <v-col cols="12" md="4">
+
+        <TestimonialCard
+          quote="Perfect family adventure for our kids."
+          author="Ashley T"
+        />
+
+      </v-col>
+
+    </v-row>
+
+  </v-container>
+
+  <!--
+  ========================
+  FAQ SECTION
+  ========================
+  -->
+
+  <FAQSection />
+
+  <!--
+  ========================
+  CTA SECTION
+  ========================
+  -->
+
+  <CTASection />
 
 </template>
 
@@ -63,13 +132,13 @@ SEO SECTION
 
 useSeoMeta({
 
-  title: 'Truckee River Rafting',
+  title: 'Truckee River Rafting | Guided Tahoe Adventures',
 
-  description: 'Guided rafting adventures near Tahoe and the Truckee River.',
+  description: 'Experience guided rafting adventures near Tahoe with experienced Truckee River guides.',
 
   ogTitle: 'Truckee River Rafting',
 
-  ogDescription: 'Adventure rafting in Northern California.'
+  ogDescription: 'Northern California rafting adventures near Tahoe.'
 
 })
 
