@@ -4,7 +4,7 @@
 
     <v-row align="center">
 
-      <!--
+      <!-- REFACTOR START 
       ========================
       HERO TEXT
       ========================
