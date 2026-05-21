@@ -15,7 +15,7 @@
         <v-col cols="12" md="6">
 
           <h1 class="text-h2 font-weight-bold mb-4">
-            Truckee River Rafting
+            IRIE River Rafting (laptop)v1.0
           </h1>
 
           <p class="text-h6 mb-6">
