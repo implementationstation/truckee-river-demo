@@ -6,7 +6,14 @@
   ========================
   -->
 
-  <HeroSection />
+  <SectionsHeroPrimary 
+    eyebrow="TAHOE SUMMER 2026"
+    title="The river rafting trips you hear about from your friends is available with us all year round."
+    subtitle="Strong Ambience, Skilled Guides & unforgettable experiences for all."
+    primary-cta="Get In Now"
+    secondary-cta="View The Prices"
+    />
+  <!-- <HeroSection /> -->
 
   <!--
   ========================
@@ -142,7 +149,7 @@
   ========================
   -->
 
-  <FAQSection />
+  <!-- <FAQSection /> -->
 
   <!--
   ========================

@@ -33,9 +33,13 @@
 
       <!-- <NuxtLink to="/trips/truckee">Trips</NuxtLink> -->
 
-      <v-btn to="/about" variant="text">
-        About
+      <v-btn to="/info/faq" variant="text">
+        FAQ
       </v-btn>
+
+      <!-- <v-btn to="/about" variant="text">
+        About
+      </v-btn> -->
 
       <v-btn to="/contact" variant="text">
         Contact
