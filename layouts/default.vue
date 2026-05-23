@@ -27,6 +27,12 @@
         Home
       </v-btn>
 
+      <v-btn to="/trips/truckee" variant="text">
+        Trips
+      </v-btn>
+
+      <!-- <NuxtLink to="/trips/truckee">Trips</NuxtLink> -->
+
       <v-btn to="/about" variant="text">
         About
       </v-btn>

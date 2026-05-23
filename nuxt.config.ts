@@ -6,9 +6,7 @@ export default defineNuxtConfig({
   ========================
   */
 
-  modules: [
-    'vuetify-nuxt-module'
-  ],
+  modules: ['vuetify-nuxt-module', '@nuxt/image'],
 
   /*
   ========================

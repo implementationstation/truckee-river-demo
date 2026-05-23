@@ -1,58 +1,104 @@
 <template>
 
-   <!--
-   ========================
-   TRIP CARD
-   ========================
-   -->
+  <v-card
+    rounded="xl"
+    elevation="2"
+    class="trip-card"
+    :to="link"
+    hover
+  >
 
-   <v-card rounded="xl" elevation="2">
+    <!-- IMAGE -->
+    <NuxtImg
+      :src="image"
+      :alt="title"
+      format="webp"
+      quality="80"
+      height="220"
+      class="rounded-t-xl"
+    />
 
-      <v-img
-         :src="image"
-         height="240"
-         cover
-         :alt="title"
-      />
+    <!-- BADGE -->
+    <v-chip
+      v-if="badge"
+      class="ma-3 position-absolute"
+      color="primary"
+      size="small"
+    >
+      {{ badge }}
+    </v-chip>
 
-      <v-card-title>
-         {{ title }}
-      </v-card-title>
+    <!-- CONTENT -->
+    <v-card-title class="text-h6 font-weight-bold">
+      {{ title }}
+    </v-card-title>
 
-      <v-card-text>
-         {{ description }}
-      </v-card-text>
+    <!-- QUICK FACTS -->
+    <v-card-text class="pt-0">
 
-      <v-card-actions>
+      <div class="text-body-2 text-medium-emphasis mb-2">
+        {{ duration }} • {{ difficulty }}
+      </div>
 
-         <v-btn
-            color="primary"
-            :to="link"
-         >
-            Learn More
-         </v-btn>
+      <div class="mb-3">
+        {{ description }}
+      </div>
 
-      </v-card-actions>
+      <!-- PRICE -->
+      <div class="text-subtitle-1 font-weight-bold">
+        From ${{ price }}
+      </div>
 
-   </v-card>
+    </v-card-text>
+
+    <!-- ACTION -->
+    <v-card-actions>
+
+      <v-btn
+        color="primary"
+        block
+        size="large"
+        :to="link"
+      >
+        View Trip
+      </v-btn>
+
+    </v-card-actions>
+
+  </v-card>
 
 </template>
 
-<script setup>
+<script setup lang="ts">
 
 /*
 ========================
-COMPONENT PROPS
+PROPS (SCALABLE)
 ========================
 */
 
-const props = defineProps({
-
-   title: String,
-   description: String,
-   image: String,
-   link: String
-
+defineProps({
+  title: String,
+  description: String,
+  image: String,
+  link: String,
+  duration: String,
+  difficulty: String,
+  price: Number,
+  badge: String
 })
 
 </script>
+
+<style scoped>
+
+.trip-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trip-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+</style>

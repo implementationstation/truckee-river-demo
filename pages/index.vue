@@ -14,13 +14,45 @@
   ========================
   -->
 
+
   <v-container class="py-16">
 
-    <h2 class="text-h3 mb-10 text-center">
-      Featured Adventures
+    <h2 class="text-h3 mb-6 text-center">
+      The IRIE River Rafting Experience
     </h2>
 
-    <v-row>
+    <p class="text-center mb-10 text-subtitle-1">
+    Class II–III rapids • 3–4 hours • Perfect for families and first-timers
+  </p>
+
+  <v-row justify="center">
+
+    <v-col cols="12" md="6">
+
+      <!-- <TripCard :trip="truckeeTrip" /> -->
+       <TripCard
+          title="Truckee River Gorge Run Half Day"
+          description="Summertime rafting trips through the Truckee River Gorge with exciting Class II-III rapids. Scenic rafting trip perfect for families and beginners."
+          image="/images/family-trip.webp"
+          link="/trips/truckee"
+          duration="3–4 hours"
+          difficulty="Class II–III"
+          :price="120"
+          badge="Most Popular"
+        />
+
+    </v-col>
+
+  </v-row>
+
+  <div class="text-center mt-6">
+    <v-btn color="primary" size="large" to="/trips/truckee">
+      View Trip Details
+    </v-btn>
+  </div>
+
+
+    <!-- <v-row>
 
       <v-col cols="12" md="4">
 
@@ -55,7 +87,7 @@
 
       </v-col>
 
-    </v-row>
+    </v-row> -->
 
   </v-container>
 
@@ -122,8 +154,19 @@
 
 </template>
 
-<script setup>
+<script setup lang="ts">
 
+// USE ONLY IF YOU WANT DYNAMIC INFO COMING 
+const truckeeTrip = {
+  id: 'truckee',
+  name: 'Truckee River Half Day',
+  river: 'Truckee River',
+  difficulty: 'Moderate',
+  duration: '3–4 hours',
+  price: 120,
+  image: '/images/family-trip.webp',
+  description: 'Guided rafting near Lake Tahoe.'
+}
 /*
 ========================
 SEO SECTION

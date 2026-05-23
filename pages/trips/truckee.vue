@@ -1,46 +1,50 @@
 <script setup lang="ts">
-//import { useSeo } from '@/utils/seo'
-import {useSeo} from '../../composables/useSeo'
+import { useSeo } from '../../composables/useSeo'
 
 useSeo({
-  title: 'Truckee River Rafting | Half Day Guided Trip',
-  description: 'Guided whitewater rafting on the Truckee River. Class II–III rapids near Lake Tahoe. Perfect for families and first-timers.',
-  image: '/images/truckee-hero.jpg'
+  title: 'Truckee River Rafting | Half Day Trip',
+  description: 'Guided rafting on the Truckee River near Lake Tahoe. Class II–III rapids, perfect for families.',
+  image: '/images/family-trip.webp'
 })
 </script>
 
 <template>
-  <SectionContainer>
+  <v-container>
 
-    <!-- HERO -->
-    <h1>Truckee River Half-Day Rafting</h1>
+    <h1 class="text-h4 font-weight-bold">
+      Truckee River Half-Day Rafting
+    </h1>
 
-    <p class="text-subtitle-1">
+    <p class="text-subtitle-1 mt-2">
       Class II–III • 3–4 Hours • Ages 5+
     </p>
 
-    <!-- IMAGE -->
-    <NuxtImg src="/images/truckee.jpg" width="1200" />
+    <NuxtImg
+      src="/images/family-trip.webp"
+      class="mt-6"
+    />
 
-    <!-- DESCRIPTION -->
     <p class="mt-6">
-      Experience the Truckee River through scenic canyons, rolling rapids,
-      and crystal-clear Sierra waters. This guided half-day trip is perfect
-      for first-timers and families.
+      Navigate fun Class II–III rapids through the scenic Truckee River corridor.
+      This half-day guided trip is ideal for beginners, families, and anyone
+      looking for a classic Sierra adventure.
     </p>
 
-    <!-- DETAILS -->
-    <ul class="mt-6">
+    <ul class="mt-4">
       <li>Duration: 3–4 hours</li>
       <li>Difficulty: Class II–III</li>
       <li>Minimum age: 5</li>
       <li>Season: May–September</li>
     </ul>
 
-    <!-- CTA -->
-    <v-btn color="primary" size="large" class="mt-6">
+    <v-btn 
+      color="primary" 
+      size="large" 
+      class="mt-6"
+      to="/contact"
+      >
       Book This Trip
     </v-btn>
 
-  </SectionContainer>
+  </v-container>
 </template>
