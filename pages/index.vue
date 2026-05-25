@@ -40,7 +40,7 @@
        <TripCard
           title="Truckee River Gorge Run Half Day"
           description="Summertime rafting trips through the Truckee River Gorge with exciting Class II-III rapids. Scenic rafting trip perfect for families and beginners."
-          image="/images/family-trip.webp"
+          image="/images/l-exciting-truckee-river-rafting-experien ces.webp"
           link="/trips/truckee"
           duration="3–4 hours"
           difficulty="Class II–III"

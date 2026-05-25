@@ -142,13 +142,13 @@ defineProps({
   backgroundImage: {
     type: String,
     default:
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb'
+    '/images/l-california-whitewater-rafting.webp' 
   },
 
   cardImage: {
     type: String,
     default:
-      'https://images.unsplash.com/photo-1522163182402-834f871fd851'
+      '/images/l-bossmoss-rapids-whitewater-rafting-tours-truckee.webp'
   },
 
   stats: {

@@ -9,19 +9,25 @@
   >
 
     <!-- IMAGE -->
-    <NuxtImg
+    <!-- <NuxtImg
       :src="image"
       :alt="title"
       format="webp"
       quality="80"
       height="220"
       class="rounded-t-xl"
-    />
+    /> -->
+    <v-img
+                :src="image"
+                height="320"
+                cover
+                rounded="lg"
+              />
 
     <!-- BADGE -->
     <v-chip
       v-if="badge"
-      class="ma-3 position-absolute"
+      class="ma-3"
       color="primary"
       size="small"
     >
