@@ -31,37 +31,67 @@ const images = trip.images?.length
   <div>
 
     <!-- 🖼️ IMAGE GALLERY HERO -->
-    <v-container fluid class="pa-0">
+    <v-container fluid class="hero-section pa-0">
 <v-row no-gutters>
-  <!-- BIG IMAGE -->
   <v-col cols="12" md="8">
+  <div class="hero-wrapper">
     <v-img
-      :src="images[0]"
-      height="500"
+      :src="trip.image"
+      height="520"
       cover
-      class="cursor-pointer"
+      class="hero-image cursor-pointer"
+      gradient="to top, rgba(0,0,0,.75), rgba(0,0,0,.15)"
       @click="lightbox = true; activeImage = 0"
-    />
-  </v-col>
+    >
+      <div class="hero-content">
+        <div class="hero-badge">
+          ✈ Luxury Escape
+        </div>
 
-  <!-- GRID -->
-  <v-col cols="12" md="4">
-    <v-row no-gutters>
-      <v-col
-        v-for="(img, i) in images.slice(1, 5)"
-        :key="i"
-        cols="6"
-      >
-        <v-img
-          :src="img"
-          height="250"
-          cover
-          class="cursor-pointer"
-          @click="lightbox = true; activeImage = i + 1"
-        />
-      </v-col>
-    </v-row>
-  </v-col>
+        <div class="hero-meta">
+  <span>⭐ 4.8</span>
+  <span>•</span>
+  <span>{{ trip.duration }}</span>
+  <span>•</span>
+  <span>{{ trip.difficulty }}</span>
+</div>
+
+        <div>
+          <h1 class="hero-title">
+            {{ trip.heroTitle }}
+          </h1>
+
+          <p class="hero-description">
+            {{ trip.heroDescription }}
+          </p>
+
+          <div class="hero-actions">
+            <v-btn
+              color="white"
+              size="large"
+              rounded="xl"
+              class="text-black font-weight-bold px-6"
+            >
+              Book Now
+            </v-btn>
+
+            <v-btn
+              variant="outlined"
+              color="white"
+              size="large"
+              rounded="xl"
+              class="px-6"
+            >
+              View Gallery
+            </v-btn>
+          </div>
+        </div>
+      </div>
+    </v-img>
+  </div>
+</v-col>
+
+  
 </v-row>
     </v-container>
 
@@ -92,34 +122,41 @@ const images = trip.images?.length
         <v-col cols="12" md="8">
 
           <!-- QUICK FACTS -->
-          <v-card class="pa-5 mb-6" rounded="xl" elevation="1">
-            <v-row>
-              <v-col cols="6" md="3">
-                <v-icon class="mb-1">mdi-clock-outline</v-icon>
-                <div class="text-caption">Duration</div>
-                <div class="font-weight-medium">{{ trip.duration }}</div>
-              </v-col>
+           <v-row class="my-8" density="comfortable">
 
-              <v-col cols="6" md="3">
-                <v-icon class="mb-1">mdi-wave</v-icon>
-                <div class="text-caption">Difficulty</div>
-                <div class="font-weight-medium">{{ trip.difficulty }}</div>
-              </v-col>
+  <v-col cols="6" md="3">
+    <v-card class="pa-4 text-center" rounded="xl">
+      <v-icon color="primary">mdi-clock-outline</v-icon>
+      <div class="text-caption">Duration</div>
+      <div class="font-weight-bold">{{ trip.duration }}</div>
+    </v-card>
+  </v-col>
 
-              <v-col cols="6" md="3">
-                <v-icon class="mb-1">mdi-account-group</v-icon>
-                <div class="text-caption">Group Size</div>
-                <div class="font-weight-medium">Up to 8</div>
-              </v-col>
+  <v-col cols="6" md="3">
+    <v-card class="pa-4 text-center" rounded="xl">
+      <v-icon color="primary">mdi-signal</v-icon>
+      <div class="text-caption">Difficulty</div>
+      <div class="font-weight-bold">{{ trip.difficulty }}</div>
+    </v-card>
+  </v-col>
 
-              <v-col cols="6" md="3">
-                <v-icon class="mb-1">mdi-weather-sunny</v-icon>
-                <div class="text-caption">Season</div>
-                <div class="font-weight-medium">May – Sep</div>
-              </v-col>
-            </v-row>
-          </v-card>
+  <v-col cols="6" md="3">
+    <v-card class="pa-4 text-center" rounded="xl">
+      <v-icon color="primary">mdi-currency-usd</v-icon>
+      <div class="text-caption">Adult</div>
+      <div class="font-weight-bold">{{ trip.price }}</div>
+    </v-card>
+  </v-col>
 
+  <v-col cols="6" md="3">
+    <v-card class="pa-4 text-center" rounded="xl">
+      <v-icon color="primary">mdi-account-child</v-icon>
+      <div class="text-caption">Youth</div>
+      <div class="font-weight-bold">{{ trip.priceYouth }}</div>
+    </v-card>
+  </v-col>
+
+</v-row>
           <!-- DESCRIPTION -->
           <div class="mb-8">
             <h2 class="text-h5 font-weight-bold mb-3">Experience</h2>
@@ -128,10 +165,54 @@ const images = trip.images?.length
             </p>
           </div>
 
+          
+          <!--TRIP DETAILS BLOCK-->
+          <v-container class="my-10">
+
+  <h2 class="text-h5 font-weight-bold mb-6">
+    Trip Details
+  </h2>
+
+  <v-row>
+
+    <v-col cols="12" md="4">
+      <v-card class="pa-4" rounded="xl">
+        <v-icon color="primary">mdi-account-group</v-icon>
+        <div class="font-weight-bold mt-2">Raft Capacity</div>
+        <div class="text-body-2">
+          {{ trip.raftSizeCapacity }}
+        </div>
+      </v-card>
+    </v-col>
+
+    <v-col cols="12" md="4">
+      <v-card class="pa-4" rounded="xl">
+        <v-icon color="primary">mdi-calendar-clock</v-icon>
+        <div class="font-weight-bold mt-2">Meet Times</div>
+        <div class="text-body-2">
+          {{ trip.meetTime }}
+        </div>
+      </v-card>
+    </v-col>
+
+    <v-col cols="12" md="4">
+      <v-card class="pa-4" rounded="xl">
+        <v-icon color="primary">mdi-timer-outline</v-icon>
+        <div class="font-weight-bold mt-2">Trip Duration</div>
+        <div class="text-body-2">
+          {{ trip.tripTime }}
+        </div>
+      </v-card>
+    </v-col>
+
+  </v-row>
+
+</v-container>
+
           <!-- HIGHLIGHTS -->
           <div class="mb-8">
             <h2 class="text-h5 font-weight-bold mb-3">Highlights</h2>
-
+        
             <v-row>
               <v-col cols="12" md="6">
                 ✔ Expert river guides
@@ -149,16 +230,55 @@ const images = trip.images?.length
           </div>
 
           <!-- INCLUDED -->
-          <div class="mb-8">
-            <h2 class="text-h5 font-weight-bold mb-3">What's Included</h2>
+          <v-container class="my-10">
 
-            <ul>
-              <li>Professional guide</li>
-              <li>Helmet & life jacket</li>
-              <li>Raft & paddles</li>
-              <li>Safety briefing</li>
-            </ul>
-          </div>
+  <h2 class="text-h5 font-weight-bold mb-4">
+    What’s Included
+  </h2>
+
+  <v-list>
+
+    <v-list-item
+      v-for="(item, i) in trip.whatsIncluded.filter(i => i)"
+      :key="i"
+    >
+      <template #prepend>
+        <v-icon color="primary">mdi-check-circle</v-icon>
+      </template>
+
+      <v-list-item-title>
+        {{ item }}
+      </v-list-item-title>
+    </v-list-item>
+
+  </v-list>
+
+</v-container>
+<!-- IMAGE GALLERY GRID -->
+  <v-col cols="12" md="4">
+    <v-row no-gutters>
+      <v-col
+        v-for="(img, i) in images.slice(1, 5)"
+        :key="i"
+        cols="6"
+      >
+        <v-img
+  :src="img"
+  height="260"
+  cover
+  class="gallery-thumb cursor-pointer"
+  @click="lightbox = true; activeImage = i + 1"
+>
+  <div
+    v-if="i === 3 && images.length > 5"
+    class="gallery-overlay"
+  >
+    +{{ images.length - 5 }} photos
+  </div>
+</v-img>
+      </v-col>
+    </v-row>
+  </v-col>
 
           <!-- REVIEWS -->
           <div>
@@ -256,8 +376,155 @@ const images = trip.images?.length
 </template>
 
 <style scoped>
+/* GALLERY UPGRADE GRID */
+.gallery-thumb {
+  transition: all .35s ease;
+}
+
+.gallery-thumb:hover {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  backdrop-filter: blur(4px);
+}
+
+
 .booking-card {
   position: sticky;
   top: 100px;
+}
+
+/* ADDED THIS FOR THE NEW HERO */
+.hero-wrapper {
+  position: relative;
+  border-radius: 0 0 36px 36px;
+  overflow: hidden;
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.28);
+}
+
+.hero-image {
+  transition: transform 0.5s ease;
+}
+
+.hero-wrapper:hover .hero-image {
+  transform: scale(1.02);
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 48px;
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.35) 45%,
+      rgba(0, 0, 0, 0.05) 100%
+    );
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 8px 18px;
+  margin-bottom: 18px;
+  border-radius: 999px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  color: white;
+   font-size: clamp(3rem, 6vw, 5.5rem);
+  letter-spacing: -2px;
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 16px;
+  max-width: 700px;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+}
+
+.hero-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 650px;
+  margin-bottom: 28px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 28px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-section {
+  margin-bottom: 60px;
+}
+}
+
+/*CLEANER PAGE BACKGROUND */
+:deep(body) {
+  background:
+    linear-gradient(
+      to bottom,
+      #f8fafc 0%,
+      #ffffff 20%
+    );
+}
+
+
+.v-card {
+  transition: all .3s ease;
+}
+
+.v-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.08);
+}
+
+
+.hero-meta {
+  display: flex;
+  gap: 12px;
+  color: rgba(255,255,255,.88);
+  margin-bottom: 18px;
+  font-weight: 500;
 }
 </style>
