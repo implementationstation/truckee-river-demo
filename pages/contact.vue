@@ -56,7 +56,8 @@
                 <v-icon color="primary">mdi-phone</v-icon>
               </template>
               <v-list-item-title>
-                <a href="tel:15305831111">(530) 583-1111</a>
+                <a href="tel:15305831111">(530) 583-1111</a> 
+                <br/> <a href="tel:15305824900">(530) 582-4900</a>
               </v-list-item-title>
               <v-list-item-subtitle>
                 Call anytime

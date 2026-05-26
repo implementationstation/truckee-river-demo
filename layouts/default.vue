@@ -121,6 +121,7 @@ const drawer = ref(false)
       <v-btn
   color="primary"
   class="ml-4"
+  to="https://book.singenuity.com/338/catalog/activities"
 >
   Book Now
 </v-btn>
@@ -271,11 +272,13 @@ const drawer = ref(false)
         <div class="d-flex flex-column ga-2 text-body-2">
 
           <div>
-            📍 Truckee Northern California
+            📍 175 River Rd, Tahoe City, CA 96145
           </div>
 
           <div>
-            📞 (530) 583-1111
+            <v-icon color="primary">mdi-phone</v-icon>
+<a href="tel:15305831111">(530) 583-1111</a> 
+                <br/> <v-icon color="primary">mdi-phone</v-icon><a href="tel:15305824900">(530) 582-4900</a>
           </div>
 
           <div>
@@ -286,11 +289,13 @@ const drawer = ref(false)
 
         <div class="d-flex ga-3 mt-4">
 
-  <v-btn icon="mdi-instagram" variant="text" />
+  <v-btn icon="mdi-instagram" variant="text" to="http://instagram.com/raftirie"/>
 
   <v-btn icon="mdi-facebook" variant="text" />
 
-  <v-btn icon="mdi-youtube" variant="text" />
+  <!-- <v-btn icon="mdi-yelp" variant="text" to="http://www.yelp.com/biz/irie-rafting-company-truckee"></v-btn> -->
+
+  <v-btn icon="mdi-youtube" variant="text" to="http://www.youtube.com/channel/UC72y5dGdF-fBalazy2qvZaw"/>
 
 </div>
 

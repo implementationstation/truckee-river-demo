@@ -7,9 +7,9 @@
   -->
 
   <SectionsHeroPrimary 
-    eyebrow="TAHOE SUMMER 2026"
-    title="Whitewater Rafting with I.R.I.E River Rafting based in Truckee|Tahoe"
-    subtitle="Strong Ambience, Skilled Guides & unforgettable experiences for all."
+    eyebrow="TAHOE TRUCKEE RAFTING 2026"
+    title="Isolated Rivers Incredible Experiences"
+    subtitle="Experience the thrill of the rapids on the Truckee River with IRIE Rafting Company. Nestled in the heart of the stunning Lake Tahoe area, our whitewater rafting trips on the Truckee River promise half-day adventures that are perfect for families and thrill-seekers alike."
     primary-cta="Book Now"
     secondary-cta="Learn More"
     />
@@ -25,11 +25,11 @@
   <v-container class="py-16">
 
     <h2 class="text-h3 mb-6 text-center">
-      The IRIE River Rafting Experience
+      The Tahoe Based Whitewater Raft Outfitter
     </h2>
-
+    <p style="font-weight: bold" class="text-subtitle-1 mb-10 text-center">Class II–III rapids • 3–4 hours • Perfect for families and first-timers</p>
     <p class="text-center mb-10 text-subtitle-1">
-    Class II–III rapids • 3–4 hours • Perfect for families and first-timers
+    We offer two guided whitewater rafting trips down the Truckee River daily throughout the summer, so you can choose the perfect time to dive into the adventure. Whether you’re a seasoned rafter or a first-timer, our expert guides ensure a safe and fantastic experience for everyone. Don’t miss out on this must-do adventure while exploring the Truckee Tahoe area! Embrace the rush, make memories, and splash into fun!
   </p>
 
   <v-row justify="center">
@@ -38,10 +38,10 @@
 
       <!-- <TripCard :trip="truckeeTrip" /> -->
        <TripCard
-          title="Truckee River Gorge Run Half Day"
-          description="Summertime rafting trips through the Truckee River Gorge with exciting Class II-III rapids. Scenic rafting trip perfect for families and beginners."
+          title="Truckee River Half Day “Boca Run”"
+          description="AKA - ‘Floriston Gorge” Class II-III. This popular guided river trip is offered twice daily, all summer, and is very close to Truckee & North Lake Tahoe. A bucket list adventure for visitors to the area and long time locals alike. This section of the Truckee River takes you through beautiful scenic river canyons and rich history. The rapids in this section progresses from small riffles to class II canyons. The journey ends with exhilarating Class III rapids. "
           image="/images/l-exciting-truckee-river-rafting-experiences.webp"
-          link="/trips/truckee"
+          link="/trips/truckee-river-half-day-guided-river-rafting"
           duration="3–4 hours"
           difficulty="Class II–III"
           :price="120"
@@ -53,8 +53,8 @@
   </v-row>
 
   <div class="text-center mt-6">
-    <v-btn color="primary" size="large" to="/trips/truckee">
-      View Trip Details
+    <v-btn color="primary" size="large" to="/contact">
+      Contact Us Now
     </v-btn>
   </div>
 

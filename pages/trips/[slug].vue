@@ -67,6 +67,7 @@ const images = trip.images?.length
 
           <div class="hero-actions">
             <v-btn
+            :href="trip.bookingUrl"
               color="white"
               size="large"
               rounded="xl"
@@ -313,7 +314,8 @@ const images = trip.images?.length
 
             <v-divider class="mb-4" />
 
-            <v-btn color="black" size="large" block class="mb-3">
+            <v-btn :href="trip.bookingUrl" 
+            color="black" size="large" block class="mb-3">
               Reserve now
             </v-btn>
 

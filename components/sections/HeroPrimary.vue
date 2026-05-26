@@ -91,16 +91,15 @@
 
               <div class="mt-4">
                 <div class="text-overline text-medium-emphasis">
-                  FEATURED EXPERIENCE
+                  Floriston Gorge Boca Run II-III
                 </div>
 
                 <div class="text-h5 font-weight-bold mt-2">
-                  Truckee River Sunset Float
+                  Truckee River Half Day Guided Rafting
                 </div>
 
                 <div class="text-body-1 mt-3 text-medium-emphasis">
-                  Cold water, golden light, mountain air, and a
-                  ridiculously good afternoon.
+                  Spring through September 2025: This section of the Truckee River takes you through beautiful scenic river canyons and rich history. The rapids in this section progresses from small riffles to class II canyons.
                 </div>
               </div>
             </v-sheet>
@@ -155,15 +154,15 @@ defineProps({
     type: Array,
     default: () => [
       {
-        value: '4.9★',
+        value: '4.6★ (65 reviews)',
         label: 'Average Rating'
       },
       {
-        value: '12k+',
-        label: 'Happy Guests'
+        value: '4200+',
+        label: 'Happy Rafters'
       },
       {
-        value: '18 Years',
+        value: '18+ Years',
         label: 'River Experience'
       }
     ]

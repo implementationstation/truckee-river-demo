@@ -21,6 +21,7 @@ export const trips = [
   {
     slug: 'california-whitewater',
     title: 'Class 4 Full Day Truckee River Rafting',
+    bookingUrl: 'https://book.singenuity.com/338/activity/details/1637/rates',
     image: '/images/l-mfa-series-whitewater-adventures-in-california.webp',
     images: [
       '/images/l-mfa-series-whitewater-adventures-in-california.webp',
@@ -50,6 +51,7 @@ export const trips = [
   {
     slug: 'truckee-river-half-day-guided-river-rafting',
     title: 'Truckee River Half Day Guided River Rafting',
+    bookingUrl: 'https://book.singenuity.com/338/activity/details/1452/rates',
     image: '/images/l-tahoe-whitewater-rafting-trips.webp',
     images: [
       '/images/l-tahoe-whitewater-rafting-trips.webp',
