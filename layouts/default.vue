@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { trips } from '~/data/trips'
-</script>
 
+const drawer = ref(false)
+</script>
 <template>
 
   <v-app>
@@ -16,7 +18,11 @@ import { trips } from '~/data/trips'
       elevation="2"
       color="white"
     >
-
+    <!-- Mobile Burger -->
+<v-app-bar-nav-icon
+  class="d-md-none"
+  @click="drawer = !drawer"
+/>
       <NuxtLink to="/" class="text-decoration-none">
 
   <v-img
@@ -41,7 +47,7 @@ import { trips } from '~/data/trips'
       DESKTOP NAVIGATION
       ========================
       -->
-
+<div class="d-none d-md-flex align-center">
       <v-btn to="/" variant="text">
         Home
       </v-btn>
@@ -111,8 +117,76 @@ import { trips } from '~/data/trips'
       <v-btn to="/contact" variant="text">
         Contact
       </v-btn>
+      </div>
 
     </v-app-bar>
+    <v-navigation-drawer
+  v-model="drawer"
+  temporary
+  location="left"
+>
+
+  <v-list nav>
+
+    <v-list-item
+      to="/"
+      title="Home"
+      prepend-icon="mdi-home"
+      @click="drawer = false"
+    />
+
+    <!-- Trips Group -->
+    <v-list-group value="Trips">
+
+      <template #activator="{ props }">
+        <v-list-item
+          v-bind="props"
+          title="Trips"
+          prepend-icon="mdi-kayaking"
+        />
+      </template>
+
+      <v-list-item
+        v-for="trip in trips"
+        :key="trip.slug"
+        :to="`/trips/${trip.slug}`"
+        @click="drawer = false"
+      >
+        <template #prepend>
+          <v-avatar size="36">
+            <v-img :src="trip.images?.[0] || trip.image" />
+          </v-avatar>
+        </template>
+
+        <v-list-item-title>
+          {{ trip.title }}
+        </v-list-item-title>
+
+        <v-list-item-subtitle>
+          {{ trip.duration }}
+        </v-list-item-subtitle>
+
+      </v-list-item>
+
+    </v-list-group>
+
+    <v-list-item
+      to="/info/faq"
+      title="FAQ"
+      prepend-icon="mdi-help-circle"
+      @click="drawer = false"
+    />
+
+    <v-list-item
+      to="/contact"
+      title="Contact"
+      prepend-icon="mdi-email"
+      @click="drawer = false"
+    />
+
+  </v-list>
+
+</v-navigation-drawer>
 
     <!--
     ========================
