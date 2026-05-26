@@ -17,9 +17,24 @@ import { trips } from '~/data/trips'
       color="white"
     >
 
-      <v-app-bar-title>
-        Truckee River Rafting
-      </v-app-bar-title>
+      <NuxtLink to="/" class="text-decoration-none">
+
+  <v-img
+    src="/images/logo/logo.gif"
+    alt="I.R.I.E River Rafting"
+    max-height="65"
+    width="auto"
+    contain
+    class="mr-3"
+  />
+
+  <!-- <span class="font-weight-bold text-body-1 text-black">
+    I.R.I.E River Rafting
+  </span> -->
+
+</NuxtLink>
+
+<v-spacer />
 
       <!--
       ========================
@@ -129,7 +144,7 @@ import { trips } from '~/data/trips'
           <v-col cols="12" md="6">
 
             <h3 class="mb-2">
-              Truckee River Rafting
+              I.R.I.E River Rafting
             </h3>
 
             <p>
@@ -141,7 +156,7 @@ import { trips } from '~/data/trips'
           <v-col cols="12" md="6">
 
             <p>
-              © 2026 Truckee River Rafting
+              © 2026 I.R.I.E River Rafting
             </p>
 
           </v-col>
