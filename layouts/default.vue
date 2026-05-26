@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { trips } from '~/data/trips'
+</script>
+
 <template>
 
   <v-app>
@@ -27,9 +31,57 @@
         Home
       </v-btn>
 
-      <v-btn to="/trips/truckee" variant="text">
+      <!-- <v-btn to="/trips/truckee" variant="text">
         Trips
-      </v-btn>
+      </v-btn> -->
+      <v-menu offset-y>
+  <template #activator="{ props }">
+    <v-btn
+      v-bind="props"
+      variant="text"
+    >
+      Trips
+      <v-icon end>mdi-chevron-down</v-icon>
+    </v-btn>
+  </template>
+
+  <v-list>
+
+    <!-- <v-list-item
+      v-for="trip in trips"
+      :key="trip.slug"
+      :to="`/trips/${trip.slug}`"
+      link
+    >
+      <v-list-item-title>
+        {{ trip.title }}
+      </v-list-item-title>
+    </v-list-item> -->
+    
+    <!-- UPGRADED Dropdown now with Images & Duration -->
+    <v-list-item
+  v-for="trip in trips"
+  :key="trip.slug"
+  :to="`/trips/${trip.slug}`"
+  link
+>
+  <template #prepend>
+    <v-avatar size="40">
+      <v-img :src="trip.images?.[0] || trip.image" />
+    </v-avatar>
+  </template>
+
+  <v-list-item-title>
+    {{ trip.title }}
+  </v-list-item-title>
+
+  <v-list-item-subtitle>
+    {{ trip.duration }}
+  </v-list-item-subtitle>
+</v-list-item>
+
+  </v-list>
+</v-menu>
 
       <!-- <NuxtLink to="/trips/truckee">Trips</NuxtLink> -->
 

@@ -1,9 +1,18 @@
 export const trips = [
   {
-    slug: 'half-day-truckee-river',
-    title: 'Half Day Truckee River Rafting',
-    description:
-      'Enjoy a scenic and family-friendly rafting trip on the Truckee River. Perfect for beginners and groups.',
-    image: '/images/california-whitewater.webp'
+    slug: 'california-whitewater',
+    title: 'California Whitewater Rafting',
+    image: '/images/l-mfa-series-whitewater-adventures-in-california.webp',
+    images: [
+      '/images/l-mfa-series-whitewater-adventures-in-california.webp',
+      '/images/l-bossmoss-rapids-whitewater-rafting-tours-truckee.webp',
+      '/images/l-exciting-truckee-river-rafting-experiences.webp',
+      '/images/l-group-river-rafting-experience-near-tahoe.webp',
+      '/images/l-mfa-series-whitewater-rafting-trips-california.webp'
+    ],
+    description: 'Thrilling Class III–IV rapids...',
+    duration: 'Full Day',
+    difficulty: 'advanced',
+    price: '$129'
   }
 ]
