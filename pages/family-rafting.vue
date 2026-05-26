@@ -11,7 +11,7 @@
     </p>
 
     <v-img
-      src="/images/family-trip.webp"
+      src="/images/l-group-river-rafting-experience-near-tahoe.webp"
       rounded="xl"
       class="mb-8"
     />

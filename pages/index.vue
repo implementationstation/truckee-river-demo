@@ -171,7 +171,7 @@ const truckeeTrip = {
   difficulty: 'Moderate',
   duration: '3–4 hours',
   price: 120,
-  image: '/images/family-trip.webp',
+  image: '/images/l-family-guided-rafting-on-truckee-river.webp',
   description: 'Guided rafting near Lake Tahoe.'
 }
 /*

@@ -20,7 +20,7 @@ useSeo({
     </p>
 
     <NuxtImg
-      src="/images/family-trip.webp"
+      src="/images/l-family-river-rafting-experiences-on-truckee-river.webp"
       class="mt-6"
     />
 

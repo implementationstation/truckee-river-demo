@@ -11,7 +11,7 @@
     </p>
 
     <v-img
-      src="/images/california-whitewater.webp"
+      src="/images/l-guided-river-rafting-trips-tahoe.webp"
       rounded="xl"
       class="mb-8"
     />
