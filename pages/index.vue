@@ -8,10 +8,10 @@
 
   <SectionsHeroPrimary 
     eyebrow="TAHOE SUMMER 2026"
-    title="The river rafting trips you hear about from your friends is available with us all year round."
+    title="Whitewater Rafting with I.R.I.E River Rafting based in Truckee|Tahoe"
     subtitle="Strong Ambience, Skilled Guides & unforgettable experiences for all."
-    primary-cta="Get In Now"
-    secondary-cta="View The Prices"
+    primary-cta="Book Now"
+    secondary-cta="Learn More"
     />
   <!-- <HeroSection /> -->
 

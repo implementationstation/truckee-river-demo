@@ -84,7 +84,7 @@ const drawer = ref(false)
   v-for="trip in trips"
   :key="trip.slug"
   :to="`/trips/${trip.slug}`"
-  link
+  link min-width="320"
 >
   <template #prepend>
     <v-avatar size="40">
@@ -117,6 +117,13 @@ const drawer = ref(false)
       <v-btn to="/contact" variant="text">
         Contact
       </v-btn>
+
+      <v-btn
+  color="primary"
+  class="ml-4"
+>
+  Book Now
+</v-btn>
       </div>
 
     </v-app-bar>
@@ -207,40 +214,98 @@ const drawer = ref(false)
     -->
 
     <v-footer
-      class="pa-6"
-      color="grey-lighten-4"
-    >
+  color="grey-lighten-4"
+  class="pt-10 pb-6"
+>
+  <v-container>
 
-      <v-container>
+    <v-row>
 
-        <v-row>
+      <!-- Brand -->
+      <v-col cols="12" md="4">
 
-          <v-col cols="12" md="6">
+        <v-img
+          src="/images/logo/logo.gif"
+          max-width="180"
+          class="mb-4"
+        />
 
-            <h3 class="mb-2">
-              I.R.I.E River Rafting
-            </h3>
+        <p class="text-body-2">
+          Guided whitewater rafting adventures near Tahoe and Northern California.
+        </p>
 
-            <p>
-              Guided rafting adventures near Tahoe.
-            </p>
+      </v-col>
 
-          </v-col>
+      <!-- Quick Links -->
+      <v-col cols="12" md="4">
 
-          <v-col cols="12" md="6">
+        <h4 class="mb-4">
+          Quick Links
+        </h4>
 
-            <p>
-              © 2026 I.R.I.E River Rafting
-            </p>
+        <div class="d-flex flex-column ga-2">
 
-          </v-col>
+          <NuxtLink to="/">
+            Home
+          </NuxtLink>
 
-        </v-row>
+          <NuxtLink to="/info/faq">
+            FAQ
+          </NuxtLink>
 
-      </v-container>
+          <NuxtLink to="/contact">
+            Contact
+          </NuxtLink>
 
-    </v-footer>
+        </div>
 
+      </v-col>
+
+      <!-- Contact -->
+      <v-col cols="12" md="4">
+
+        <h4 class="mb-4">
+          Contact
+        </h4>
+
+        <div class="d-flex flex-column ga-2 text-body-2">
+
+          <div>
+            📍 Truckee Northern California
+          </div>
+
+          <div>
+            📞 (530) 583-1111
+          </div>
+
+          <div>
+            ✉️ info@raftirie.com
+          </div>
+
+        </div>
+
+        <div class="d-flex ga-3 mt-4">
+
+  <v-btn icon="mdi-instagram" variant="text" />
+
+  <v-btn icon="mdi-facebook" variant="text" />
+
+  <v-btn icon="mdi-youtube" variant="text" />
+
+</div>
+
+      </v-col>
+
+    </v-row>
+
+    <v-divider class="my-6" />
+
+    <div class="text-center text-body-2">
+      © 2026 I.R.I.E River Rafting — All Rights Reserved
+    </div>
+
+  </v-container>
+</v-footer>
   </v-app>
 
 </template>
