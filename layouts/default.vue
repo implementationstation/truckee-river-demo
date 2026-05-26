@@ -110,9 +110,13 @@ const drawer = ref(false)
         FAQ
       </v-btn>
 
-      <!-- <v-btn to="/about" variant="text">
+      <v-btn to="/about" variant="text">
         About
-      </v-btn> -->
+      </v-btn>
+
+      <v-btn to="/irie-river-raft-guide-school" variant="text">
+        Guide School
+      </v-btn>
 
       <v-btn to="/contact" variant="text">
         Contact
@@ -252,6 +256,10 @@ const drawer = ref(false)
 
           <NuxtLink to="/info/faq">
             FAQ
+          </NuxtLink>
+
+          <NuxtLink to="/irie-river-raft-guide-school">
+            Guide School
           </NuxtLink>
 
           <NuxtLink to="/contact">

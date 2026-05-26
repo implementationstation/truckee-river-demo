@@ -5,20 +5,23 @@
     <v-container class="py-10">
 
       <h1 class="text-h3 mb-6">
-        About Our Guides
+        Why Choose Us?
       </h1>
 
       <p class="text-body-1">
-        Our guides have spent years navigating the Truckee River,
-        helping families and adventure seekers experience Northern California safely.
+        Local Our guides live and breathe Sierra rivers.
       </p>
 
     </v-container>
+
+    <guide-school-section/>
 
   </v-main>
 </template>
 
 <script setup>
+import GuideSchoolSection from '~/components/GuideSchoolSection.vue';
+
 
 useSeoMeta({
 
