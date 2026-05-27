@@ -6,6 +6,8 @@
   ========================
   -->
 
+   
+
   <SectionsHeroPrimary 
     eyebrow="TAHOE TRUCKEE RAFTING 2026"
     title="Isolated Rivers Incredible Experiences"
@@ -162,6 +164,9 @@
 </template>
 
 <script setup lang="ts">
+import ImportantAdminInfo from '~/components/general/importantAdminInfo.vue';
+import RaftingTripPricingSection from '~/components/general/RaftingTripPricingSection.vue';
+
 
 // USE ONLY IF YOU WANT DYNAMIC INFO COMING 
 const truckeeTrip = {

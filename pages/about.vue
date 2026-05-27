@@ -5,12 +5,11 @@
     <v-container class="py-10">
 
       <h1 class="text-h3 mb-6">
-        Why Choose Us?
+        About IRIE
       </h1>
-
-      <p class="text-body-1">
-        Local Our guides live and breathe Sierra rivers.
-      </p>
+      <hr>
+      
+      <general-important-admin-info />
 
     </v-container>
 
