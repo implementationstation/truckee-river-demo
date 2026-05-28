@@ -1,7 +1,8 @@
 export const trips = [
   
   {
-    slug: 'truckee-river-half-day-guided-river-rafting',
+    // slug: 'truckee-river-half-day-guided-river-rafting',
+    slug: 'truckee-half-day',
     title: 'Truckee River Half Day Guided River Rafting',
     bookingUrl: 'https://book.singenuity.com/338/activity/details/1452/rates',
     image: '/images/l-tahoe-whitewater-rafting-trips.webp',

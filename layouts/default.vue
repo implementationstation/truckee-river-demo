@@ -110,8 +110,8 @@ const drawer = ref(false)
         FAQ
       </v-btn>
 
-      <v-btn to="/about" variant="text">
-        About
+      <v-btn to="/info/trip-planning" variant="text">
+        Planning Your Trip
       </v-btn>
 
       <v-btn to="/irie-river-raft-guide-school" variant="text">
@@ -188,6 +188,13 @@ const drawer = ref(false)
       prepend-icon="mdi-help-circle"
       @click="drawer = false"
     />
+
+    <v-list-item
+      to="/info/trip-planning"
+      title="Plan Your Trip"
+      prepend-icon="mdi-help-circle"
+      @click="drawer = false"
+      />
 
     <v-list-item
       to="/contact"
