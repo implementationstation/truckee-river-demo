@@ -5,7 +5,7 @@
     <h2 class="text-h3 mb-8">
       Frequently Asked Questions
     </h2>
-
+    <general-rafting-trip-pricing-section />
     <v-expansion-panels variant="inset">
 
       <v-expansion-panel

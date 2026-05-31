@@ -193,7 +193,7 @@ const trip = truckeeHalfDay
       rgba(0,0,0,.45),
       rgba(0,0,0,.55)
     ),
-    url('/images/l-exciting-truckee-river-rafting-experiences.webp');
+    url('/images/irie-rafting-group-in-truckee.webp');
 
   background-size: cover;
   background-position: center;

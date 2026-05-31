@@ -141,13 +141,13 @@ defineProps({
   backgroundImage: {
     type: String,
     default:
-    '/images/l-california-whitewater-rafting.webp' 
+    '/images/family-guided-rafting-on-truckee-river.webp' 
   },
 
   cardImage: {
     type: String,
     default:
-      '/images/l-bossmoss-rapids-whitewater-rafting-tours-truckee.webp'
+      '/images/family-river-rafting-experiences-on-truckee-river.webp'
   },
 
   stats: {

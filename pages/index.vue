@@ -8,13 +8,14 @@
 
    
 
-  <SectionsHeroPrimary 
+  <!-- <SectionsHeroPrimary 
     eyebrow="TAHOE TRUCKEE RAFTING 2026"
-    title="Isolated Rivers Incredible Experiences"
+    title="Tahoe Local Guides: Proper River Know-how"
     subtitle="Experience the thrill of the rapids on the Truckee River with IRIE Rafting Company. Nestled in the heart of the stunning Lake Tahoe area, our whitewater rafting trips on the Truckee River promise half-day adventures that are perfect for families and thrill-seekers alike."
     primary-cta="Book Now"
     secondary-cta="Learn More"
-    />
+    /> -->
+    <HeroHappy></HeroHappy>
   <!-- <HeroSection /> -->
 
   <!--
@@ -42,7 +43,7 @@
        <TripCard
           title="Truckee River Half Day “Boca Run”"
           description="AKA - ‘Floriston Gorge” Class II-III. This popular guided river trip is offered twice daily, all summer, and is very close to Truckee & North Lake Tahoe. A bucket list adventure for visitors to the area and long time locals alike. This section of the Truckee River takes you through beautiful scenic river canyons and rich history. The rapids in this section progresses from small riffles to class II canyons. The journey ends with exhilarating Class III rapids. "
-          image="/images/l-exciting-truckee-river-rafting-experiences.webp"
+          image="/images/family-river-rafting-experiences-on-truckee-river.webp"
           link="/trips/truckee-river-half-day-guided-river-rafting"
           duration="3–4 hours"
           difficulty="Class II–III"
@@ -166,6 +167,7 @@
 <script setup lang="ts">
 import ImportantAdminInfo from '~/components/general/importantAdminInfo.vue';
 import RaftingTripPricingSection from '~/components/general/RaftingTripPricingSection.vue';
+import HeroHappy from '~/components/sections/HeroHappy.vue';
 
 
 // USE ONLY IF YOU WANT DYNAMIC INFO COMING 
@@ -176,7 +178,7 @@ const truckeeTrip = {
   difficulty: 'Moderate',
   duration: '3–4 hours',
   price: 120,
-  image: '/images/l-family-guided-rafting-on-truckee-river.webp',
+  image: '/images/unforgettable-family-river-rafting-tours-in-tahoe.webp',
   description: 'Guided rafting near Lake Tahoe.'
 }
 /*

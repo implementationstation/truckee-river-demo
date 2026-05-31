@@ -6,8 +6,8 @@
     ======================== -->
 
     <v-img
-      src="/images/l-mfa-series-whitewater-adventures-in-california.webp"
-      height="300"
+      src="/images/scenic-whitewater-tours-guided-in-truckee.webp"
+      height="420"
       cover
     >
       <div class="hero-overlay">

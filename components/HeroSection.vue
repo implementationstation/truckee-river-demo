@@ -53,7 +53,7 @@
       <v-col cols="12" md="6">
 
         <NuxtImg
-          src="/images/l-family-guided-rafting-on-truckee-river.webp"
+          src="/images/group-in-tahoe-whitewater-rafting-trips.webp"
           alt="Truckee River rafting near Lake Tahoe"
           format="webp"
           quality="80"

@@ -43,7 +43,7 @@ useHead({
             <p class="hero-subtitle mb-8">
               {{ page.hero.subtitle }}
             </p>
-
+            <!--V-CHIPS REMOVED 
             <div class="d-flex flex-wrap ga-3 mb-10">
               <v-chip
                 color="white"
@@ -76,7 +76,7 @@ useHead({
               >
                 Trip Photos
               </v-chip>
-            </div>
+            </div> -->
 
             <div class="d-flex flex-wrap ga-4">
               <v-btn
@@ -415,7 +415,7 @@ useHead({
   position: relative;
 
   background:
-    url('/images/rafting/rafting-team-background.webp');
+    url('/images/best-truckee-river-rafting-guides.webp');
 
   background-size: cover;
   background-position: center;
@@ -557,7 +557,7 @@ useHead({
       rgba(10, 20, 30, 0.95),
       rgba(20, 40, 60, 0.92)
     ),
-    url('/images/l-guided-river-rafting-trips-tahoe.webp');
+    url('/images/rafting-under-bridge-view-truckee-river.webp');
 
   background-size: cover;
   background-position: center;

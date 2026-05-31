@@ -106,17 +106,17 @@ const drawer = ref(false)
 
       <!-- <NuxtLink to="/trips/truckee">Trips</NuxtLink> -->
 
-      <v-btn to="/info/faq" variant="text">
+      <v-btn to="/faq" variant="text">
         FAQ
       </v-btn>
 
-      <v-btn to="/info/trip-planning" variant="text">
+      <v-btn to="/trip-planning" variant="text">
         Planning Your Trip
       </v-btn>
 
-      <v-btn to="/irie-river-raft-guide-school" variant="text">
+      <!-- <v-btn to="/irie-river-raft-guide-school" variant="text">
         Guide School
-      </v-btn>
+      </v-btn> -->
 
       <v-btn to="/contact" variant="text">
         Contact
@@ -183,14 +183,14 @@ const drawer = ref(false)
     </v-list-group>
 
     <v-list-item
-      to="/info/faq"
+      to="/faq"
       title="FAQ"
       prepend-icon="mdi-help-circle"
       @click="drawer = false"
     />
 
     <v-list-item
-      to="/info/trip-planning"
+      to="/trip-planning"
       title="Plan Your Trip"
       prepend-icon="mdi-help-circle"
       @click="drawer = false"
@@ -261,14 +261,17 @@ const drawer = ref(false)
             Home
           </NuxtLink>
 
-          <NuxtLink to="/info/faq">
+          
+
+          <!-- <NuxtLink to="/irie-river-raft-guide-school">
+            Guide School
+          </NuxtLink> -->
+          <NuxtLink to="/trip-planning">
+            Plan Your Trip
+          </NuxtLink>
+          <NuxtLink to="/faq">
             FAQ
           </NuxtLink>
-
-          <NuxtLink to="/irie-river-raft-guide-school">
-            Guide School
-          </NuxtLink>
-
           <NuxtLink to="/contact">
             Contact
           </NuxtLink>

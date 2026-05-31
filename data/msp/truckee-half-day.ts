@@ -69,7 +69,7 @@ const truckeeHalfDay: TripPage = {
     subtitle:
       'Half Day Trip • Family Friendly • Great For Larger Groups • Ages 5+',
 
-    image: '/images/l-exciting-truckee-river-rafting-experiences.webp',
+    image: '/images/rapids-california-whitewater-rafting.webp',
 
     badges: [
       'Class II-III Rapids',

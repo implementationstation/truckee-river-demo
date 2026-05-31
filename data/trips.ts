@@ -5,13 +5,12 @@ export const trips = [
     slug: 'truckee-half-day',
     title: 'Truckee River Half Day Guided River Rafting',
     bookingUrl: 'https://book.singenuity.com/338/activity/details/1452/rates',
-    image: '/images/l-tahoe-whitewater-rafting-trips.webp',
+    image: '/images/unforgettable-family-river-rafting-tours-in-tahoe.webp',
     images: [
-      '/images/l-tahoe-whitewater-rafting-trips.webp',
-      '/images/l-family-river-rafting-experiences-on-truckee-river.webp',
-      '/images/l-rapids-with-irie-rafting-experiences-truckee.webp',
-      '/images/l-unforgettable-family-river-rafting-tours-in-tahoe.webp',
-      '/images/l-irie-rafting-group-in-truckee.webp'
+      '/images/truckee-tahoe-river-rafting-beauty.webp',
+      '/images/rafting-adventure-near-boca-reservoir.webp',
+      '/images/guided-tahoe-based-river-rafting.webp',
+      '/images/guided-rafting-trip-on-truckee-river-class-2-3.webp'
     ],
     //PAGE HERO -- TRIPS/[SLUG]
     heroTitle: 'Truckee River Half Day | "Boca Run" | AKA Floriston Gorge',
@@ -49,34 +48,3 @@ export const trips = [
   }
 ]
 
-// MAY26 - REMOVED THIS TRIP BECAUSE ONLY FOCUSSING ON HALF DAY TRIP GOING FORWARD 
-//{
-//     slug: 'california-whitewater',
-//     title: 'Class 4 Full Day Truckee River Rafting',
-//     bookingUrl: 'https://book.singenuity.com/338/activity/details/1637/rates',
-//     image: '/images/l-mfa-series-whitewater-adventures-in-california.webp',
-//     images: [
-//       '/images/l-mfa-series-whitewater-adventures-in-california.webp',
-//       '/images/l-bossmoss-rapids-whitewater-rafting-tours-truckee.webp',
-//       '/images/l-exciting-truckee-river-rafting-experiences.webp',
-//       '/images/l-group-river-rafting-experience-near-tahoe.webp',
-//       '/images/l-mfa-series-whitewater-rafting-trips-california.webp'
-//     ],
-//     heroTitle: 'Class 4 Full Day Truckee River Rafting ',
-//     heroDescription: 'Along with many other rapids and diversion dams the Bocca To Verdi Section of the Truckee River makes for an action packed day',
-//     description: 'Thrilling Class III–IV rapids...',
-//     duration: 'Full Day',
-//     difficulty: 'Advanced',
-//     price: '$200',
-//     priceYouth: '$200',
-//     whatsIncluded: [
-//       'We provide transportation to and from our office in Truckee (15-20 min)',
-//       'Deli style lunch on the side of the river.',
-//       'PFDs, paddles, and helmets are provided for all guests.',
-//       'We will provide two large water bottles per raft that clip in to the boat.',
-//       'We ask that if you do bring your own water there is a way to fasten it to the raft.',
-//     ],
-//     raftSizeCapacity: 'The Truckee River is a low volume river and we use 12in and 13in rafts that will fit up to 6 guests plus one guide. However, we aim to only put 4 or 5 guest per boat if individual group sizes will permit.',
-//     meetTime: '09:00',
-//     tripTime: 'Approximately 7hours.'
-//   },
