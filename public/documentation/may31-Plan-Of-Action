@@ -1,0 +1,521 @@
+For Nuxt 4 + Vuetify, I would structure things slightly differently than a generic Vue project.
+
+The biggest advantage of Vuetify is that many sections become composable layouts built from VContainer, VRow, VCol, VCard, VExpansionPanels, VTimeline, VParallax, etc., rather than lots of custom HTML.
+
+A lean competitive rafting-tour site would look like this:
+
+Nuxt 4 + Vuetify 4 Structure
+Nuxt 4 + Vuetify 4 Structure
+app/
+├── pages/
+│   ├── index.vue
+│   ├── about.vue
+│   ├── trip-info.vue
+│   ├── planning-your-trip.vue
+│   ├── faq.vue
+│   └── contact.vue
+│
+├── components/
+│
+│   ├── layout/
+│   │   ├── SiteHeader.vue
+│   │   ├── MobileNavigation.vue
+│   │   ├── DesktopNavigation.vue
+│   │   ├── SiteFooter.vue
+│   │   └── BookingCTA.vue
+│   │
+│   ├── shared/
+│   │   ├── HeroSection.vue
+│   │   ├── SectionHeader.vue
+│   │   ├── TrustBar.vue
+│   │   ├── ReviewCarousel.vue
+│   │   ├── CTASection.vue
+│   │   ├── FeatureCard.vue
+│   │   ├── StatCard.vue
+│   │   └── ImageGallery.vue
+│   │
+│   ├── home/
+│   │   ├── HomeHero.vue
+│   │   ├── FeaturedTrips.vue
+│   │   ├── WhyChooseUs.vue
+│   │   ├── HomeStatistics.vue
+│   │   ├── Testimonials.vue
+│   │   └── InstagramGallery.vue
+│   │
+│   ├── about/
+│   │   ├── CompanyStory.vue
+│   │   ├── GuideProfiles.vue
+│   │   ├── SafetyStandards.vue
+│   │   ├── Certifications.vue
+│   │   └── CompanyTimeline.vue
+│   │
+│   ├── trip-info/
+│   │   ├── TripCards.vue
+│   │   ├── IncludedFeatures.vue
+│   │   ├── RapidsBreakdown.vue
+│   │   ├── PackingChecklist.vue
+│   │   └── SeasonalConditions.vue
+│   │
+│   ├── planning/
+│   │   ├── GettingHere.vue
+│   │   ├── LodgingOptions.vue
+│   │   ├── WeatherGuide.vue
+│   │   ├── LocalAttractions.vue
+│   │   └── TransportationGuide.vue
+│   │
+│   ├── faq/
+│   │   ├── FAQPanels.vue
+│   │   ├── FAQCategories.vue
+│   │   └── FAQSearch.vue
+│   │
+│   └── contact/
+│       ├── ContactForm.vue
+│       ├── ContactMethods.vue
+│       ├── OfficeMap.vue
+│       └── BusinessHours.vue
+│
+├── content/
+│   ├── pages.ts
+│   ├── trips.ts
+│   ├── faq.ts
+│   ├── reviews.ts
+│   ├── guides.ts
+│   ├── company.ts
+│   ├── weather.ts
+│   └── lodging.ts
+│
+├── composables/
+│   ├── useNavigation.ts
+│   ├── usePageSeo.ts
+│   ├── useBookingInquiry.ts
+│   └── useFaqSearch.ts
+│
+├── types/
+│   ├── page.ts
+│   ├── trip.ts
+│   ├── faq.ts
+│   ├── guide.ts
+│   └── review.ts
+│
+└── plugins/
+    └── vuetify.ts
+content/pages.ts
+export interface PageDefinition {
+  route: string
+
+  title: string
+
+  description: string
+
+  seo: {
+    title: string
+    description: string
+    keywords: string[]
+  }
+
+  hero: {
+    heading: string
+    subheading: string
+    image: string
+
+    cta?: {
+      label: string
+      to: string
+    }
+  }
+
+  stats?: {
+    value: string
+    label: string
+  }[]
+}
+
+export const pages = {
+  home: {
+    route: "/",
+
+    title: "Truckee River Rafting",
+
+    description:
+      "Guided rafting adventures in Truckee and Lake Tahoe.",
+
+    seo: {
+      title:
+        "Truckee River Rafting Adventures",
+
+      description:
+        "Family-friendly rafting experiences on the Truckee River.",
+
+      keywords: [
+        "truckee rafting",
+        "lake tahoe rafting",
+        "rafting tours"
+      ]
+    },
+
+    hero: {
+      heading:
+        "The Best Day On The Truckee River",
+
+      subheading:
+        "Scenic rafting adventures for families and groups.",
+
+      image:
+        "/images/home/hero.webp",
+
+      cta: {
+        label:
+          "View Trips",
+
+        to:
+          "/trip-info"
+      }
+    },
+
+    stats: [
+      {
+        value: "20+",
+        label: "Years Guiding"
+      },
+
+      {
+        value: "15,000+",
+        label: "Guests Served"
+      },
+
+      {
+        value: "4.9★",
+        label: "Guest Rating"
+      }
+    ]
+  }
+
+  // Add:
+  // about
+  // trip-info
+  // planning-your-trip
+  // faq
+  // contact
+}
+Home Page
+<!-- pages/index.vue -->
+
+<script setup lang="ts">
+const page = pages.home
+
+usePageSeo("home")
+</script>
+
+<template>
+
+  <VMain>
+
+    <!-- Full-width parallax/video hero -->
+    <!-- Large booking CTA -->
+    <!-- Seasonal announcement banner -->
+    <HomeHero />
+
+    <!-- Trust indicators -->
+    <!-- TripAdvisor -->
+    <!-- Google Reviews -->
+    <!-- Safety Certifications -->
+    <TrustBar />
+
+    <!-- Featured trip cards -->
+    <!-- VContainer -->
+    <!-- VRow -->
+    <!-- VCol -->
+    <!-- VCard -->
+    <FeaturedTrips />
+
+    <!-- Why choose us -->
+    <!-- Icon cards -->
+    <!-- Safety -->
+    <!-- Local guides -->
+    <!-- Family friendly -->
+    <WhyChooseUs />
+
+    <!-- Animated statistics -->
+    <!-- Guests -->
+    <!-- Reviews -->
+    <!-- Years in business -->
+    <HomeStatistics />
+
+    <!-- Vuetify Carousel -->
+    <!-- Guest testimonials -->
+    <Testimonials />
+
+    <!-- Booking CTA -->
+    <BookingCTA />
+
+  </VMain>
+
+</template>
+HomeHero.vue
+<script setup lang="ts">
+
+// Props:
+// heading
+// subheading
+// image
+// CTA
+
+</script>
+
+<template>
+
+  <!-- VParallax background image -->
+
+  <!-- Overlay gradient -->
+
+  <!-- Centered VContainer -->
+
+  <!-- Hero headline -->
+
+  <!-- Supporting copy -->
+
+  <!-- Primary CTA button -->
+
+  <!-- Secondary CTA button -->
+
+  <!-- Scroll indicator -->
+
+</template>
+FeaturedTrips.vue
+<script setup lang="ts">
+
+// Pull from trips.ts
+
+</script>
+
+<template>
+
+  <VContainer>
+
+    <!-- Section title -->
+
+    <!-- Intro paragraph -->
+
+    <VRow>
+
+      <!-- Loop trip cards -->
+
+      <!-- VCol md=4 -->
+
+      <!-- VCard -->
+
+      <!-- Hero image -->
+
+      <!-- Duration chip -->
+
+      <!-- Difficulty chip -->
+
+      <!-- Pricing -->
+
+      <!-- Highlights list -->
+
+      <!-- Book button -->
+
+    </VRow>
+
+  </VContainer>
+
+</template>
+About Page
+<!-- pages/about.vue -->
+
+<template>
+
+  <!-- Company story -->
+  <CompanyStory />
+
+  <!-- Timeline -->
+  <!-- Built using VTimeline -->
+  <CompanyTimeline />
+
+  <!-- Meet guides -->
+  <!-- Profile cards -->
+  <!-- Certifications -->
+  <GuideProfiles />
+
+  <!-- Safety standards -->
+  <!-- Certifications -->
+  <!-- Emergency procedures -->
+  <SafetyStandards />
+
+  <BookingCTA />
+
+</template>
+Trip Info Page
+<!-- pages/trip-info.vue -->
+
+<template>
+
+  <!-- Trip comparison cards -->
+  <TripCards />
+
+  <!-- River classes -->
+  <!-- Difficulty chart -->
+  <RapidsBreakdown />
+
+  <!-- What's included -->
+  <!-- Equipment -->
+  <!-- Transportation -->
+  <IncludedFeatures />
+
+  <!-- What to bring -->
+  <!-- Packing checklist -->
+  <PackingChecklist />
+
+  <!-- Seasonal conditions -->
+  <!-- Water flow -->
+  <!-- Temperatures -->
+  <SeasonalConditions />
+
+  <BookingCTA />
+
+</template>
+FAQ Component
+<!-- FAQPanels.vue -->
+
+<script setup lang="ts">
+
+// Search
+// Category filtering
+// Expand all
+
+</script>
+
+<template>
+
+  <VExpansionPanels>
+
+    <!-- Question -->
+
+    <!-- Answer -->
+
+    <!-- Category chips -->
+
+  </VExpansionPanels>
+
+</template>
+Contact Form
+<!-- ContactForm.vue -->
+
+<script setup lang="ts">
+
+// Name
+// Email
+// Phone
+// Group Size
+// Desired Date
+// Message
+
+// Validation via Vuetify forms
+
+</script>
+
+<template>
+
+  <VForm>
+
+    <!-- VTextField -->
+    <!-- Name -->
+
+    <!-- VTextField -->
+    <!-- Email -->
+
+    <!-- VTextField -->
+    <!-- Phone -->
+
+    <!-- VSelect -->
+    <!-- Group size -->
+
+    <!-- VDateInput -->
+    <!-- Preferred date -->
+
+    <!-- VTextarea -->
+    <!-- Message -->
+
+    <!-- Submit button -->
+
+  </VForm>
+
+</template>
+Recommended Landing Page Conversion Order
+HEADER
+
+Hero
+│
+├─ Headline
+├─ Supporting Copy
+├─ CTA
+└─ Social Proof
+
+Trust Bar
+│
+├─ Reviews
+├─ Certifications
+└─ Years Experience
+
+Featured Trips
+│
+├─ Trip 1
+├─ Trip 2
+└─ Trip 3
+
+Why Choose Us
+│
+├─ Local Guides
+├─ Safety
+├─ Convenience
+└─ Family Friendly
+
+Testimonials
+
+Instagram Gallery
+
+Final CTA
+
+FOOTER
+Vuetify Components Used
+Layout
+├─ VApp
+├─ VMain
+├─ VContainer
+├─ VRow
+└─ VCol
+
+Navigation
+├─ VAppBar
+├─ VNavigationDrawer
+└─ VMenu
+
+Content
+├─ VCard
+├─ VChip
+├─ VTimeline
+├─ VExpansionPanels
+├─ VCarousel
+├─ VParallax
+└─ VImg
+
+Forms
+├─ VForm
+├─ VTextField
+├─ VSelect
+├─ VTextarea
+├─ VCheckbox
+└─ VBtn
+
+Feedback
+├─ VAlert
+├─ VSnackbar
+└─ VProgressCircular
+
+The overall philosophy is:
+
+Nuxt handles routing, SEO, and data organization.
+Vuetify handles layout, responsiveness, accessibility, and visual consistency.
+
+That keeps the codebase lean while still looking like a premium outdoor-tourism brand rather than a generic template site.
