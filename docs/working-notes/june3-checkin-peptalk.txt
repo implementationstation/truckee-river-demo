@@ -1,0 +1,28 @@
+----------
+JUNE 3 -- 5 Days Late to Demo Deployment -- 
+    FOUND NEW WORKFLOW
+
+-----
+
+Demo template and implementation style works well. Info first, then content. (Better to make sections and typography etc stand out already. and I know what there is seo wise)
+
+PLAN TODAY
+-------
+Good: Home Page Exists and parent styles and layout files are working now.
+Good: It actually looks pretty good as-is without photos
+FUCK: There are no photos at all.
+    ?: Maybe I just leave it until end and ask ma booi cgpt 
+    !: Placeholders would be sick though...
+Note: Going forward keep in mind there are no photos so either:
+    A: Blast through to get the pages/components/datastructures/general style acceptable and running
+        (!BLAST! == Still need to deal with photos but the output is worth it I rate from the above task)
+    B: Take longer to keep in mind how images could be placed and kinda account for them
+        (!Warn! == This is classic red-flag territory for konrad with sidequest tangency mastery and procrastingation/ocd soooooo nah)
+     
+*! TASK BIRTH EVENT ===> Tayby born [Task-Day-Baby]
+*! ORGANIZATIONAL EVENT ===> Fkn sick, so we gonna assign labels to the tasks I have and each label level (importance level of task) will determine if we just mention a note about it or in the case of high importance and potentially breaking the architecture, then we say FDC - Why/Explain
+
+**** NEW TASK (*Load-Bearing Wall Work) - FDC [Full Direction Change] == Something major changes now with how we go from here 
+    Build out all the remaining planned in the same style kinda of index.vue where the correct info is displayed in the right component, from a data source away from the page
+
+

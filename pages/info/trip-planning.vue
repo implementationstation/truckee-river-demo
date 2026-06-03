@@ -415,7 +415,7 @@ useHead({
   position: relative;
 
   background:
-    url('/images/rafting/rafting-team-background.webp');
+    url('/images/processed/small-group-guided-rafters-enjoying-truckee-river.webp');
 
   background-size: cover;
   background-position: center;

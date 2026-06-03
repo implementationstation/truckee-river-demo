@@ -1,200 +1,82 @@
 <template>
+  <PagePageShell>
+    <section class="hero">
+      <p class="eyebrow">{{ page.hero.eyebrow }}</p>
+      <h1>{{ page.hero.title }}</h1>
+      <p>{{ page.hero.subtitle }}</p>
 
-  <!--
-  ========================
-  HERO SECTION
-  ========================
-  -->
+      <div class="hero-actions">
+        <v-btn size="large" rounded="xl">
+          {{ page.hero.primaryAction }}
+        </v-btn>
 
-   
+        <v-btn size="large" rounded="xl" variant="tonal">
+          {{ page.hero.secondaryAction }}
+        </v-btn>
+      </div>
+    </section>
 
-  <SectionsHeroPrimary 
-    eyebrow="TAHOE TRUCKEE RAFTING 2026"
-    title="Isolated Rivers Incredible Experiences"
-    subtitle="Experience the thrill of the rapids on the Truckee River with IRIE Rafting Company. Nestled in the heart of the stunning Lake Tahoe area, our whitewater rafting trips on the Truckee River promise half-day adventures that are perfect for families and thrill-seekers alike."
-    primary-cta="Book Now"
-    secondary-cta="Learn More"
+    <PageSectionBlock
+      v-for="section in page.sections"
+      :key="section.title"
+      :label="section.label"
+      :title="section.title"
+      :intro="section.intro"
+    >
+      <PageInfoCardGrid :cards="section.cards" />
+    </PageSectionBlock>
+
+    <PageCTASection
+      eyebrow="Ready?"
+      title="Book the Truckee River Boca Run."
+      text="Keep the final action painfully obvious. No cleverness here. Just make booking easy."
+      button-text="Start Booking"
     />
-  <!-- <HeroSection /> -->
-
-  <!--
-  ========================
-  FEATURED TRIPS
-  ========================
-  -->
-
-
-  <v-container class="py-16">
-
-    <h2 class="text-h3 mb-6 text-center">
-      The Tahoe Based Whitewater Raft Outfitter
-    </h2>
-    <p style="font-weight: bold" class="text-subtitle-1 mb-10 text-center">Class II–III rapids • 3–4 hours • Perfect for families and first-timers</p>
-    <p class="text-center mb-10 text-subtitle-1">
-    We offer two guided whitewater rafting trips down the Truckee River daily throughout the summer, so you can choose the perfect time to dive into the adventure. Whether you’re a seasoned rafter or a first-timer, our expert guides ensure a safe and fantastic experience for everyone. Don’t miss out on this must-do adventure while exploring the Truckee Tahoe area! Embrace the rush, make memories, and splash into fun!
-  </p>
-
-  <v-row justify="center">
-
-    <v-col cols="12" md="6">
-
-      <!-- <TripCard :trip="truckeeTrip" /> -->
-       <TripCard
-          title="Truckee River Half Day “Boca Run”"
-          description="AKA - ‘Floriston Gorge” Class II-III. This popular guided river trip is offered twice daily, all summer, and is very close to Truckee & North Lake Tahoe. A bucket list adventure for visitors to the area and long time locals alike. This section of the Truckee River takes you through beautiful scenic river canyons and rich history. The rapids in this section progresses from small riffles to class II canyons. The journey ends with exhilarating Class III rapids. "
-          image="/images/l-exciting-truckee-river-rafting-experiences.webp"
-          link="/trips/truckee-river-half-day-guided-river-rafting"
-          duration="3–4 hours"
-          difficulty="Class II–III"
-          :price="120"
-          badge="Most Popular"
-        />
-
-    </v-col>
-
-  </v-row>
-
-  <div class="text-center mt-6">
-    <v-btn color="primary" size="large" to="/contact">
-      Contact Us Now
-    </v-btn>
-  </div>
-
-
-    <!-- <v-row>
-
-      <v-col cols="12" md="4">
-
-        <TripCard
-          title="Family Float Trips"
-          description="Relaxed scenic rafting adventures for families."
-          image="/images/family-trip.webp"
-          link="/family-rafting"
-        />
-
-      </v-col>
-
-      <v-col cols="12" md="4">
-
-        <TripCard
-          title="Whitewater Adventures"
-          description="Exciting rapids and unforgettable memories."
-          image="/images/california-whitewater.webp"
-          link="/california-whitewater"
-        />
-
-      </v-col>
-
-      <v-col cols="12" md="4">
-
-        <TripCard
-          title="Tahoe Guided Tours"
-          description="Explore the Truckee River with local experts."
-          image="/images/tahoe-trip.webp"
-          link="/rafting-near-tahoe"
-        />
-
-      </v-col>
-
-    </v-row> -->
-
-  </v-container>
-
-  <!--
-  ========================
-  TESTIMONIALS
-  ========================
-  -->
-
-  <v-container class="py-16">
-
-    <h2 class="text-h3 mb-10 text-center">
-      What Guests Are Saying
-    </h2>
-
-    <v-row>
-
-      <v-col cols="12" md="4">
-
-        <TestimonialCard
-          quote="One of the best Tahoe experiences we've ever had."
-          author="Sarah M"
-        />
-
-      </v-col>
-
-      <v-col cols="12" md="4">
-
-        <TestimonialCard
-          quote="Amazing guides and incredible scenery."
-          author="Daniel R"
-        />
-
-      </v-col>
-
-      <v-col cols="12" md="4">
-
-        <TestimonialCard
-          quote="Perfect family adventure for our kids."
-          author="Ashley T"
-        />
-
-      </v-col>
-
-    </v-row>
-
-  </v-container>
-
-  <!--
-  ========================
-  FAQ SECTION
-  ========================
-  -->
-
-  <!-- <FAQSection /> -->
-
-  <!--
-  ========================
-  CTA SECTION
-  ========================
-  -->
-
-  <CTASection />
-
+  </PagePageShell>
 </template>
 
 <script setup lang="ts">
-import ImportantAdminInfo from '~/components/general/importantAdminInfo.vue';
-import RaftingTripPricingSection from '~/components/general/RaftingTripPricingSection.vue';
-
-
-// USE ONLY IF YOU WANT DYNAMIC INFO COMING 
-const truckeeTrip = {
-  id: 'truckee',
-  name: 'Truckee River Half Day',
-  river: 'Truckee River',
-  difficulty: 'Moderate',
-  duration: '3–4 hours',
-  price: 120,
-  image: '/images/l-family-guided-rafting-on-truckee-river.webp',
-  description: 'Guided rafting near Lake Tahoe.'
-}
-/*
-========================
-SEO SECTION
-========================
-*/
+import { truckeeHomePage as page } from '~/data/pages/truckeeHome'
+import PagePageShell from '~/components/page/PageShell.vue'
 
 useSeoMeta({
-
-  title: 'Truckee River Rafting | Guided Tahoe Adventures',
-
-  description: 'Experience guided rafting adventures near Tahoe with experienced Truckee River guides.',
-
-  ogTitle: 'Truckee River Rafting',
-
-  ogDescription: 'Northern California rafting adventures near Tahoe.'
-
+  title: page.seo.title,
+  description: page.seo.description,
+  ogTitle: page.seo.title,
+  ogDescription: page.seo.description,
 })
-
 </script>
+
+<style scoped>
+.hero {
+  padding: 48px 0 72px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+
+h1 {
+  max-width: 920px;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 0.95;
+}
+
+.hero p {
+  margin-top: 24px;
+  max-width: 680px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 36px;
+}
+</style>
