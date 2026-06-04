@@ -1,21 +1,16 @@
 <template>
+  <!-- /*
+      LAYOUT PAGESHELL SECTION
+*/ -->
   <PagePageShell>
-    <section class="hero">
-      <p class="eyebrow">{{ page.hero.eyebrow }}</p>
-      <h1>{{ page.hero.title }}</h1>
-      <p>{{ page.hero.subtitle }}</p>
 
-      <div class="hero-actions">
-        <v-btn size="large" rounded="xl">
-          {{ page.hero.primaryAction }}
-        </v-btn>
-
-        <v-btn size="large" rounded="xl" variant="tonal">
-          {{ page.hero.secondaryAction }}
-        </v-btn>
-      </div>
-    </section>
-
+    <!-- /*
+      HERO SECTION
+*/ -->
+    <HomeHomeHero />
+<!-- /*
+      INFO CARD SECTION
+*/ -->
     <PageSectionBlock
       v-for="section in page.sections"
       :key="section.title"
@@ -26,18 +21,24 @@
       <PageInfoCardGrid :cards="section.cards" />
     </PageSectionBlock>
 
+
+<!-- /*
+      CALL TO ACTION SECTION
+*/ -->
     <PageCTASection
       eyebrow="Ready?"
       title="Book the Truckee River Boca Run."
       text="Keep the final action painfully obvious. No cleverness here. Just make booking easy."
       button-text="Start Booking"
     />
+
   </PagePageShell>
 </template>
 
 <script setup lang="ts">
 import { truckeeHomePage as page } from '~/data/pages/truckeeHome'
 import PagePageShell from '~/components/page/PageShell.vue'
+import HomeHomeHero from '~/components/home/HomeHero.vue'
 
 useSeoMeta({
   title: page.seo.title,

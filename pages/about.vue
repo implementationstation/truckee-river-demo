@@ -1,33 +1,22 @@
-<template>
-
-  <v-main>
-
-    <v-container class="py-10">
-
-      <h1 class="text-h3 mb-6">
-        About IRIE
-      </h1>
-      <hr>
-      
-      <general-important-admin-info />
-
-    </v-container>
-
-    <guide-school-section/>
-
-  </v-main>
-</template>
-
-<script setup>
-import GuideSchoolSection from '~/components/GuideSchoolSection.vue';
-
+<script setup lang="ts">
+import AboutHero from '~/components/about/AboutHero.vue'
+import GuideStory from '~/components/about/GuideStory.vue'
+import ValuesGrid from '~/components/about/ValuesGrid.vue'
+import WhyChooseUs from '~/components/about/WhyChooseUs.vue'
+import BookingCTA from '~/components/shared/BookingCTA.vue'
 
 useSeoMeta({
-
-  title: 'About Us | Truckee River Rafting',
-
-  description: 'Learn about our rafting guides and Tahoe adventures.'
-
+  title: 'About Us',
+  description: 'Learn about our river guides, values, and passion for outdoor adventure.'
 })
-
 </script>
+
+<template>
+  <div>
+    <AboutHero />
+    <GuideStory />
+    <ValuesGrid />
+    <WhyChooseUs />
+    <BookingCTA />
+  </div>
+</template>
