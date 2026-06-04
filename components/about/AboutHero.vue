@@ -1,5 +1,5 @@
 <template>
-  <v-container class="py-16 py-md-24">
+  <v-container class="py-4 py-md-6">
     <section class="hero">
       <p class="eyebrow">About Hero Eyebrow</p>
       <h1>About Us Hero Title</h1>

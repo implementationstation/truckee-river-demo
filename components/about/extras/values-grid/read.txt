@@ -1,0 +1,248 @@
+Below are **3 Nuxt 4 / Vuetify 4–style “Values Grid” components**. All are **docs-centric, simple, no images, icon-driven**, and suitable for an outdoor/rafting brand.
+
+I’ll assume Material Design Icons (MDI) are available via Vuetify (`icon="mdi-..."`).
+
+---
+
+# 1) Clean Minimal Grid (best default / docs-style)
+
+Simple, readable, very Vuetify-native.
+
+```vue
+<template>
+  <v-container class="py-12">
+    <v-row class="text-center mb-8">
+      <v-col>
+        <h2 class="text-h4 font-weight-bold">Our Values</h2>
+        <p class="text-medium-emphasis">
+          What defines every rafting experience we run.
+        </p>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col
+        v-for="(item, i) in values"
+        :key="i"
+        cols="12"
+        md="4"
+      >
+        <v-card variant="tonal" class="pa-6 h-100">
+          <v-icon size="36" class="mb-4" color="primary">
+            {{ item.icon }}
+          </v-icon>
+
+          <h3 class="text-h6 font-weight-bold mb-2">
+            {{ item.title }}
+          </h3>
+
+          <p class="text-body-2 text-medium-emphasis">
+            {{ item.text }}
+          </p>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<script setup>
+const values = [
+  {
+    title: "Real Adventure",
+    icon: "mdi-hiking",
+    text: "Authentic river experiences built around exploration and challenge."
+  },
+  {
+    title: "Safety First",
+    icon: "mdi-lifebuoy",
+    text: "Guides, gear, and decisions focused on your protection."
+  },
+  {
+    title: "Great Memories",
+    icon: "mdi-camera",
+    text: "Moments you’ll want to relive long after the river ends."
+  }
+]
+</script>
+```
+
+---
+
+# 2) “Flairy Glass / Elevated Cards” (modern marketing style)
+
+More visual depth, subtle glow, slightly premium feel.
+
+```vue
+<template>
+  <v-container class="py-12">
+    <div class="text-center mb-10">
+      <h2 class="text-h3 font-weight-bold">What We Stand For</h2>
+      <p class="text-medium-emphasis">
+        Built for people who want more than just a float down the river.
+      </p>
+    </div>
+
+    <v-row>
+      <v-col
+        v-for="(v, i) in values"
+        :key="i"
+        cols="12"
+        md="4"
+      >
+        <v-card class="value-card pa-6 h-100">
+          <div class="icon-wrap mb-4">
+            <v-icon size="40">{{ v.icon }}</v-icon>
+          </div>
+
+          <div class="text-h6 font-weight-bold mb-2">
+            {{ v.title }}
+          </div>
+
+          <div class="text-body-2 text-medium-emphasis">
+            {{ v.text }}
+          </div>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<script setup>
+const values = [
+  {
+    title: "Real Adventure",
+    icon: "mdi-kayak",
+    text: "Wild rivers, real rapids, and zero artificial experiences."
+  },
+  {
+    title: "Expert Guides",
+    icon: "mdi-account-tie",
+    text: "Professionals who know every bend, current, and safety line."
+  },
+  {
+    title: "Scenic Rivers",
+    icon: "mdi-river",
+    text: "Routes chosen for beauty, excitement, and unforgettable views."
+  }
+]
+</script>
+
+<style scoped>
+.value-card {
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--v-theme-primary), 0.12);
+}
+</style>
+```
+
+---
+
+# 3) “Icon-First Compact Grid” (fast scanning / UX-heavy)
+
+Very clean, scalable, great for homepage sections.
+
+```vue
+<template>
+  <v-container class="py-12">
+    <v-row class="mb-8">
+      <v-col>
+        <h2 class="text-h4 font-weight-bold">Why Choose Us</h2>
+      </v-col>
+    </v-row>
+
+    <v-row dense>
+      <v-col
+        v-for="(v, i) in values"
+        :key="i"
+        cols="12"
+        sm="6"
+        md="3"
+      >
+        <div class="d-flex ga-4 pa-4 align-start value-item">
+          <v-icon size="28" color="primary">
+            {{ v.icon }}
+          </v-icon>
+
+          <div>
+            <div class="font-weight-medium">
+              {{ v.title }}
+            </div>
+            <div class="text-caption text-medium-emphasis">
+              {{ v.text }}
+            </div>
+          </div>
+        </div>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<script setup>
+const values = [
+  {
+    title: "Adventure",
+    icon: "mdi-hiking",
+    text: "Real outdoor experiences."
+  },
+  {
+    title: "Safety",
+    icon: "mdi-lifebuoy",
+    text: "Guided and controlled."
+  },
+  {
+    title: "Memories",
+    icon: "mdi-camera",
+    text: "Capture every moment."
+  },
+  {
+    title: "Nature",
+    icon: "mdi-mountain",
+    text: "Pure river environments."
+  }
+]
+</script>
+
+<style scoped>
+.value-item {
+  border-radius: 12px;
+  transition: background 0.2s ease;
+}
+
+.value-item:hover {
+  background: rgba(var(--v-theme-primary), 0.06);
+}
+</style>
+```
+
+---
+
+# Quick Guidance (what each is best for)
+
+* **Version 1 (Minimal Grid)** → documentation style, clean trust-building
+* **Version 2 (Glass / Elevated)** → marketing homepage hero sections
+* **Version 3 (Icon Compact)** → fast scanning, mobile-first UX, dense layouts
+
+---
+
+If you want next step upgrade, I can:
+
+* turn this into a **Nuxt 4 composable-driven CMS structure**
+* or make it **auto-driven from a JSON API**
+* or align it with your rafting site nav sections so everything shares one design system

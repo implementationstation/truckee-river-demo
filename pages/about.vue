@@ -5,6 +5,10 @@ import ValuesGrid from '~/components/about/ValuesGrid.vue'
 import WhyChooseUs from '~/components/about/WhyChooseUs.vue'
 import BookingCTA from '~/components/shared/BookingCTA.vue'
 
+import PageShell from '~/components/page/PageShell.vue'
+
+import CompactGridIconFirstStyle from '~/components/about/extras/values-grid/CompactGridIconFirstStyle.vue'
+
 useSeoMeta({
   title: 'About Us',
   description: 'Learn about our river guides, values, and passion for outdoor adventure.'
@@ -12,11 +16,11 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
+  <PageShell>
     <AboutHero />
     <GuideStory />
-    <ValuesGrid />
+    <ValuesGrid /> <CompactGridIconFirstStyle />
     <WhyChooseUs />
     <BookingCTA />
-  </div>
+  </PageShell>
 </template>

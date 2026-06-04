@@ -1,0 +1,1723 @@
+If you're trying to communicate "Real Adventure" (authentic exploration, wilderness, discovery, challenge, and journey) using only free icons from the Material Design Icons library, I'd pick these five:
+
+Icon	Why it works
+hiking	The strongest single symbol for active adventure and exploration. It implies effort, trails, and real-world experiences rather than tourism.
+map-marker-path	Represents following a route into the unknown, discovery, and journeying beyond familiar places.
+compass	Classic symbol of navigation, exploration, and finding your own way. Often recognized as the universal "adventure" icon.
+mountain (available in MDI)	Conveys challenge, wilderness, achievement, and epic destinations.
+tent (or campfire)	Suggests immersion in nature, overnight expeditions, and genuine outdoor experiences rather than day trips.
+My preferred set
+
+For a brand, app, or category labeled "Real Adventure", I'd rank them:
+
+hiking
+mountain
+compass
+map-marker-path
+campfire (or tent)
+If you need just one icon
+
+Use hiking. It combines:
+
+Human action
+Outdoor setting
+Physical challenge
+Exploration
+
+more effectively than any other single MDI icon.
+
+Alternative vibe combinations
+Expedition: compass + map-marker-path + mountain
+Outdoor lifestyle: hiking + tent + campfire
+Discovery/travel: compass + map + map-marker-path
+Extreme adventure: mountain + hiking + kayak + campfire
+
+If you're designing a logo, website navigation, or app category, I can narrow the choices further based on whether "Real Adventure" means hiking/backpacking, overlanding, travel exploration, outdoor sports, or family adventure.
+
+ok for a whitewater river rafting site, which icons in a list  would be appropriate, please organize by the 'search term' parm put into the search bar to find them. They are grouped
+
+For a whitewater rafting site, I'd organize icons by the search terms you'd enter in the MDI library search. The goal is to build a cohesive icon set around rivers, outdoor adventure, navigation, safety, camping, and travel.
+
+Core Whitewater Rafting
+
+Search term: kayak
+
+kayak
+
+Search term: boat
+
+boat
+sail-boat (less ideal for rafting, but sometimes useful)
+
+Search term: wave
+
+wave
+waves
+
+Search term: water
+
+water
+water-outline
+water-circle
+
+Search term: river
+
+river
+Adventure & Exploration
+
+Search term: hiking
+
+hiking
+
+Search term: mountain
+
+mountain
+mountain-outline
+
+Search term: compass
+
+compass
+compass-outline
+
+Search term: map
+
+map
+map-marker
+map-marker-path
+
+Search term: trail
+
+trail-sign
+Camping & Multi-Day Trips
+
+Search term: tent
+
+tent
+
+Search term: campfire
+
+campfire
+
+Search term: forest
+
+forest
+
+Search term: tree
+
+tree
+tree-outline
+
+Search term: pine
+
+pine-tree
+Safety & Guides
+
+Search term: life
+
+lifebuoy
+
+Search term: helmet
+
+helmet
+
+Search term: shield
+
+shield-check
+shield-outline
+
+Search term: account
+
+account-group
+account-tie (guide/leader)
+
+Search term: alert
+
+alert
+alert-outline
+Wildlife & Nature
+
+Search term: fish
+
+fish
+
+Search term: bird
+
+bird
+
+Search term: paw
+
+paw
+
+Search term: leaf
+
+leaf
+leaf-maple
+
+Search term: nature
+
+nature
+Logistics & Amenities
+
+Search term: calendar
+
+calendar
+
+Search term: clock
+
+clock-outline
+
+Search term: camera
+
+camera
+
+Search term: weather
+
+weather-sunny
+weather-partly-cloudy
+weather-rainy
+
+Search term: food
+
+food
+silverware-fork-knife
+
+Search term: car
+
+car
+bus
+Trip Difficulty / River Conditions
+
+Search term: speedometer
+
+speedometer
+
+Search term: chart
+
+chart-line
+
+Search term: gauge
+
+gauge
+
+Search term: lightning
+
+lightning-bolt
+
+Search term: trending
+
+trending-up
+Best 10 for a Rafting Website
+
+If you're trying to keep the icon library small and consistent:
+
+kayak
+river
+wave
+mountain
+hiking
+compass
+map
+tent
+campfire
+lifebuoy
+
+These collectively communicate: river + adventure + navigation + wilderness + safety, which is exactly the mental model most visitors have for a whitewater rafting experience.
+
+and for 'Great memories'
+
+For "Great Memories", you generally want icons that communicate capturing moments, sharing experiences, nostalgia, keepsakes, and meaningful experiences rather than adventure itself.
+
+Top Choices
+
+Search term: camera
+
+camera
+camera-outline
+
+Search term: image
+
+image
+image-multiple
+
+Search term: album
+
+album
+
+Search term: heart
+
+heart
+heart-outline
+
+Search term: star
+
+star
+star-outline
+Memories & Keepsakes
+
+Search term: bookmark
+
+bookmark
+bookmark-heart
+
+Search term: book
+
+book-open-page-variant
+book-open
+
+Search term: notebook
+
+notebook
+
+Search term: treasure
+
+treasure-chest
+
+Search term: gift
+
+gift
+Shared Experiences
+
+Search term: account-group
+
+account-group
+
+Search term: family
+
+human-male-female-child
+
+Search term: party
+
+party-popper
+
+Search term: glass
+
+glass-cocktail
+glass-wine
+Travel Memories
+
+Search term: map-marker
+
+map-marker
+map-marker-path
+
+Search term: airplane
+
+airplane
+
+Search term: compass
+
+compass
+
+Search term: beach
+
+beach
+Storytelling / Looking Back
+
+Search term: history
+
+history
+
+Search term: clock
+
+clock-outline
+
+Search term: timeline
+
+timeline
+
+Search term: archive
+
+archive
+Best 5 for "Great Memories"
+
+If this is a navigation category or marketing tile:
+
+camera → captured moments
+image-multiple → collection of memories
+heart → cherished experiences
+book-open-page-variant → stories and memories
+star → memorable highlights
+For a Whitewater Rafting Site Specifically
+
+I'd lean toward:
+
+camera
+image-multiple
+heart
+account-group
+star
+
+This combination says:
+
+"Amazing experiences with friends you'll want to remember."
+
+If it's a homepage with categories like:
+
+Real Adventure → kayak
+Great Memories → camera
+Expert Guides → account-tie
+Scenic Rivers → river
+Multi-Day Trips → tent
+
+then camera is probably the strongest single icon for "Great Memories."
+
+please aggregate all the responses into a simple heading/paragraph style with the vibe/mdi icon names included
+Real Adventure
+
+Authentic outdoor exploration, challenge, discovery, and journeying into the wild.
+
+Best MDI icons: hiking, mountain, compass, map-marker-path, campfire, tent
+
+Vibe: Exploration • Wilderness • Achievement • Discovery • Adventure
+
+Whitewater Rafting
+
+Fast-moving rivers, excitement, outdoor adventure, and guided experiences on the water.
+
+Best MDI icons: kayak, river, wave, mountain, hiking, compass, map-marker-path, tent, campfire, lifebuoy
+
+Vibe: Rapids • Adventure • Nature • Exploration • Safety
+
+Expedition & Discovery
+
+Finding new places, following routes, and venturing beyond the familiar.
+
+Best MDI icons: compass, map, map-marker-path, trail-sign, mountain
+
+Vibe: Navigation • Discovery • Journey • Exploration
+
+Camping & Multi-Day Trips
+
+Immersive outdoor experiences that extend beyond a single day.
+
+Best MDI icons: tent, campfire, forest, pine-tree, tree
+
+Vibe: Wilderness • Overnight Adventure • Nature • Connection
+
+Safety & Expert Guides
+
+Professional leadership, preparation, and confidence in challenging environments.
+
+Best MDI icons: lifebuoy, helmet, shield-check, account-tie, account-group
+
+Vibe: Trust • Expertise • Protection • Guidance
+
+Wildlife & Nature
+
+Experiencing natural ecosystems and the outdoors up close.
+
+Best MDI icons: fish, bird, paw, leaf, nature
+
+Vibe: Environment • Wildlife • Conservation • Scenic Beauty
+
+Great Memories
+
+Meaningful experiences, shared adventures, and moments worth remembering.
+
+Best MDI icons: camera, image-multiple, heart, book-open-page-variant, star
+
+Vibe: Memories • Connection • Storytelling • Highlights
+
+Shared Experiences
+
+Adventure is better together—friends, families, and groups creating lasting memories.
+
+Best MDI icons: account-group, human-male-female-child, party-popper, heart
+
+Vibe: Community • Friendship • Family • Fun
+
+Scenic Rivers
+
+The beauty and power of the waterways that make rafting unforgettable.
+
+Best MDI icons: river, wave, water, water-outline, mountain
+
+Vibe: Natural Beauty • Water • Landscapes • Serenity
+
+Photography & Trip Highlights
+
+Capturing the best moments from the adventure.
+
+Best MDI icons: camera, image, image-multiple, album
+
+Vibe: Photos • Highlights • Keepsakes • Storytelling
+
+River Difficulty & Excitement
+
+The thrill, intensity, and challenge level of a rafting experience.
+
+Best MDI icons: speedometer, gauge, chart-line, lightning-bolt, trending-up
+
+Vibe: Adrenaline • Challenge • Action • Performance
+
+Recommended Homepage Icons
+Real Adventure
+
+hiking
+
+Whitewater Rafting
+
+kayak
+
+Great Memories
+
+camera
+
+Expert Guides
+
+account-tie
+
+Scenic Rivers
+
+river
+
+Multi-Day Trips
+
+tent
+
+Safety First
+
+lifebuoy
+
+Route & Discovery
+
+compass
+
+These eight icons form a cohesive outdoor-adventure visual language and should work well together across a rafting website.
+
+You're welcome! For a rafting/outdoor adventure brand, I'd prioritize clarity over novelty. Visitors should instantly understand what each section means.
+
+A strong, cohesive set could be:
+
+Real Adventure → hiking
+Whitewater Rafting → kayak
+Great Memories → camera
+Expert Guides → account-tie
+Scenic Rivers → river
+Multi-Day Trips → tent
+Safety First → lifebuoy
+Explore Routes → compass
+
+This set works well because they're all simple, recognizable silhouettes and avoid mixing too many visual metaphors.
+
+If you're building a homepage, another effective pattern is:
+
+Adventure
+
+kayak
+
+Nature
+
+mountain
+
+Memories
+
+camera
+
+Guides
+
+account-tie
+
+Safety
+
+lifebuoy
+
+That gives you a cleaner, more marketing-oriented icon system while still covering the core rafting experience.
+
+siiick!! OK we flying, next thing: Using vuetify4/nuxt4 simplicity/docs-centric code, please make me 3 variations of component code I can use as a "Values Grid" - informational section visually flairy but simple info no images. Icons yes
+
+Below are 3 Nuxt 4 / Vuetify 4–style “Values Grid” components. All are docs-centric, simple, no images, icon-driven, and suitable for an outdoor/rafting brand.
+
+I’ll assume Material Design Icons (MDI) are available via Vuetify (icon="mdi-...").
+
+1) Clean Minimal Grid (best default / docs-style)
+
+Simple, readable, very Vuetify-native.
+
+<template>
+  <v-container class="py-12">
+    <v-row class="text-center mb-8">
+      <v-col>
+        <h2 class="text-h4 font-weight-bold">Our Values</h2>
+        <p class="text-medium-emphasis">
+          What defines every rafting experience we run.
+        </p>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col
+        v-for="(item, i) in values"
+        :key="i"
+        cols="12"
+        md="4"
+      >
+        <v-card variant="tonal" class="pa-6 h-100">
+          <v-icon size="36" class="mb-4" color="primary">
+            {{ item.icon }}
+          </v-icon>
+
+          <h3 class="text-h6 font-weight-bold mb-2">
+            {{ item.title }}
+          </h3>
+
+          <p class="text-body-2 text-medium-emphasis">
+            {{ item.text }}
+          </p>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<script setup>
+const values = [
+  {
+    title: "Real Adventure",
+    icon: "mdi-hiking",
+    text: "Authentic river experiences built around exploration and challenge."
+  },
+  {
+    title: "Safety First",
+    icon: "mdi-lifebuoy",
+    text: "Guides, gear, and decisions focused on your protection."
+  },
+  {
+    title: "Great Memories",
+    icon: "mdi-camera",
+    text: "Moments you’ll want to relive long after the river ends."
+  }
+]
+</script>
+2) “Flairy Glass / Elevated Cards” (modern marketing style)
+
+More visual depth, subtle glow, slightly premium feel.
+
+<template>
+  <v-container class="py-12">
+    <div class="text-center mb-10">
+      <h2 class="text-h3 font-weight-bold">What We Stand For</h2>
+      <p class="text-medium-emphasis">
+        Built for people who want more than just a float down the river.
+      </p>
+    </div>
+
+    <v-row>
+      <v-col
+        v-for="(v, i) in values"
+        :key="i"
+        cols="12"
+        md="4"
+      >
+        <v-card class="value-card pa-6 h-100">
+          <div class="icon-wrap mb-4">
+            <v-icon size="40">{{ v.icon }}</v-icon>
+          </div>
+
+          <div class="text-h6 font-weight-bold mb-2">
+            {{ v.title }}
+          </div>
+
+          <div class="text-body-2 text-medium-emphasis">
+            {{ v.text }}
+          </div>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<script setup>
+const values = [
+  {
+    title: "Real Adventure",
+    icon: "mdi-kayak",
+    text: "Wild rivers, real rapids, and zero artificial experiences."
+  },
+  {
+    title: "Expert Guides",
+    icon: "mdi-account-tie",
+    text: "Professionals who know every bend, current, and safety line."
+  },
+  {
+    title: "Scenic Rivers",
+    icon: "mdi-river",
+    text: "Routes chosen for beauty, excitement, and unforgettable views."
+  }
+]
+</script>
+
+<style scoped>
+.value-card {
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--v-theme-primary), 0.12);
+}
+</style>
+3) “Icon-First Compact Grid” (fast scanning / UX-heavy)
+
+Very clean, scalable, great for homepage sections.
+
+<template>
+  <v-container class="py-12">
+    <v-row class="mb-8">
+      <v-col>
+        <h2 class="text-h4 font-weight-bold">Why Choose Us</h2>
+      </v-col>
+    </v-row>
+
+    <v-row dense>
+      <v-col
+        v-for="(v, i) in values"
+        :key="i"
+        cols="12"
+        sm="6"
+        md="3"
+      >
+        <div class="d-flex ga-4 pa-4 align-start value-item">
+          <v-icon size="28" color="primary">
+            {{ v.icon }}
+          </v-icon>
+
+          <div>
+            <div class="font-weight-medium">
+              {{ v.title }}
+            </div>
+            <div class="text-caption text-medium-emphasis">
+              {{ v.text }}
+            </div>
+          </div>
+        </div>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<script setup>
+const values = [
+  {
+    title: "Adventure",
+    icon: "mdi-hiking",
+    text: "Real outdoor experiences."
+  },
+  {
+    title: "Safety",
+    icon: "mdi-lifebuoy",
+    text: "Guided and controlled."
+  },
+  {
+    title: "Memories",
+    icon: "mdi-camera",
+    text: "Capture every moment."
+  },
+  {
+    title: "Nature",
+    icon: "mdi-mountain",
+    text: "Pure river environments."
+  }
+]
+</script>
+
+<style scoped>
+.value-item {
+  border-radius: 12px;
+  transition: background 0.2s ease;
+}
+
+.value-item:hover {
+  background: rgba(var(--v-theme-primary), 0.06);
+}
+</style>
+Quick Guidance (what each is best for)
+Version 1 (Minimal Grid) → documentation style, clean trust-building
+Version 2 (Glass / Elevated) → marketing homepage hero sections
+Version 3 (Icon Compact) → fast scanning, mobile-first UX, dense layouts
+
+If you want next step upgrade, I can:
+
+turn this into a Nuxt 4 composable-driven CMS structure
+or make it auto-driven from a JSON API
+or align it with your rafting site nav sections so everything shares one design system
+explain both options first please
+
+Here’s the difference in a clear, practical way—this is really about how you want to structure and scale your content, not just UI.
+
+Option 1: Composable-driven CMS structure (Nuxt-native logic layer)
+
+This approach means you keep your Values Grid mostly “dumb”, and all the logic/data comes from a Nuxt composable like useValues().
+
+What it looks like conceptually
+Component = presentation only
+Composable = source of truth (data + rules)
+Easy to swap content later (CMS, API, A/B tests)
+Structure
+/composables/useValues.ts
+/components/ValuesGrid.vue
+Example idea
+useValues.ts
+export const useValues = () => {
+  const values = ref([
+    {
+      title: "Real Adventure",
+      icon: "mdi-hiking",
+      text: "Authentic river experiences built around exploration and challenge."
+    },
+    {
+      title: "Safety First",
+      icon: "mdi-lifebuoy",
+      text: "Guides, gear, and decisions focused on your protection."
+    },
+    {
+      title: "Great Memories",
+      icon: "mdi-camera",
+      text: "Moments you’ll want to relive long after the river ends."
+    }
+  ])
+
+  return { values }
+}
+ValuesGrid.vue
+<script setup>
+const { values } = useValues()
+</script>
+
+Then your template is identical to any of the grids I gave earlier.
+
+Why this is useful
+Pros
+Clean separation (UI vs data)
+Easy to swap to CMS later (Sanity, Strapi, Contentful)
+Reusable across multiple pages
+Great for scaling a full rafting site
+Best for
+Multi-page marketing sites
+Content that changes often
+Teams / CMS integration later
+Design systems
+Mental model
+
+“The component doesn’t know what values are — it just renders them.”
+
+Option 2: JSON / API-driven structure (data-first architecture)
+
+This takes it one step further: instead of Nuxt composables, the data behaves like it comes from an external source (or simulated API).
+
+What it looks like conceptually
+Component fetches data
+Data behaves like CMS/API response
+Fully backend-agnostic frontend
+Structure
+/server/api/values.get.ts   (or external API later)
+/components/ValuesGrid.vue
+Example API (Nuxt 4 server route)
+/server/api/values.get.ts
+export default defineEventHandler(() => {
+  return [
+    {
+      title: "Real Adventure",
+      icon: "mdi-hiking",
+      text: "Authentic river experiences built around exploration and challenge."
+    },
+    {
+      title: "Safety First",
+      icon: "mdi-lifebuoy",
+      text: "Guides, gear, and decisions focused on your protection."
+    },
+    {
+      title: "Great Memories",
+      icon: "mdi-camera",
+      text: "Moments you’ll want to relive long after the river ends."
+    }
+  ]
+})
+Component usage
+<script setup>
+const { data: values } = await useFetch('/api/values')
+</script>
+Why this is useful
+Pros
+Closest to real production architecture
+Backend-ready (headless CMS, database, etc.)
+Works across web/mobile apps
+Enables caching, personalization, A/B testing
+Best for
+Production SaaS-style apps
+Large content systems
+Multi-platform apps (web + mobile)
+Sites that will grow into full backend systems
+Mental model
+
+“The frontend is just a renderer for live data.”
+
+Key difference (simple version)
+Approach	Think of it as	Best for
+Composable (useValues)	“Local brain of the app”	Clean Nuxt architecture, fast dev
+API-driven (useFetch)	“Remote data source”	Scalability, CMS, production systems
+What I’d recommend for your rafting site
+
+For your current stage:
+
+Start with:
+
+👉 Composable-driven (useValues)
+
+Because:
+
+fast
+simple
+still scalable later
+
+Then upgrade later to:
+👉 API/CMS when content expands (locations, trips, guides, blogs, etc.)
+
+If you want next step, I can wire this into:
+
+a full Nuxt 4 “Adventure Design System”
+or a CMS-ready schema (Strapi/Sanity style)
+or convert your whole rafting homepage into this architecture cleanly
+please do all three and throw in some rulesofthumb/tips/pro-rules etc
+
+Good—this is exactly where a simple UI idea turns into a real system instead of just components. I’ll give you all three layers:
+
+Nuxt 4 Adventure Design System (practical structure)
+CMS-ready schema (Strapi/Sanity style, portable)
+Refactored rafting homepage architecture
+Rules of thumb / pro rules (the part that saves you later pain)
+1) Nuxt 4 “Adventure Design System” (scalable structure)
+
+This is how you turn your rafting site into a consistent product system, not a collection of pages.
+
+Folder architecture
+/components
+  /ui
+    BaseIconCard.vue
+    BaseSection.vue
+
+  /sections
+    ValuesGrid.vue
+    HeroSection.vue
+    TripHighlights.vue
+
+/composables
+  useValues.ts
+  useTrips.ts
+  useGuides.ts
+
+/server/api
+  values.get.ts
+  trips.get.ts
+
+/types
+  content.ts
+Core idea
+
+You split everything into 3 layers:
+
+1. UI layer (dumb)
+BaseIconCard
+BaseSection
+2. Section layer (layout logic)
+ValuesGrid
+HeroSection
+3. Data layer (source of truth)
+composables OR API
+Example: BaseIconCard (your reusable primitive)
+<template>
+  <v-card class="pa-5 h-100" variant="tonal">
+    <v-icon size="34" class="mb-3" color="primary">
+      {{ icon }}
+    </v-icon>
+
+    <div class="text-h6 font-weight-medium mb-1">
+      {{ title }}
+    </div>
+
+    <div class="text-body-2 text-medium-emphasis">
+      {{ text }}
+    </div>
+  </v-card>
+</template>
+
+<script setup>
+defineProps({
+  icon: String,
+  title: String,
+  text: String
+})
+</script>
+
+👉 This becomes your atomic “value unit” everywhere
+
+2) CMS-ready schema (Strapi / Sanity style)
+
+This is how you future-proof your rafting site so it can become a CMS without rewriting everything.
+
+Content Type: valueBlock
+{
+  "name": "valueBlock",
+  "fields": [
+    { "name": "title", "type": "string" },
+    { "name": "text", "type": "text" },
+    { "name": "icon", "type": "string" },
+    { "name": "order", "type": "number" }
+  ]
+}
+Content Type: section
+{
+  "name": "section",
+  "fields": [
+    { "name": "heading", "type": "string" },
+    { "name": "subheading", "type": "text" },
+    {
+      "name": "values",
+      "type": "relation",
+      "target": "valueBlock"
+    }
+  ]
+}
+What this gives you
+Non-devs can edit “Real Adventure”
+You can reorder values via order
+You can localize later (EN/ES rafting sites)
+You can A/B test sections without redeploying
+3) Refactored rafting homepage architecture
+
+This is how your site should actually assemble itself.
+
+/pages/index.vue
+<template>
+  <HeroSection />
+
+  <ValuesGrid />
+
+  <TripHighlights />
+
+  <GuidesSection />
+</template>
+
+👉 No logic here. Just composition.
+
+/components/sections/ValuesGrid.vue
+<template>
+  <BaseSection title="Our Values" subtitle="What defines every trip we run">
+
+    <v-row>
+      <v-col
+        v-for="v in values"
+        :key="v.title"
+        cols="12"
+        md="4"
+      >
+        <BaseIconCard
+          :icon="v.icon"
+          :title="v.title"
+          :text="v.text"
+        />
+      </v-col>
+    </v-row>
+
+  </BaseSection>
+</template>
+
+<script setup>
+const { values } = useValues()
+</script>
+/composables/useValues.ts
+export const useValues = () => {
+  return {
+    values: [
+      {
+        title: "Real Adventure",
+        icon: "mdi-hiking",
+        text: "Authentic river experiences built around exploration and challenge."
+      },
+      {
+        title: "Safety First",
+        icon: "mdi-lifebuoy",
+        text: "Guides, gear, and decisions focused on your protection."
+      },
+      {
+        title: "Great Memories",
+        icon: "mdi-camera",
+        text: "Moments you’ll want to relive long after the river ends."
+      }
+    ]
+  }
+}
+4) Rules of thumb / Pro rules (important stuff)
+
+These are the “don’t regret this later” guidelines.
+
+Rule 1: Never mix layout + data logic
+
+Bad:
+
+API calls inside card components
+
+Good:
+
+Section fetches data → passes to cards
+Rule 2: One icon system only
+
+Stick to:
+
+MDI (mdi-*) only
+
+Mixing icon packs = visual inconsistency later
+
+Rule 3: Limit values per grid (3–6 max)
+
+Why:
+
+3 = marketing clarity
+6 = max cognitive load
+
+6 = people stop reading
+
+Rule 4: Every section should answer ONE question
+
+Examples:
+
+“Why choose us?”
+“What is rafting like?”
+“Is it safe?”
+
+If it answers 2 questions → split it.
+
+Rule 5: Design for scanning, not reading
+
+Your rafting users:
+
+mobile
+outdoors
+low attention mode
+
+So:
+
+short titles
+1 sentence max
+strong icons
+high contrast
+Rule 6: Treat icons as a language
+
+Example your system already implies:
+
+mdi-hiking → adventure
+mdi-lifebuoy → safety
+mdi-camera → memories
+mdi-river → nature
+
+👉 Don’t randomly assign icons
+👉 They become a semantic system
+
+Rule 7: Build “sections like LEGO blocks”
+
+Every section should be:
+
+reusable
+reorderable
+CMS-compatible later
+Rule 8: Keep a “design vocabulary list”
+
+For your rafting site:
+
+Adventure → hiking, kayak
+Water → river, wave
+Safety → lifebuoy, shield
+Memories → camera, image
+People → account-group
+Nature → mountain, tree
+Final mental model (important)
+
+Think of your site like this:
+
+Content (CMS/API) → feeds → Sections (Nuxt components) → render via → UI primitives (cards/buttons/icons)
+
+If you get this right, you can:
+
+redesign fast
+scale to multiple rivers/locations
+plug in CMS later
+add booking system later without rewriting UI
+
+If you want next step, I can take this further into:
+
+a full rafting design system spec (colors, spacing, motion, tone)
+or a booking flow architecture (this is where most sites fail)
+or a high-converting homepage wireframe using these components
+lets combine all three of your final recommended next steps, into the next step output as if i want to save it in a folder on some cloud drive. ALso dial in on nuxt4/vuetify4/vercel
+Adventure Rafting Platform Blueprint
+Nuxt 4 + Vuetify 4 + Vercel
+Version 1.0
+Vision
+
+Build a rafting and outdoor adventure platform that feels:
+
+Authentic
+Professional
+Trustworthy
+Modern
+Fast
+Easy to maintain
+
+The stack should prioritize:
+
+Nuxt 4 SSR/Hybrid Rendering
+Vuetify 4 UI System
+Vercel Deployment
+CMS-ready architecture
+SEO-first marketing pages
+Future booking capabilities
+Technology Stack
+Frontend
+Nuxt 4
+Vuetify 4
+TypeScript
+Pinia
+VueUse
+
+Why:
+
+Mature ecosystem
+Excellent DX
+SSR support
+Strong SEO
+Fast development
+Deployment
+Vercel
+
+Use:
+
+Preview Deployments
+Environment Variables
+Edge Middleware (later)
+Analytics
+Content
+
+Phase 1:
+
+Composable-driven content
+
+Phase 2:
+
+Nuxt Content
+
+Phase 3:
+
+Sanity CMS
+
+This progression minimizes complexity early.
+
+Design System
+Brand Personality
+Real Adventure
+
+Not:
+
+Extreme sports
+Influencer culture
+Artificial hype
+
+Instead:
+
+Authenticity
+Nature
+Exploration
+Storytelling
+Color System
+Primary
+River Blue
+#1565C0
+Secondary
+Forest Green
+#2E7D32
+Accent
+Sunset Orange
+#FB8C00
+Surface
+#FFFFFF
+#F8FAFC
+Text
+#0F172A
+#475569
+Spacing Rules
+
+Use only:
+
+8
+16
+24
+32
+48
+64
+96
+
+Avoid random spacing values.
+
+Border Radius
+12px
+16px
+20px
+
+Only.
+
+Consistency > creativity.
+
+Icon Vocabulary
+
+Single icon family:
+
+MDI
+
+Core meanings:
+
+Meaning	Icon
+Adventure	mdi-hiking
+Rafting	mdi-kayak
+River	mdi-river
+Memories	mdi-camera
+Safety	mdi-lifebuoy
+Guides	mdi-account-tie
+Nature	mdi-mountain
+Camping	mdi-tent
+Navigation	mdi-compass
+
+Never invent new meanings.
+
+Site Architecture
+/
+├── Home
+├── Trips
+├── Rivers
+├── Guides
+├── About
+├── FAQ
+├── Contact
+└── Book Now
+Homepage Wireframe
+Hero
+
+Headline:
+
+Real Whitewater Adventures.
+Real Memories.
+
+CTA:
+
+View Trips
+
+Secondary CTA:
+
+Plan Your Adventure
+Values Grid
+
+Purpose:
+
+Build trust quickly.
+
+Show:
+
+Real Adventure
+Safety First
+Great Memories
+Expert Guides
+
+Use:
+
+4 cards
+
+Maximum.
+
+Featured Trips
+
+Purpose:
+
+Generate exploration.
+
+Display:
+
+Half Day
+Full Day
+Multi-Day
+
+Cards only.
+
+No overwhelming lists.
+
+Scenic Rivers
+
+Purpose:
+
+Sell destination quality.
+
+Show:
+
+River name
+Difficulty
+Season
+Why People Return
+
+Purpose:
+
+Emotional reinforcement.
+
+Display:
+
+Memories
+Friendships
+Tradition
+FAQ
+
+Purpose:
+
+Remove hesitation.
+
+Must answer:
+
+Is rafting safe?
+Do I need experience?
+What should I bring?
+What ages can go?
+Final CTA
+
+Headline:
+
+Ready for Your Next Adventure?
+
+Button:
+
+Book Your Trip
+Component System
+UI Layer
+/components/ui
+
+Contains:
+
+BaseButton
+BaseCard
+BaseIconCard
+BaseSection
+BaseBadge
+BaseCTA
+
+These should contain almost no business logic.
+
+Section Layer
+/components/sections
+
+Examples:
+
+HeroSection
+ValuesGrid
+FeaturedTrips
+GuidesSection
+FAQSection
+CTASection
+Data Layer
+/composables
+
+Examples:
+
+useTrips
+useValues
+useGuides
+useFAQ
+Recommended Folder Structure
+app/
+│
+├── components/
+│   ├── ui/
+│   └── sections/
+│
+├── composables/
+│
+├── pages/
+│
+├── types/
+│
+├── server/
+│   └── api/
+│
+├── stores/
+│
+├── assets/
+│
+└── utils/
+Booking System Architecture
+
+Phase 1:
+
+Simple inquiry form.
+
+Trip
+Date
+Group Size
+Name
+Email
+Phone
+
+Submit to:
+
+Vercel Function
+
+Email via:
+
+Resend
+Why
+
+You avoid building:
+
+Availability systems
+Payments
+Calendars
+
+before validating demand.
+
+Booking Phase 2
+
+Add:
+
+Trip Availability
+
+Store:
+
+Supabase
+
+Tables:
+
+trips
+bookings
+customers
+guides
+Booking Phase 3
+
+Add:
+
+Stripe
+
+Flow:
+
+Select Trip
+→
+Select Date
+→
+Reserve Spots
+→
+Pay
+→
+Confirmation
+High-Converting Booking Flow
+
+Keep users focused.
+
+Never show:
+
+10+ options at once
+
+Use:
+
+Step 1
+Choose Trip
+
+Step 2
+Choose Date
+
+Step 3
+Group Size
+
+Step 4
+Guest Details
+
+Step 5
+Payment
+
+One decision per screen.
+
+SEO Architecture
+Trip Pages
+
+Example:
+
+/trips/american-river-full-day
+
+Each trip should have:
+
+Description
+Difficulty
+Season
+Duration
+Included Gear
+FAQ
+River Pages
+
+Example:
+
+/rivers/american-river
+
+Each river page should target:
+
+"whitewater rafting [river]"
+
+search intent.
+
+Structured Data
+
+Implement:
+
+FAQ Schema
+Organization Schema
+Breadcrumb Schema
+
+Later:
+
+TouristTrip Schema
+Vercel-Specific Rules
+Rule 1
+
+Prefer:
+
+useAsyncData()
+
+for SSR content.
+
+Not:
+
+onMounted()
+
+for primary page data.
+
+Rule 2
+
+Static where possible.
+
+Dynamic where necessary.
+
+Use route rules.
+
+Example:
+
+routeRules: {
+  '/': { prerender: true },
+  '/trips/**': { swr: 3600 }
+}
+Rule 3
+
+Avoid unnecessary client-side state.
+
+Most marketing content should be:
+
+SSR rendered
+Rule 4
+
+Optimize for edge caching.
+
+Content changes:
+
+Rarely
+
+Exploit that.
+
+Nuxt 4 Rules of Thumb
+Components
+
+If a component exceeds:
+
+200-300 lines
+
+split it.
+
+Composables
+
+One responsibility only.
+
+Bad:
+
+useTripsAndBookingsAndWeather
+
+Good:
+
+useTrips
+useBookings
+useWeather
+Props
+
+Pass data down.
+
+Avoid prop drilling deeper than 2 levels.
+
+Use composables instead.
+
+State
+
+Ask:
+
+Does this need global state?
+
+Most of the time:
+
+No.
+Launch Roadmap
+Phase 1
+
+Marketing Site
+
+Homepage
+Trips
+Rivers
+Contact
+Inquiry Form
+Phase 2
+
+CMS
+
+Sanity
+Editable trips
+Editable FAQs
+Phase 3
+
+Booking Engine
+
+Availability
+Reservations
+Stripe
+Phase 4
+
+Growth
+
+Reviews
+Guide Profiles
+Seasonal Promotions
+Email Marketing
+Loyalty Programs
+Golden Rule
+
+Build the architecture today as if you'll have:
+
+50 trips
+10 rivers
+20 guides
+5 years of content
+
+But implement only what you need for:
+
+3 trips
+1 river
+1 booking form
+
+That balance is where Nuxt 4 + Vuetify 4 + Vercel really shines: simple now, scalable later.

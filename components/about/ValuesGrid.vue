@@ -1,18 +1,23 @@
 <script setup lang="ts">
 const values = [
-  {
+    //https://pictogrammers.com/library/mdi/
+  {    
+    icon: 'mdi mdi-lifebuoy',//search: [protect|shield]
     title: 'Safety First',
     text: 'Professional guidance and preparation for every trip.'
   },
   {
+    icon: 'mdi mdi-flower',//search: [plant]
     title: 'Respect Nature',
     text: 'We leave rivers and camps better than we found them.'
   },
   {
+    icon: 'mdi mdi-hiking',//search: [kayak]
     title: 'Real Adventure',
     text: 'Authentic outdoor experiences, not tourist attractions.'
   },
   {
+    icon: 'mdi mdi-treasure-chest',//search: [treasure]
     title: 'Great Memories',
     text: 'The moments people remember long after the trip ends.'
   }
@@ -44,6 +49,9 @@ const values = [
           variant="outlined"
           height="100%"
         >
+          <v-card-title class="">
+              <v-icon size="60" class="ml-1 me-2" color="primary">{{ value.icon }}</v-icon>
+          </v-card-title>
           <v-card-text class="pa-8">
             <h3 class="text-h6 mb-3">
               {{ value.title }}
