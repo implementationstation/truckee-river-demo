@@ -1,85 +1,106 @@
-<template>
-  <!-- /*
-      LAYOUT PAGESHELL SECTION
-*/ -->
-  <PagePageShell>
-
-    <!-- /*
-      HERO SECTION
-*/ -->
-    <HomeHomeHero />
-
-    
-<!-- /*
-      INFO CARD SECTION
-*/ -->
-    <PageSectionBlock
-      v-for="section in page.sections"
-      :key="section.title"
-      :label="section.label"
-      :title="section.title"
-      :intro="section.intro"
-    >
-      <PageInfoCardGrid :cards="section.cards" />
-    </PageSectionBlock>
-
-
-<!-- /*
-      CALL TO ACTION SECTION
-*/ -->
-    <PageCTASection
-      eyebrow="Ready?"
-      title="Book the Truckee River Boca Run."
-      text="Keep the final action painfully obvious. No cleverness here. Just make booking easy."
-      button-text="Start Booking"
-    />
-
-  </PagePageShell>
-</template>
-
 <script setup lang="ts">
-import { truckeeHomePage as page } from '~/data/pages/truckeeHome'
-import PagePageShell from '~/components/page/PageShell.vue'
-import HomeHomeHero from '~/components/home/HomeHero.vue'
-
-useSeoMeta({
-  title: page.seo.title,
-  description: page.seo.description,
-  ogTitle: page.seo.title,
-  ogDescription: page.seo.description,
-})
+import { trips } from '~/data/trips'
+import HeroSection from '~/components/shared/HeroSection.vue';
+import SectionBlock from '~/components/shared/SectionBlock.vue';
+import TripCard from '~/components/trip/TripCard.vue';
 </script>
 
-<style scoped>
-.hero {
-  padding: 48px 0 72px;
-}
+<template>
 
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  opacity: 0.7;
-  margin-bottom: 16px;
-}
+  <!-- HERO -->
+  <HeroSection
+    title="Truckee River Rafting Adventures"
+    subtitle="Scenic, fun, and unforgettable trips for families and thrill-seekers"
+    image="/images/processed/half-day-guided-river-rafting-experience.webp"
+  />
 
-h1 {
-  max-width: 920px;
-  font-size: clamp(3rem, 8vw, 6.5rem);
-  line-height: 0.95;
-}
+  <!-- TRUST BAR -->
+  <SectionBlock>
+    <v-row class="text-center">
+      <v-col cols="6" md="3">
+        <div class="text-h5 font-weight-bold">10,000+</div>
+        <div class="text-body-2">Happy Rafters</div>
+      </v-col>
 
-.hero p {
-  margin-top: 24px;
-  max-width: 680px;
-  font-size: 1.2rem;
-  line-height: 1.7;
-  opacity: 0.85;
-}
+      <v-col cols="6" md="3">
+        <div class="text-h5 font-weight-bold">4.9★</div>
+        <div class="text-body-2">Average Rating</div>
+      </v-col>
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-top: 36px;
-}
-</style>
+      <v-col cols="6" md="3">
+        <div class="text-h5 font-weight-bold">15+</div>
+        <div class="text-body-2">Years Experience</div>
+      </v-col>
+
+      <v-col cols="6" md="3">
+        <div class="text-h5 font-weight-bold">100%</div>
+        <div class="text-body-2">Fun Guaranteed</div>
+      </v-col>
+    </v-row>
+  </SectionBlock>
+
+  <!-- TRIPS -->
+   <!--NAAAAH FUCK THIS ONE HEY-->
+  <SectionBlock
+    title="Choose Your Adventure"
+    subtitle="From relaxing floats to exciting rapids"
+  >
+    <v-row>
+      <v-col
+        v-for="trip in trips"
+        :key="trip.slug"
+        cols="12"
+        md="4"
+      >
+         <TripCard v-bind="trip" />
+       </v-col>
+    </v-row>
+  </SectionBlock> 
+
+  <!-- WHY CHOOSE US -->
+  <SectionBlock
+    title="Why Choose Us"
+    subtitle="We make rafting easy, safe, and unforgettable"
+  >
+    <v-row>
+      <v-col cols="12" md="4">
+        <div class="text-h6 font-weight-bold mb-2">Expert Guides</div>
+        <div class="text-body-2">
+          Our experienced team ensures a safe and fun adventure.
+        </div>
+      </v-col>
+
+      <v-col cols="12" md="4">
+        <div class="text-h6 font-weight-bold mb-2">All Skill Levels</div>
+        <div class="text-body-2">
+          Perfect for beginners, families, and experienced rafters.
+        </div>
+      </v-col>
+
+      <v-col cols="12" md="4">
+        <div class="text-h6 font-weight-bold mb-2">Stunning Scenery</div>
+        <div class="text-body-2">
+          Enjoy breathtaking views along the Truckee River.
+        </div>
+      </v-col>
+    </v-row>
+  </SectionBlock>
+
+  <!-- CTA -->
+  <SectionBlock>
+    <v-sheet
+      rounded="xl"
+      class="pa-8 text-center"
+      color="primary"
+    >
+      <div class="text-h5 font-weight-bold mb-4 text-white">
+        Ready for Your Adventure?
+      </div>
+
+      <v-btn size="large" color="white" rounded="xl">
+        Book Your Trip Now
+      </v-btn>
+    </v-sheet>
+  </SectionBlock>
+
+</template>

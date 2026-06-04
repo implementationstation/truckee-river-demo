@@ -6,7 +6,7 @@
       </v-col>
     </v-row>
 
-    <v-row dense>
+    <v-row density="comfortable">
       <v-col
         v-for="(v, i) in values"
         :key="i"

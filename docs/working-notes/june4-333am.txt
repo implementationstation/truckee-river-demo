@@ -1,0 +1,71 @@
+Absolutely. Execute this in order.
+
+1. Create folders
+mkdir -p components/page
+mkdir -p data/pages
+2. Create the data file
+touch data/pages/truckeeHome.ts
+
+Paste the page content/data there.
+
+3. Create reusable components
+touch components/page/PageShell.vue
+touch components/page/SectionBlock.vue
+touch components/page/InfoCardGrid.vue
+touch components/page/CTASection.vue
+
+Paste each component into its matching file.
+
+4. Replace the homepage
+
+Open:
+
+pages/index.vue
+
+Replace it with the page template that imports:
+
+import { truckeeHomePage as page } from '~/data/pages/truckeeHome'
+5. Run the dev server
+npm run dev
+
+Then open the local URL.
+
+6. Fix spacing first, not colors
+
+Tune these numbers first:
+
+.section-block {
+  margin-top: 88px;
+}
+
+.page-container {
+  max-width: 1180px;
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+Do not start redesigning yet. Get the rhythm right first.
+
+7. Add sections one at a time
+
+Add page sections in this order:
+
+Hero
+Trip overview
+Morning / Afternoon / Pricing cards
+Prepare section
+About the company
+FAQ
+Contact / Booking CTA
+Footer
+8. Keep this rule
+
+Each section gets:
+
+small label
+large title
+short intro
+one visual/card system
+one clear action if needed
+
+That’s the whole system. Build slow, keep it spacious, and don’t let the page become a junk drawer.

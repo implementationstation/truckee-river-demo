@@ -1,203 +1,211 @@
-<!-- ~/pages/trips/[slug].vue -->
-
 <script setup lang="ts">
-import truckeeHalfDay from '~/data/msp/truckee-half-day'
+import { useRoute } from 'vue-router'
+import { trips } from '~/data/trips'
+import { useSeo } from '~/composables/useSeo'
 
-const trip = truckeeHalfDay
+const route = useRoute()
+
+const trip = trips.find(t => t.slug === route.params.slug)
+
+// SEO (important)
+if (trip) {
+  useSeo({
+    title: `${trip.title} | Truckee River Rafting`,
+    description: trip.description,
+    image: trip.image,
+    url: `/trips/${trip.slug}`
+  })
+}
 </script>
 
 <template>
-  <div>
+  <div v-if="trip">
+
     <!-- HERO -->
-    <v-sheet
-      class="hero-section d-flex align-center"
-      color="grey-darken-4"
-      min-height="600"
+    <div
+      class="hero d-flex align-end"
+      :style="`background-image:url(${trip.image})`"
     >
-      <v-container>
-        <v-row align="center">
-          <v-col cols="12" md="7">
-            <div class="text-overline mb-4">
-              Whitewater Rafting Adventure
-            </div>
+      <v-container class="pb-10 text-white">
 
-            <h1 class="text-h2 font-weight-bold mb-4">
-              {{ trip.hero.heading }}
-            </h1>
+        <div class="max-w-xl">
+          <h1 class="text-h3 font-weight-bold mb-3">
+            {{ trip.title }}
+          </h1>
 
-            <p class="text-h6 mb-6">
-              {{ trip.hero.subtitle }}
-            </p>
+          <p class="text-body-1 mb-4">
+            {{ trip.description }}
+          </p>
 
-            <div class="d-flex flex-wrap ga-2 mb-8">
-              <v-chip
-                v-for="badge in trip.hero.badges"
-                :key="badge"
-                color="primary"
-                variant="tonal"
-              >
-                {{ badge }}
-              </v-chip>
-            </div>
+          <!-- QUICK TAGS -->
+          <div class="d-flex flex-wrap ga-2 mb-4">
+            <v-chip>{{ trip.duration }}</v-chip>
+            <v-chip>{{ trip.difficulty }}</v-chip>
+            <v-chip>{{ trip.season }}</v-chip>
+          </div>
 
-            <div class="d-flex flex-wrap ga-4">
-              <v-btn
-                :href="trip.hero.primaryCta?.href"
-                :color="trip.hero.primaryCta?.color"
-                size="large"
-              >
-                <v-icon start>
-                  {{ trip.hero.primaryCta?.prependIcon }}
-                </v-icon>
+          <v-btn size="large" color="primary" rounded="xl">
+            Book This Trip
+          </v-btn>
+        </div>
 
-                {{ trip.hero.primaryCta?.label }}
-              </v-btn>
-
-              <v-btn
-                :href="trip.hero.secondaryCta?.href"
-                variant="outlined"
-                color="white"
-                size="large"
-              >
-                <v-icon start>
-                  {{ trip.hero.secondaryCta?.prependIcon }}
-                </v-icon>
-
-                {{ trip.hero.secondaryCta?.label }}
-              </v-btn>
-            </div>
-          </v-col>
-        </v-row>
       </v-container>
-    </v-sheet>
+    </div>
 
-    <!-- META STATS -->
+    <!-- MAIN GRID -->
     <v-container class="py-12">
       <v-row>
-        <v-col cols="6" md="3">
-          <v-card>
-            <v-card-text>
-              <div class="text-caption">Difficulty</div>
-              <div class="text-h6">{{ trip.meta.difficulty }}</div>
-            </v-card-text>
-          </v-card>
+
+        <!-- LEFT CONTENT -->
+        <v-col cols="12" md="8">
+
+          <!-- OVERVIEW -->
+          <section class="mb-10">
+            <h2 class="text-h5 font-weight-bold mb-3">
+              Overview
+            </h2>
+            <p class="text-body-1">
+              {{ trip.longDescription }}
+            </p>
+          </section>
+
+          <!-- HIGHLIGHTS -->
+          <section class="mb-10">
+            <h2 class="text-h5 font-weight-bold mb-4">
+              Highlights
+            </h2>
+
+            <v-row>
+              <v-col
+                v-for="(item, i) in trip.highlights"
+                :key="i"
+                cols="12"
+                sm="6"
+              >
+                <div class="d-flex align-center ga-2">
+                  <v-icon color="primary">mdi-check-circle</v-icon>
+                  <span>{{ item }}</span>
+                </div>
+              </v-col>
+            </v-row>
+          </section>
+
+          <!-- INCLUDED -->
+          <section class="mb-10">
+            <h2 class="text-h5 font-weight-bold mb-4">
+              What’s Included
+            </h2>
+
+            <v-row>
+              <v-col
+                v-for="(item, i) in trip.includes"
+                :key="i"
+                cols="12"
+                sm="6"
+              >
+                <div class="d-flex align-center ga-2">
+                  <v-icon color="green">mdi-check</v-icon>
+                  <span>{{ item }}</span>
+                </div>
+              </v-col>
+            </v-row>
+          </section>
+
         </v-col>
 
-        <v-col cols="6" md="3">
-          <v-card>
-            <v-card-text>
-              <div class="text-caption">Duration</div>
-              <div class="text-h6">{{ trip.meta.duration }}</div>
-            </v-card-text>
+        <!-- RIGHT SIDEBAR (BOOKING CARD) -->
+        <v-col cols="12" md="4">
+
+          <v-card
+            class="pa-6 sticky"
+            rounded="xl"
+            elevation="3"
+          >
+
+            <div class="text-h6 font-weight-bold mb-2">
+              {{ trip.price }}
+            </div>
+
+            <div class="text-body-2 text-grey mb-4">
+              per person
+            </div>
+
+            <v-divider class="mb-4" />
+
+            <div class="mb-2 d-flex justify-space-between">
+              <span>Duration</span>
+              <strong>{{ trip.duration }}</strong>
+            </div>
+
+            <div class="mb-2 d-flex justify-space-between">
+              <span>Difficulty</span>
+              <strong>{{ trip.difficulty }}</strong>
+            </div>
+
+            <div class="mb-4 d-flex justify-space-between">
+              <span>Season</span>
+              <strong>{{ trip.season }}</strong>
+            </div>
+
+            <v-btn
+              block
+              size="large"
+              color="primary"
+              rounded="xl"
+              class="mb-3"
+            >
+              Book Now
+            </v-btn>
+
+            <v-btn
+              block
+              variant="outlined"
+              rounded="xl"
+            >
+              Ask a Question
+            </v-btn>
+
           </v-card>
+
         </v-col>
 
-        <v-col cols="6" md="3">
-          <v-card>
-            <v-card-text>
-              <div class="text-caption">Season</div>
-              <div class="text-h6">{{ trip.meta.season }}</div>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col cols="6" md="3">
-          <v-card>
-            <v-card-text>
-              <div class="text-caption">Minimum Age</div>
-              <div class="text-h6">{{ trip.meta.minimumAge }}+</div>
-            </v-card-text>
-          </v-card>
-        </v-col>
       </v-row>
     </v-container>
 
-    <!-- CONTENT SECTIONS -->
-    <v-container class="py-8">
-      <section
-        v-for="section in trip.sections"
-        :key="section.id"
-        class="mb-16"
+    <!-- FINAL CTA -->
+    <v-container class="pb-16">
+      <v-sheet
+        rounded="xl"
+        class="pa-10 text-center"
+        color="primary"
       >
-        <h2 class="text-h4 font-weight-bold mb-4">
-          {{ section.heading }}
+        <h2 class="text-h5 font-weight-bold text-white mb-4">
+          Ready for Your Adventure?
         </h2>
 
-        <p
-          v-if="section.body"
-          class="text-body-1 mb-8"
-        >
-          {{ section.body }}
-        </p>
-
-        <v-row v-if="section.items">
-          <v-col
-            v-for="item in section.items"
-            :key="item.title"
-            cols="12"
-            md="6"
-          >
-            <v-card height="100%">
-              <v-card-text class="d-flex ga-4">
-                <v-icon
-                  size="36"
-                  color="primary"
-                >
-                  {{ item.icon }}
-                </v-icon>
-
-                <div>
-                  <div class="text-h6 mb-2">
-                    {{ item.title }}
-                  </div>
-
-                  <div class="text-body-2">
-                    {{ item.description }}
-                  </div>
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-      </section>
+        <v-btn size="large" color="white" rounded="xl">
+          Reserve Your Spot
+        </v-btn>
+      </v-sheet>
     </v-container>
 
-    <!-- IMPORTANT NOTES -->
-    <v-container class="pb-16">
-      <v-alert
-        type="warning"
-        variant="tonal"
-      >
-        <div class="text-h6 mb-4">
-          Important Notes
-        </div>
+  </div>
 
-        <ul class="pl-4">
-          <li
-            v-for="note in trip.importantNotes"
-            :key="note"
-            class="mb-2"
-          >
-            {{ note }}
-          </li>
-        </ul>
-      </v-alert>
-    </v-container>
+  <!-- FALLBACK -->
+  <div v-else class="text-center py-16">
+    <h2 class="text-h5">Trip not found</h2>
   </div>
 </template>
 
 <style scoped>
-.hero-section {
-  background:
-    linear-gradient(
-      rgba(0,0,0,.45),
-      rgba(0,0,0,.55)
-    ),
-    url('/images/l-exciting-truckee-river-rafting-experiences.webp');
-
+.hero {
+  height: 420px;
   background-size: cover;
   background-position: center;
+}
 
-  color: white;
+.sticky {
+  position: sticky;
+  top: 100px;
 }
 </style>
