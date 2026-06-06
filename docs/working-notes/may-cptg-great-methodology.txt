@@ -1,0 +1,1022 @@
+structuroing a .ts file for use in UI across nuxt4
+
+If you're structuring a .ts file for reuse across a Nuxt 4 UI, the best approach depends on what the file contains (types, constants, configuration, composables, utilities, etc.).
+
+A common project structure looks like this:
+
+app/
+├── components/
+├── composables/
+├── pages/
+├── utils/
+├── types/
+├── constants/
+└── services/
+
+
+1. Shared Types
+
+types/user.ts
+
+export interface User {
+  id: string
+  name: string
+  email: string
+}
+
+export interface UserProfile extends User {
+  avatar?: string
+}
+
+Usage:
+
+import type { User } from '~/types/user'
+
+const user: User = {
+  id: '1',
+  name: 'John',
+  email: 'john@example.com'
+}
+
+
+2. UI Constants
+
+constants/navigation.ts
+
+export interface NavItem {
+  label: string
+  to: string
+  icon?: string
+}
+
+export const navigation: NavItem[] = [
+  {
+    label: 'Dashboard',
+    to: '/'
+  },
+  {
+    label: 'Settings',
+    to: '/settings'
+  }
+]
+
+Usage:
+
+<script setup lang="ts">
+import { navigation } from '~/constants/navigation'
+</script>
+3. UI Configuration Objects
+
+If you're defining cards, menus, table columns, form schemas, etc., keep them strongly typed.
+
+constants/userTable.ts
+
+export interface TableColumn {
+  key: string
+  label: string
+}
+
+export const userColumns: TableColumn[] = [
+  {
+    key: 'name',
+    label: 'Name'
+  },
+  {
+    key: 'email',
+    label: 'Email'
+  }
+]
+4. Utility Functions
+
+utils/formatDate.ts
+
+export function formatDate(date: string) {
+  return new Intl.DateTimeFormat('en-US').format(
+    new Date(date)
+  )
+}
+
+Usage:
+
+import { formatDate } from '~/utils/formatDate'
+5. Composables for Reactive UI State
+
+composables/useSidebar.ts
+
+export const useSidebar = () => {
+  const isOpen = useState('sidebar', () => false)
+
+  const toggle = () => {
+    isOpen.value = !isOpen.value
+  }
+
+  return {
+    isOpen,
+    toggle
+  }
+}
+
+Usage:
+
+const { isOpen, toggle } = useSidebar()
+6. Feature-Based Organization (Recommended for Large Apps)
+
+Instead of organizing by file type:
+
+features/
+├── users/
+│   ├── types.ts
+│   ├── constants.ts
+│   ├── composables.ts
+│   └── api.ts
+├── billing/
+└── settings/
+
+Example:
+
+// features/users/types.ts
+export interface User {
+  id: string
+  name: string
+}
+
+// features/users/constants.ts
+export const USER_ROLES = [
+  'admin',
+  'user'
+] as const
+
+This scales much better as the application grows.
+
+Example "UI data file"
+
+If your .ts file is purely feeding UI components:
+
+// data/dashboard.ts
+
+export interface DashboardCard {
+  title: string
+  description: string
+  icon: string
+}
+
+export const dashboardCards: DashboardCard[] = [
+  {
+    title: 'Users',
+    description: 'Manage users',
+    icon: 'i-lucide-users'
+  },
+  {
+    title: 'Settings',
+    description: 'Configure application',
+    icon: 'i-lucide-settings'
+  }
+]
+
+Then in a component:
+
+<script setup lang="ts">
+import { dashboardCards } from '~/data/dashboard'
+</script>
+
+<template>
+  <Card
+    v-for="card in dashboardCards"
+    :key="card.title"
+  >
+    {{ card.title }}
+  </Card>
+</template>
+
+For Nuxt 4 specifically, a good rule is:
+
+types/ → interfaces, types, enums
+constants/ or data/ → static UI configuration
+utils/ → pure functions
+composables/ → reactive state and logic
+services/ → API access
+features/ → group related code when the app becomes large
+
+If you share the specific .ts file you're trying to structure (menus, form definitions, API models, table configs, etc.), I can suggest a more concrete Nuxt 4 pattern.
+
+
+
+--------------
+please output a great example of a .ts file being used to store the info for each page on my nuxt site. 
+
+A clean pattern for Nuxt is to have a single source of truth for page metadata, SEO, navigation, permissions, breadcrumbs, and UI content. Then pages, layouts, navigation menus, and SEO composables can all consume the same data.
+
+content/pages.ts
+// content/pages.ts
+
+export interface PageDefinition {
+  slug: string
+  route: string
+
+  // Navigation
+  title: string
+  shortTitle?: string
+  description: string
+  icon?: string
+  showInNavigation?: boolean
+  navigationOrder?: number
+
+  // SEO
+  seo: {
+    title: string
+    description: string
+    keywords?: string[]
+    ogImage?: string
+  }
+
+  // UI Content
+  hero?: {
+    heading: string
+    subheading: string
+    cta?: {
+      label: string
+      to: string
+    }
+  }
+
+  // Access Control
+  requiresAuth?: boolean
+  roles?: string[]
+
+  // Misc
+  tags?: string[]
+  lastUpdated?: string
+}
+
+export const pages: Record<string, PageDefinition> = {
+  home: {
+    slug: "home",
+    route: "/",
+
+    title: "Home",
+    description: "Welcome to our platform.",
+    icon: "i-lucide-home",
+    showInNavigation: true,
+    navigationOrder: 1,
+
+    seo: {
+      title: "My Company | Home",
+      description:
+        "Discover our products, services, and solutions.",
+      keywords: [
+        "software",
+        "technology",
+        "business"
+      ]
+    },
+
+    hero: {
+      heading: "Build Better Products",
+      subheading:
+        "Modern tools for modern teams.",
+      cta: {
+        label: "Get Started",
+        to: "/pricing"
+      }
+    }
+  },
+
+  about: {
+    slug: "about",
+    route: "/about",
+
+    title: "About Us",
+    description: "Learn more about our company.",
+    icon: "i-lucide-building",
+    showInNavigation: true,
+    navigationOrder: 2,
+
+    seo: {
+      title: "About Us | My Company",
+      description:
+        "Learn about our mission, team, and values."
+    },
+
+    hero: {
+      heading: "Our Story",
+      subheading:
+        "Creating software that helps businesses grow."
+    }
+  },
+
+  pricing: {
+    slug: "pricing",
+    route: "/pricing",
+
+    title: "Pricing",
+    description: "Plans for teams of every size.",
+    icon: "i-lucide-credit-card",
+    showInNavigation: true,
+    navigationOrder: 3,
+
+    seo: {
+      title: "Pricing | My Company",
+      description:
+        "Simple and transparent pricing."
+    },
+
+    hero: {
+      heading: "Choose Your Plan",
+      subheading:
+        "Flexible pricing for startups and enterprises."
+    }
+  },
+
+  dashboard: {
+    slug: "dashboard",
+    route: "/dashboard",
+
+    title: "Dashboard",
+    description: "Your account dashboard.",
+    icon: "i-lucide-layout-dashboard",
+    showInNavigation: false,
+
+    requiresAuth: true,
+
+    seo: {
+      title: "Dashboard",
+      description: "Manage your account."
+    }
+  }
+}
+Navigation Generated Automatically
+// composables/useNavigation.ts
+
+import { pages } from "~/content/pages"
+
+export const useNavigation = () => {
+  return Object.values(pages)
+    .filter(page => page.showInNavigation)
+    .sort(
+      (a, b) =>
+        (a.navigationOrder ?? 999) -
+        (b.navigationOrder ?? 999)
+    )
+}
+
+Usage:
+
+<script setup lang="ts">
+const navigation = useNavigation()
+</script>
+
+<template>
+  <nav>
+    <NuxtLink
+      v-for="item in navigation"
+      :key="item.route"
+      :to="item.route"
+    >
+      {{ item.title }}
+    </NuxtLink>
+  </nav>
+</template>
+Page SEO Generated Automatically
+// composables/usePageSeo.ts
+
+import { pages } from "~/content/pages"
+
+export function usePageSeo(pageKey: keyof typeof pages) {
+  const page = pages[pageKey]
+
+  useSeoMeta({
+    title: page.seo.title,
+    description: page.seo.description,
+    keywords: page.seo.keywords?.join(", ")
+  })
+
+  return page
+}
+
+Usage:
+
+<script setup lang="ts">
+const page = usePageSeo("about")
+</script>
+Page Component
+<script setup lang="ts">
+import { pages } from "~/content/pages"
+
+const page = pages.about
+
+useSeoMeta({
+  title: page.seo.title,
+  description: page.seo.description
+})
+</script>
+
+<template>
+  <section>
+    <h1>{{ page.hero?.heading }}</h1>
+
+    <p>
+      {{ page.hero?.subheading }}
+    </p>
+  </section>
+</template>
+Enterprise-Style Structure
+
+As the site grows, split the file:
+
+content/
+├── pages/
+│   ├── home.ts
+│   ├── about.ts
+│   ├── pricing.ts
+│   ├── dashboard.ts
+│   └── index.ts
+├── navigation.ts
+├── seo.ts
+└── page-types.ts
+
+Example:
+
+// content/pages/about.ts
+
+import type { PageDefinition } from "../page-types"
+
+export const aboutPage: PageDefinition = {
+  slug: "about",
+  route: "/about",
+
+  title: "About Us",
+
+  description:
+    "Learn more about our company.",
+
+  seo: {
+    title: "About Us | My Company",
+    description:
+      "Learn about our mission and values."
+  },
+
+  hero: {
+    heading: "Our Story",
+    subheading:
+      "Building products people love."
+  }
+}
+
+Then aggregate:
+
+// content/pages/index.ts
+
+import { aboutPage } from "./about"
+import { homePage } from "./home"
+import { pricingPage } from "./pricing"
+
+export const pages = {
+  home: homePage,
+  about: aboutPage,
+  pricing: pricingPage
+}
+
+This pattern works especially well because navigation, breadcrumbs, page headers, SEO, sitemap generation, search indexing, and permissions all come from the same typed data source, preventing duplication across your Nuxt application.
+
+Please add commented out descriptions of what to add within the code im going to ask you to produce: I need a proper competitive lean layout (Pages & Components & (In text: structure of each component) as well as data.ts files for the following rafting tour company in truckee: Home, About, Trip Info, Planning Your Trip, FAQ, Contact
+
+This structure is optimized for a modern rafting company site in Nuxt 4 with strong SEO, conversion-focused layouts, and scalable content management.
+
+Project Structure
+app/
+├── pages/
+│   ├── index.vue
+│   ├── about.vue
+│   ├── trip-info.vue
+│   ├── planning-your-trip.vue
+│   ├── faq.vue
+│   └── contact.vue
+│
+├── components/
+│   ├── global/
+│   │   ├── SiteHeader.vue
+│   │   ├── SiteFooter.vue
+│   │   ├── HeroSection.vue
+│   │   ├── CTASection.vue
+│   │   └── SectionHeading.vue
+│   │
+│   ├── home/
+│   │   ├── HomeHero.vue
+│   │   ├── FeaturedTrips.vue
+│   │   ├── WhyChooseUs.vue
+│   │   ├── Testimonials.vue
+│   │   └── HomeCTA.vue
+│   │
+│   ├── about/
+│   │   ├── CompanyStory.vue
+│   │   ├── MeetTheGuides.vue
+│   │   ├── SafetyCommitment.vue
+│   │   └── AboutCTA.vue
+│   │
+│   ├── trip-info/
+│   │   ├── TripOverview.vue
+│   │   ├── RapidsBreakdown.vue
+│   │   ├── IncludedFeatures.vue
+│   │   ├── WhatToBring.vue
+│   │   └── BookingCTA.vue
+│   │
+│   ├── planning/
+│   │   ├── TravelInfo.vue
+│   │   ├── LodgingRecommendations.vue
+│   │   ├── WeatherGuide.vue
+│   │   ├── TransportationInfo.vue
+│   │   └── PlanningCTA.vue
+│   │
+│   ├── faq/
+│   │   ├── FAQAccordion.vue
+│   │   ├── SafetyQuestions.vue
+│   │   └── BookingQuestions.vue
+│   │
+│   └── contact/
+│       ├── ContactForm.vue
+│       ├── ContactMethods.vue
+│       ├── OfficeLocation.vue
+│       └── ContactCTA.vue
+│
+├── content/
+│   ├── pages.ts
+│   ├── faq.ts
+│   ├── trips.ts
+│   ├── testimonials.ts
+│   └── company.ts
+│
+├── composables/
+│   ├── useNavigation.ts
+│   ├── usePageSeo.ts
+│   └── useContactForm.ts
+│
+└── types/
+    ├── page.ts
+    ├── faq.ts
+    └── trip.ts
+content/pages.ts
+// content/pages.ts
+
+export interface PageData {
+  slug: string
+  route: string
+
+  title: string
+  description: string
+
+  seo: {
+    title: string
+    description: string
+    keywords: string[]
+  }
+
+  hero: {
+    heading: string
+    subheading: string
+    image: string
+
+    cta?: {
+      label: string
+      to: string
+    }
+  }
+}
+
+export const pages = {
+  home: {
+    slug: 'home',
+    route: '/',
+
+    title: 'Truckee River Rafting Adventures',
+
+    description:
+      'Family-friendly rafting experiences on the beautiful Truckee River.',
+
+    seo: {
+      title:
+        'Truckee River Rafting | Family Adventures in Truckee',
+
+      description:
+        'Experience unforgettable rafting adventures on the Truckee River.',
+
+      keywords: [
+        'truckee rafting',
+        'truckee river tours',
+        'family rafting',
+        'lake tahoe rafting'
+      ]
+    },
+
+    hero: {
+      heading:
+        'Experience the Truckee River Like Never Before',
+
+      subheading:
+        'Scenic rafting adventures for families, groups, and outdoor enthusiasts.',
+
+      image:
+        '/images/home/hero.jpg',
+
+      cta: {
+        label: 'Book Your Adventure',
+        to: '/trip-info'
+      }
+    }
+  },
+
+  about: {
+    slug: 'about',
+    route: '/about',
+
+    title: 'About Our Company',
+
+    description:
+      'Learn about our guides, history, and commitment to safety.',
+
+    seo: {
+      title:
+        'About Our Truckee Rafting Company',
+
+      description:
+        'Meet the experienced guides behind our rafting adventures.',
+
+      keywords: [
+        'rafting guides',
+        'truckee rafting company'
+      ]
+    },
+
+    hero: {
+      heading:
+        'Locally Owned. Adventure Driven.',
+
+      subheading:
+        'Sharing the Truckee River with visitors for generations.',
+
+      image:
+        '/images/about/hero.jpg'
+    }
+  }
+
+  // Add:
+  // trip-info
+  // planning-your-trip
+  // faq
+  // contact
+}
+
+--
+content/trips.ts
+// content/trips.ts
+
+export interface Trip {
+  id: string
+
+  title: string
+
+  duration: string
+
+  difficulty: string
+
+  ageMinimum: number
+
+  price: number
+
+  image: string
+
+  highlights: string[]
+
+  included: string[]
+
+  description: string
+}
+
+export const trips: Trip[] = [
+  {
+    id: 'classic-float',
+
+    title:
+      'Classic Truckee River Float',
+
+    duration:
+      '2-3 Hours',
+
+    difficulty:
+      'Easy',
+
+    ageMinimum: 5,
+
+    price: 89,
+
+    image:
+      '/images/trips/classic.jpg',
+
+    highlights: [
+      'Scenic mountain views',
+      'Gentle rapids',
+      'Family friendly'
+    ],
+
+    included: [
+      'Raft',
+      'Paddles',
+      'Life Jackets',
+      'Transportation'
+    ],
+
+    description:
+      'Perfect for families and first-time rafters.'
+  }
+
+  // Add:
+  // Full-day trip
+  // Sunset float
+  // Group adventure package
+]
+content/faq.ts
+// content/faq.ts
+
+export interface FAQ {
+  question: string
+  answer: string
+  category: string
+}
+
+export const faqs: FAQ[] = [
+  {
+    category: 'Safety',
+
+    question:
+      'Do I need rafting experience?',
+
+    answer:
+      'No experience is necessary for our beginner-friendly trips.'
+  },
+
+  {
+    category: 'Booking',
+
+    question:
+      'What should I bring?',
+
+    answer:
+      'Bring sunscreen, water shoes, sunglasses, and a towel.'
+  }
+
+  // Add:
+  // Cancellation policies
+  // Weather concerns
+  // Group booking questions
+  // Child age requirements
+  // Transportation details
+]
+HOME PAGE
+<!-- pages/index.vue -->
+
+<script setup lang="ts">
+import { pages } from '~/content/pages'
+import { trips } from '~/content/trips'
+
+const page = pages.home
+</script>
+
+<template>
+  <div>
+
+    <!-- Large video/image hero -->
+    <!-- CTA button -->
+    <!-- Quick trust indicators -->
+    <HomeHero />
+
+    <!-- Featured rafting packages -->
+    <!-- Trip cards -->
+    <!-- Pricing previews -->
+    <FeaturedTrips />
+
+    <!-- Why choose this company -->
+    <!-- Safety -->
+    <!-- Local expertise -->
+    <!-- Family-friendly experiences -->
+    <WhyChooseUs />
+
+    <!-- Customer reviews -->
+    <!-- Google reviews -->
+    <!-- Trip photos -->
+    <Testimonials />
+
+    <!-- Booking CTA -->
+    <HomeCTA />
+
+  </div>
+</template>
+ABOUT PAGE
+<!-- pages/about.vue -->
+
+<template>
+
+  <!-- Company history -->
+  <!-- Founding story -->
+  <!-- Mission statement -->
+  <CompanyStory />
+
+  <!-- Guide profiles -->
+  <!-- Certifications -->
+  <!-- Experience -->
+  <!-- Personal bios -->
+  <MeetTheGuides />
+
+  <!-- Safety standards -->
+  <!-- Training procedures -->
+  <!-- Emergency protocols -->
+  <SafetyCommitment />
+
+  <!-- Booking CTA -->
+  <AboutCTA />
+
+</template>
+TRIP INFO PAGE
+<!-- pages/trip-info.vue -->
+
+<template>
+
+  <!-- Trip summaries -->
+  <!-- Duration -->
+  <!-- Difficulty -->
+  <!-- Pricing -->
+  <TripOverview />
+
+  <!-- River conditions -->
+  <!-- Rapids explanation -->
+  <!-- Seasonal expectations -->
+  <RapidsBreakdown />
+
+  <!-- Included equipment -->
+  <!-- Transportation -->
+  <!-- Safety gear -->
+  <IncludedFeatures />
+
+  <!-- Packing checklist -->
+  <!-- Clothing recommendations -->
+  <!-- What not to bring -->
+  <WhatToBring />
+
+  <!-- Booking CTA -->
+  <BookingCTA />
+
+</template>
+PLANNING YOUR TRIP PAGE
+<!-- pages/planning-your-trip.vue -->
+
+<template>
+
+  <!-- Directions to Truckee -->
+  <!-- Airport information -->
+  <!-- Driving routes -->
+  <TravelInfo />
+
+  <!-- Hotels -->
+  <!-- Cabins -->
+  <!-- Campgrounds -->
+  <LodgingRecommendations />
+
+  <!-- Seasonal weather guide -->
+  <!-- Water temperatures -->
+  <!-- Best months -->
+  <WeatherGuide />
+
+  <!-- Shuttle information -->
+  <!-- Parking -->
+  <!-- Transportation tips -->
+  <TransportationInfo />
+
+  <PlanningCTA />
+
+</template>
+FAQ PAGE
+<!-- pages/faq.vue -->
+
+<script setup lang="ts">
+import { faqs } from '~/content/faq'
+</script>
+
+<template>
+
+  <!-- Search bar -->
+  <!-- FAQ categories -->
+  <!-- Expand/collapse accordion -->
+  <FAQAccordion />
+
+  <!-- Safety-focused FAQs -->
+  <SafetyQuestions />
+
+  <!-- Booking & cancellation FAQs -->
+  <BookingQuestions />
+
+</template>
+CONTACT PAGE
+<!-- pages/contact.vue -->
+
+<template>
+
+  <!-- Contact form -->
+  <!-- Name -->
+  <!-- Email -->
+  <!-- Phone -->
+  <!-- Trip interest -->
+  <!-- Message -->
+  <ContactForm />
+
+  <!-- Phone -->
+  <!-- Email -->
+  <!-- Business hours -->
+  <!-- Social links -->
+  <ContactMethods />
+
+  <!-- Interactive map -->
+  <!-- Directions -->
+  <!-- Meeting location -->
+  <OfficeLocation />
+
+  <!-- Last booking CTA -->
+  <ContactCTA />
+
+</template>
+Example Component Structure
+<!-- components/home/FeaturedTrips.vue -->
+
+<script setup lang="ts">
+import { trips } from '~/content/trips'
+</script>
+
+<template>
+
+  <section class="py-24">
+
+    <!-- Section heading -->
+    <!-- Optional intro paragraph -->
+
+    <div class="grid">
+
+      <!-- Trip image -->
+      <!-- Duration badge -->
+      <!-- Difficulty badge -->
+      <!-- Pricing -->
+      <!-- Highlights -->
+      <!-- CTA button -->
+
+    </div>
+
+  </section>
+
+</template>
+Recommended Content Flow
+HOME
+│
+├── Hero
+├── Featured Trips
+├── Why Choose Us
+├── Reviews
+└── CTA
+
+ABOUT
+│
+├── Story
+├── Team
+├── Safety
+└── CTA
+
+TRIP INFO
+│
+├── Trip Options
+├── Difficulty Levels
+├── What's Included
+├── What To Bring
+└── CTA
+
+PLANNING YOUR TRIP
+│
+├── Getting Here
+├── Lodging
+├── Weather
+├── Transportation
+└── CTA
+
+FAQ
+│
+├── Safety
+├── Booking
+├── Logistics
+└── Policies
+
+CONTACT
+│
+├── Form
+├── Contact Methods
+├── Location
+└── CTA
+
+This layout follows the structure used by high-converting adventure tourism sites: conversion-focused homepage, trust-building About page, information-dense Trip Info and Planning sections, SEO-rich FAQ content, and a streamlined Contact page.
+
+Get smarter responses, upload files and images, and more.
+Log in
+Sign up for free

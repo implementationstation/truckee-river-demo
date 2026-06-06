@@ -60,7 +60,7 @@ export const pages = {
 
       cta: {
         label: 'Book Your Adventure',
-        to: '/trip-info'
+        to: '/'
       }
     },
     /*------------------------ 
