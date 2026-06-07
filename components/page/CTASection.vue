@@ -3,7 +3,7 @@
     <div>
       <p class="eyebrow">{{ eyebrow }}</p>
       <h2>{{ title }}</h2>
-      <p>{{ text }}</p>
+      <p>{{ subtitle }}</p>
     </div>
 
     <v-btn size="large" rounded="xl">
@@ -16,7 +16,7 @@
 defineProps<{
   eyebrow?: string
   title: string
-  text: string
+  subtitle: string
   buttonText: string
 }>()
 </script>
