@@ -1,6 +1,8 @@
 
 <template>
   <PageShell>
+
+    <!--HERO IS HERE, BRUH-->
     <section class="hero">
       <p class="eyebrow">{{ page.hero.eyebrow }}</p>
       <h1>{{ page.hero.title }}</h1>
@@ -17,6 +19,8 @@
       </div>
     </section>
 
+    
+    <!--INFO CARD GRID HERE< -->
     <SectionBlock
       v-for="section in page.sections"
       :key="section.title"
@@ -26,19 +30,14 @@
     >
       <InfoCardGrid :cards="section.cards" />
     </SectionBlock>
-      
-    <CTASection
+
+      <!--CALL TO ACTION< CUNTS-->
+    <!-- <CTASection
       :eyebrow="page.hero.eyebrow"
       :title="page.hero.title"
       :subtitle="page.hero.subtitle"
       :button-text="page.hero.primaryAction"
-    />
-    <!-- <CTASection
-      eyebrow="Ready?"
-      title="Book the Truckee River Boca Run."
-      text="Keep the final action painfully obvious. No cleverness here. Just make booking easy."
-      button-text="Start Booking"
-    /> -->
+    /> --><CallToAction></CallToAction>
   </PageShell>
 </template>
 
@@ -46,6 +45,8 @@
 import { truckeeHomePage as page } from '~/data/pages/truckeeHome'
 import InfoCardGrid from '~/components/page/InfoCardGrid.vue';
  import SectionBlock from '~/components/page/SectionBlock.vue';
+ import CallToAction from '~/components/sections/CallToAction.vue';
+
 
 useSeoMeta({
   title: page.seo.title,
