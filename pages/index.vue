@@ -19,6 +19,10 @@
       </div>
     </section>
 
+   <v-container>
+    <TestimonialGrid :items="testimonials"></TestimonialGrid>
+   </v-container>
+
     
     <!--INFO CARD GRID HERE< -->
     <SectionBlock
@@ -32,12 +36,10 @@
     </SectionBlock>
 
       <!--CALL TO ACTION< CUNTS-->
-    <!-- <CTASection
-      :eyebrow="page.hero.eyebrow"
-      :title="page.hero.title"
-      :subtitle="page.hero.subtitle"
-      :button-text="page.hero.primaryAction"
-    /> --><CallToAction></CallToAction>
+      <CallToAction></CallToAction>
+      <BaseCta variant="discover" />
+            <BaseCta variant="book-trip" />
+                  <BaseCta variant="buy-photos" />
   </PageShell>
 </template>
 
@@ -46,7 +48,9 @@ import { truckeeHomePage as page } from '~/data/pages/truckeeHome'
 import InfoCardGrid from '~/components/page/InfoCardGrid.vue';
  import SectionBlock from '~/components/page/SectionBlock.vue';
  import CallToAction from '~/components/sections/CallToAction.vue';
-
+import { testimonials } from '~/data/testimonials';
+import BaseCta from '~/components/BaseCta.vue';
+import TestimonialGrid from '~/components/sections/TestimonialGrid.vue';
 
 useSeoMeta({
   title: page.seo.title,

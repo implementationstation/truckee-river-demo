@@ -14,7 +14,7 @@ export const trips = [
     ],
     //PAGE HERO -- TRIPS/[SLUG]
     heroTitle: 'Truckee River Half Day | "Boca Run" | AKA Floriston Gorge',
-    heroDescription: '',
+    heroDescription: 'Enjoy getting your taste of the Truckee River in a digestible 4h half day excursion. 2h on the water at least.',
     //
     description: 'Our most popular river trip is offered twice a day, every day. This section of the Truckee River takes you through beautiful scenic river canyons and rich history. The rapids in this section increase from small riffles to fun and exciting Class III at the end allowing for anyone to become comfortable with whitewater rafting along the way and everyone to have lots of fun. ',
     duration: 'Half Day',

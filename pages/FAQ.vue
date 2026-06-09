@@ -2,6 +2,12 @@
 
   <v-container class="py-16">
 
+    <Hero
+    title="Common Questions Already Answered"
+    subtitle="Things to know along the Truckee River"
+    description="We compiled this list of questions most commonly asked to our guides. Here they are."
+    ></Hero>
+
     <h2 class="text-h3 mb-8">
       Frequently Asked Questions
     </h2>
@@ -30,6 +36,8 @@
 </template>
 
 <script setup>
+import Hero from '~/components/shared/Hero.vue';
+
 
 /*
 ========================
