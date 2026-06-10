@@ -5,7 +5,7 @@
     HERO
     ======================== -->
 
-    <v-img
+    <!-- <v-img
       src="/images/l-mfa-series-whitewater-adventures-in-california.webp"
       height="300"
       cover
@@ -20,8 +20,8 @@
           </p>
         </div>
       </div>
-    </v-img>
-
+    </v-img> -->
+    <HeroContact />
     <!-- ========================
     MAIN CONTENT
     ======================== -->
@@ -186,6 +186,7 @@
 </template>
 
 <script setup>
+import HeroContact from '~/components/hero/HeroContact.vue'
 const name = ref('')
 const email = ref('')
 const message = ref('')

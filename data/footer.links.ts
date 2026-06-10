@@ -30,7 +30,7 @@ export const footerSections: FooterSection[] = [
   {
     title: 'Resources',
     links: [
-      { title: 'Questions: Answered.', to: '/faq' },
+      { title: 'FAQs', to: '/faq' },
 
     ]
   }

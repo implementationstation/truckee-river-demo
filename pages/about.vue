@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import AboutHero from '~/components/about/AboutHero.vue'
+//import AboutHero from '~/components/about/AboutHero.vue'
+import HeroAbout from '~/components/hero/HeroAbout.vue'
 import GuideStory from '~/components/about/GuideStory.vue'
 import ValuesGrid from '~/components/about/ValuesGrid.vue'
 import WhyChooseUs from '~/components/about/WhyChooseUs.vue'
@@ -16,11 +17,13 @@ useSeoMeta({
 </script>
 
 <template>
+  <div><HeroAbout />
   <PageShell>
-    <AboutHero />
+    
     <GuideStory />
     <ValuesGrid /> <CompactGridIconFirstStyle />
     <WhyChooseUs />
     <BookingCTA />
   </PageShell>
+  </div>
 </template>

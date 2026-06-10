@@ -1,9 +1,10 @@
 
 <template>
+  <div><HeroHome/>
   <PageShell>
 
     <!--HERO IS HERE, BRUH-->
-    <section class="hero">
+    <!-- <section class="hero">
       <p class="eyebrow">{{ page.hero.eyebrow }}</p>
       <h1>{{ page.hero.title }}</h1>
       <p>{{ page.hero.subtitle }}</p>
@@ -17,7 +18,7 @@
           {{ page.hero.secondaryAction }}
         </v-btn>
       </div>
-    </section>
+    </section> -->
 
    <v-container>
     <TestimonialGrid :items="testimonials"></TestimonialGrid>
@@ -36,21 +37,23 @@
     </SectionBlock>
 
       <!--CALL TO ACTION< CUNTS-->
-      <CallToAction></CallToAction>
+
       <BaseCta variant="discover" />
             <BaseCta variant="book-trip" />
                   <BaseCta variant="buy-photos" />
   </PageShell>
+  </div>
 </template>
 
 <script setup lang="ts">
 import { truckeeHomePage as page } from '~/data/pages/truckeeHome'
 import InfoCardGrid from '~/components/page/InfoCardGrid.vue';
  import SectionBlock from '~/components/page/SectionBlock.vue';
- import CallToAction from '~/components/sections/CallToAction.vue';
+//import CallToAction from '~/components/sections/CallToAction.vue';
 import { testimonials } from '~/data/testimonials';
 import BaseCta from '~/components/BaseCta.vue';
 import TestimonialGrid from '~/components/sections/TestimonialGrid.vue';
+import HeroHome from '~/components/hero/HeroHome.vue';
 
 useSeoMeta({
   title: page.seo.title,

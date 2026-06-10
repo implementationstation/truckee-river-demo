@@ -15,13 +15,13 @@ export const truckeeHomePage = {
 
   sections: [
     {
-      label: 'The Trip',
+      label: 'The Whitewater Experience',
       title: 'Two daily half-day Boca Run trips.',
       intro:
-        'Make the core offer obvious fast: when it runs, what it costs, who it is for, and why it is worth booking.',
+        'Nestled in the heart of the stunning Lake Tahoe area, our whitewater rafting trips on the Truckee River promise half-day adventures that are perfect for families and thrill-seekers alike.',
       cards: [
-        { title: 'Morning Run', text: 'Half-day guided river trip.' },
-        { title: 'Afternoon Run', text: 'Same route, later start.' },
+        { title: 'Morning Run', text: 'Class II-III (introductory). Closest Rafting to Truckee / Tahoe from Reno. ' },
+        { title: 'Afternoon Run', text: 'Same route, later start. 4h trip in total.' },
         { title: 'Pricing', text: '$120 adults / $100 youth.' },
       ],
     },

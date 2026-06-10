@@ -52,7 +52,7 @@ Whitewater rafting trips daily on the Truckee River an
     BODY ARTICLE HEADING
 
     BODY ARTICLE TEXT LIST ITEMS
-Closest Rafting to Truckee / Tahoe and Reno. 15 min Shuttle From our office in Truckee
+Closest Rafting to Truckee / Tahoe a Renond. 15 min Shuttle From our office in Truckee
 Half-Day Rafting Trips Twice Daily (9:00am & 1:30pm)
 Class II-III (introductory)
 Season: April - September 

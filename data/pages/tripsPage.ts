@@ -84,9 +84,9 @@ export const tripsPage = {
     primaryAction: 'Book a Trip',
     secondaryAction: 'Prepare for Your Trip',
   },
-
+//SNAPSHOT 
   snapshot: [
-    { label: 'Duration', value: 'Half-day' },
+    { label: 'Duration', value: '4 Hours Total' },
     { label: 'Runs', value: 'Morning + afternoon' },
     { label: 'Adults', value: '$120' },
     { label: 'Youth', value: '$100' },
@@ -111,7 +111,7 @@ export const tripsPage = {
     'Safety gear',
     'Pre-trip instructions',
     'Scenic Truckee River route',
-    'Simple booking flow',
+    'Transport from I.R.I.E offices',
   ],
 
   cta: {

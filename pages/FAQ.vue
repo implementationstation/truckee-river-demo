@@ -1,12 +1,9 @@
 <template>
-
+<div><HeroFAQ/>
   <v-container class="py-16">
+    
+    
 
-    <Hero
-    title="Common Questions Already Answered"
-    subtitle="Things to know along the Truckee River"
-    description="We compiled this list of questions most commonly asked to our guides. Here they are."
-    ></Hero>
 
     <h2 class="text-h3 mb-8">
       Frequently Asked Questions
@@ -32,11 +29,14 @@
     </v-expansion-panels>
 
   </v-container>
-
+</div>
 </template>
 
 <script setup>
-import Hero from '~/components/shared/Hero.vue';
+import Hero from '~/components/hero/Hero.vue';
+import HeroFAQ from '~/components/hero/HeroFAQ.vue';
+//import HeroPrimary from '../components/sections/HeroPrimary.vue';
+//import Hero from '~/components/shared/Hero.vue';
 
 
 /*
