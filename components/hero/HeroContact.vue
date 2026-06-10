@@ -89,7 +89,7 @@ useHead({
                 Call Now
               </v-btn>
 
-              <v-btn
+              <!-- <v-btn
                 size="x-large"
                 color="white"
                 variant="outlined"
@@ -101,7 +101,7 @@ useHead({
                 </v-icon>
 
                 Contact Us
-              </v-btn>
+              </v-btn> -->
             </div>
           </v-col>
         </v-row>

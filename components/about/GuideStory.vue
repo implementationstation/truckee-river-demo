@@ -1,17 +1,9 @@
 <template>
   <v-container class="py-16">
     <v-row align="center" class="ga-8">
-      <v-col cols="12" md="6">
-        <v-sheet
-          rounded="xl"
-          height="600"
-          color="grey-lighten-3"
-        >
-          <!-- Replace with real image -->
-        </v-sheet>
-      </v-col>
+      
 
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="5">
         <div class="text-overline mb-4">
           OUR STORY
         </div>
@@ -39,6 +31,14 @@
           create a safe, memorable experience
           you'll want to do again.
         </p>
+      </v-col>
+      <v-col cols="12" md="6">
+        <v-sheet
+          rounded="xl"
+          color="grey-lighten-3"
+        >
+          <v-img rounded cover src="/images/l-truckee-river-rafting-trip-view.webp" />
+        </v-sheet>
       </v-col>
     </v-row>
   </v-container>

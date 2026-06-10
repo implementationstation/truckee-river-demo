@@ -22,7 +22,8 @@ useSeoMeta({
     
     <GuideStory />
     <ValuesGrid /> <CompactGridIconFirstStyle />
-    <WhyChooseUs />
+    
+    <!-- <WhyChooseUs /> -->
     <BookingCTA />
   </PageShell>
   </div>

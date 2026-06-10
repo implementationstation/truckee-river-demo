@@ -3,28 +3,25 @@
   <div><HeroHome/>
   <PageShell>
 
-    <!--HERO IS HERE, BRUH-->
-    <!-- <section class="hero">
-      <p class="eyebrow">{{ page.hero.eyebrow }}</p>
-      <h1>{{ page.hero.title }}</h1>
-      <p>{{ page.hero.subtitle }}</p>
+    <ReasonBlock />
 
-      <div class="hero-actions">
-        <v-btn size="large" rounded="xl">
-          {{ page.hero.primaryAction }}
-        </v-btn>
-
-        <v-btn size="large" rounded="xl" variant="tonal">
-          {{ page.hero.secondaryAction }}
-        </v-btn>
-      </div>
-    </section> -->
+    <SectionSplit
+  eyebrow="OUR STORY"
+  title="Built from a love of rivers."
+  :paragraphs="[
+    'What started as a passion for river travel grew into a mission to help more people experience the beauty of wild places.',
+    'For years we\'ve guided families, first-time rafters, and outdoor enthusiasts through scenic river corridors and unforgettable adventures.',
+    'Whether it\'s your first trip or your tenth, our goal remains the same: create a safe, memorable experience you\'ll want to do again.'
+  ]"
+  image="/images/l-truckee-river-rafting-trip-view.webp"
+/>
 
    <v-container>
     <TestimonialGrid :items="testimonials"></TestimonialGrid>
    </v-container>
-
     
+
+
     <!--INFO CARD GRID HERE< -->
     <SectionBlock
       v-for="section in page.sections"
@@ -38,9 +35,9 @@
 
       <!--CALL TO ACTION< CUNTS-->
 
-      <BaseCta variant="discover" />
+      <!-- <BaseCta variant="discover" /> -->
             <BaseCta variant="book-trip" />
-                  <BaseCta variant="buy-photos" />
+                  <!-- <BaseCta variant="buy-photos" /> -->
   </PageShell>
   </div>
 </template>
@@ -54,6 +51,9 @@ import { testimonials } from '~/data/testimonials';
 import BaseCta from '~/components/BaseCta.vue';
 import TestimonialGrid from '~/components/sections/TestimonialGrid.vue';
 import HeroHome from '~/components/hero/HeroHome.vue';
+import WhyChooseUs from '~/components/about/WhyChooseUs.vue';
+import ReasonBlock from '~/components/shared/ReasonBlock.vue';
+import SectionSplit from '~/components/shared/SectionSplit.vue';
 
 useSeoMeta({
   title: page.seo.title,

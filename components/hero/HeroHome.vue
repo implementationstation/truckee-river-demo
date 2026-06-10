@@ -40,7 +40,7 @@ useHead({
               The time is now to experience our half day tour along the Truckee River, navigating through class II-III river rapids with the folks here at I.R.I.E. 
             </p>
 
-            <div class="d-flex flex-wrap ga-3 mb-10">
+            <!-- <div class="d-flex flex-wrap ga-3 mb-10">
               <v-chip
                 color="white"
                 variant="flat"
@@ -72,7 +72,7 @@ useHead({
               >
                 Trip Photos
               </v-chip>
-            </div>
+            </div> -->
 
             <div class="d-flex flex-wrap ga-4">
               <v-btn

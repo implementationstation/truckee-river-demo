@@ -33,18 +33,18 @@ useHead({
         <v-row align="center">
           <v-col cols="12" md="8" lg="7">
             <div class="text-overline text-white mb-5 tracking">
-              IRIE RAFTING COMPANY
+              PREPARE FOR YOUR TRIP
             </div>
 
             <h1 class="hero-title mb-6">
-              {{ page.hero.heading }}
+              Planning Your River Rafting | Truckee River
             </h1>
 
             <p class="hero-subtitle mb-8">
               {{ page.hero.subtitle }}
             </p>
 
-            <div class="d-flex flex-wrap ga-3 mb-10">
+            <!-- <div class="d-flex flex-wrap ga-3 mb-10">
               <v-chip
                 color="white"
                 variant="flat"
@@ -76,7 +76,7 @@ useHead({
               >
                 Trip Photos
               </v-chip>
-            </div>
+            </div> -->
 
             <div class="d-flex flex-wrap ga-4">
               <v-btn
@@ -87,13 +87,13 @@ useHead({
                 href="tel:15305824900"
               >
                 <v-icon start>
-                  mdi-phone
+                  mdi-waves-arrow-right
                 </v-icon>
 
-                Call Now
+                Book The Trip
               </v-btn>
 
-              <v-btn
+              <!-- <v-btn
                 size="x-large"
                 color="white"
                 variant="outlined"
@@ -105,7 +105,7 @@ useHead({
                 </v-icon>
 
                 Contact Us
-              </v-btn>
+              </v-btn> -->
             </div>
           </v-col>
         </v-row>
