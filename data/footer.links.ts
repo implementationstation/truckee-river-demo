@@ -41,7 +41,8 @@ export const footerMeta = {
   tagline: 'Unforgettable river experiences.',
   cta: {
     title: 'Book Your Trip',
-    to: '/book'
+    to: '/trips',
+    href: 'https://book.singenuity.com/338/activity/details/1452/rates'
   },
   socials: [
     { icon: 'mdi-instagram', href: '#' },

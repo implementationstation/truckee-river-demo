@@ -13,23 +13,31 @@ export const navLinks: NavLink[] = [
     to: '/'
   },
   {
-    title: 'Whitewater Trips',
-    children: [
-      //{ title: 'All Trips', to: '/trips' },
-      { title: 'Truckee River Half Day', to: '/trips' },
-    //   { title: 'Half Day Boca Run: Morning Session', to: '/trips/fuck' },
-    //   { title: 'Half Day Boca Run: Afternoon Session', to: '/trips/half-day' }
-    ]
+    title: 'The Rafting Trip',
+    to: '/trips'
   },
-  {
-    title: 'Plan Your Trip',
-    children: [
-      { title: 'og:Reservation Info', to: '/trip-planning' },
-      { title: 'og:Pricing & Cancellations', to: '/trip-planning' },
-      { title: 'og:What To Bring ', to: '/trip-planning' },
+  // {
+  //   title: 'Whitewater Trips',
+  //   children: [
+  //     //{ title: 'All Trips', to: '/trips' },
+  //     { title: 'Truckee River Half Day', to: '/trips' },
+  //   //   { title: 'Half Day Boca Run: Morning Session', to: '/trips/fuck' },
+  //   //   { title: 'Half Day Boca Run: Afternoon Session', to: '/trips/half-day' }
+  //   ]
+  // },
+  // {
+  //   title: 'Plan Your Trip',
+  //   children: [
+  //     { title: 'og:Reservation Info', to: '/trip-planning' },
+  //     { title: 'og:Pricing & Cancellations', to: '/trip-planning' },
+  //     { title: 'og:What To Bring ', to: '/trip-planning' },
       
-      { title: 'og:Rafting Photos', to: '/trip-planning'}
-    ]
+  //     { title: 'og:Rafting Photos', to: '/trip-planning'}
+  //   ]
+  // },
+  {
+    title: 'Preparation',
+    to: '/trip-planning'
   },
   {
     title: 'About',
@@ -45,7 +53,7 @@ export const navLinks: NavLink[] = [
   },
   {
     title: 'Book',
-    to: '/book',
+    to: '/trips',
     cta: true
   }
 ]
