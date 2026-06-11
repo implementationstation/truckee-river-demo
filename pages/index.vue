@@ -5,7 +5,7 @@
 
     <ReasonBlock />
 
-    <SectionSplit
+    <!-- <SectionSplit
   eyebrow="OUR STORY"
   title="Built from a love of rivers."
   :paragraphs="[
@@ -14,7 +14,7 @@
     'Whether it\'s your first trip or your tenth, our goal remains the same: create a safe, memorable experience you\'ll want to do again.'
   ]"
   image="/images/l-truckee-river-rafting-trip-view.webp"
-/>
+/> -->
 
    <v-container>
     <TestimonialGrid :items="testimonials"></TestimonialGrid>

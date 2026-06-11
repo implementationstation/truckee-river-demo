@@ -8,7 +8,7 @@ import BookingCTA from '~/components/shared/BookingCTA.vue'
 
 import PageShell from '~/components/page/PageShell.vue'
 
-import CompactGridIconFirstStyle from '~/components/about/extras/values-grid/CompactGridIconFirstStyle.vue'
+import SectionSplit from '~/components/shared/SectionSplit.vue'
 
 useSeoMeta({
   title: 'About Us',
@@ -17,12 +17,24 @@ useSeoMeta({
 </script>
 
 <template>
-  <div><HeroAbout />
+  <div>
+    <HeroAbout />
+     
   <PageShell>
     
-    <GuideStory />
-    <ValuesGrid /> <CompactGridIconFirstStyle />
+      <SectionSplit
+        eyebrow="OUR STORY"
+        title="Built from a love of rivers."
+        :paragraphs="[
+          'What started as a passion for river travel grew into a mission to help more people experience the beauty of wild places.',
+          'For years we\'ve guided families, first-time rafters, and outdoor enthusiasts through scenic river corridors and unforgettable adventures.',
+          'Whether it\'s your first trip or your tenth, our goal remains the same: create a safe, memorable experience you\'ll want to do again.'
+        ]"
+        image="/images/l-truckee-river-rafting-trip-view.webp"
+      />
     
+      <ValuesGrid /> 
+
     <!-- <WhyChooseUs /> -->
     <BookingCTA />
   </PageShell>

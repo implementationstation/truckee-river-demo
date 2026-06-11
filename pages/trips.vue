@@ -11,6 +11,8 @@
 
     <TripSnapshot :items="page.snapshot" />
 
+    <WhyGrid :items="whyChooseUs" />
+
     <TripScheduleCards :trips="page.schedule" />
 
     <TripIncludedGrid :items="page.included" />
@@ -33,6 +35,8 @@ import TripSnapshot from '~/components/trips/TripSnapshot.vue';
 import TripScheduleCards from '~/components/trips/TripScheduleCards.vue';
 import TripIncludedGrid from '~/components/trips/TripIncludedGrid.vue';
 import TripBookingCTA from '~/components/trips/TripBookingCTA.vue';
+import WhyGrid from '~/components/WhyGrid.vue';
+import { whyChooseUs } from '~/data/why';
 
 
 

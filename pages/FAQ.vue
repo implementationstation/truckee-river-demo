@@ -1,11 +1,45 @@
 <template>
-<div><HeroFAQ/>
+<div>
+  <HeroFAQ/>
+  
   <v-container class="py-16">
-    
+  <!-- <ItineraryTimeline
+  :steps="[
+    { time: '9:00 AM', title: 'Arrival', text: 'Meet guides' },
+    { time: '9:30 AM', title: 'Gear Up', text: 'Safety briefing' },
+    { time: '10:00 AM', title: 'On the River', text: 'Enjoy float' }
+  ]"
+/> -->
+
+<ComparisonCards
+  :items="[
+    {
+      title: 'Trip Information',
+      description: 'Perfect intro',
+      price: '$120 | $100 (youth)',
+      features: ['4 hours total', 'Guided Experience', 'Beginner/Family Friendly', 'Class II-III rapids', 'Scenic'],
+      cta: 'Book'
+    },
+    {
+      title: 'Premium',
+      description: 'Best option',
+      price: '$129',
+      badge: 'Most Popular',
+      featured: true,
+      features: ['Longer', 'Rapids', 'Snacks'],
+      cta: 'Book'
+    }
+  ]"
+/>
+    <!-- <FAQ />
+    <ItineraryTimeline />
+    <TripHighlights />
+    <TrustBar />
+    <StickyBookingCTA /> -->
     
 
-
-    <h2 class="text-h3 mb-8">
+<!-- OLD FAQ HARDCODE -->
+    <!-- <h2 class="text-h3 mb-8">
       Frequently Asked Questions
     </h2>
 
@@ -26,19 +60,23 @@
 
       </v-expansion-panel>
 
-    </v-expansion-panels>
+    </v-expansion-panels> -->
 
   </v-container>
 </div>
 </template>
 
 <script setup>
-import Hero from '~/components/hero/Hero.vue';
 import HeroFAQ from '~/components/hero/HeroFAQ.vue';
-//import HeroPrimary from '../components/sections/HeroPrimary.vue';
-//import Hero from '~/components/shared/Hero.vue';
+import { tripPage } from '~/components/Snazzy/data/tripPageFullSchema';
+import FAQ from '~/components/Snazzy/FAQ.vue';
+import ItineraryTimeline from '~/components/Snazzy/ItineraryTimeline.vue';
+import SectionHeroPro from '~/components/Snazzy/SectionHeroPro.vue';
+import TripHighlights from '~/components/Snazzy/TripHighlights.vue';
+import TrustBar from '~/components/Snazzy/TrustBar.vue';
+import StickyBookingCTA from '~/components/Snazzy/StickyBookingCTA.vue';
 
-
+import ComparisonCards from '~/components/Snazzy/SideBySideComparison.vue';
 /*
 ========================
 FAQ DATA
