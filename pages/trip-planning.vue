@@ -84,7 +84,7 @@ useHead({
                 color="primary"
                 elevation="4"
                 rounded="xl"
-                href="tel:15305824900"
+                href="https://book.singenuity.com/338/"
               >
                 <v-icon start>
                   mdi-waves-arrow-right
@@ -277,6 +277,9 @@ useHead({
                     rounded="xl"
                     elevation="0"
                     height="100%"
+                    
+                    :href="item.link"
+                    :to="item.to"
                   >
                     <v-card-text class="pa-7">
                       <v-avatar

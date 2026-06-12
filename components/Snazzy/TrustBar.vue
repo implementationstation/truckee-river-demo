@@ -1,21 +1,52 @@
 <template>
-  <v-container class="py-10 text-center">
-    <v-row justify="center" class="ga-6">
-      <v-col cols="6" md="2" v-for="(item,i) in items" :key="i">
-        <div class="trust">
-          <div class="big">{{ item.value }}</div>
-          <div class="label">{{ item.label }}</div>
-        </div>
-      </v-col>
-    </v-row>
-  </v-container>
+  <v-sheet
+    color="surface"
+    class="py-6"
+  >
+    <v-container>
+
+      <v-row>
+
+        <v-col
+          v-for="item in trustItems"
+          :key="item.title"
+          cols="6"
+          md="2"
+        >
+          <div class="text-center">
+
+            <v-icon
+              size="36"
+              color="primary"
+              :class="item.icon"
+            >
+              {{ item.icon }}
+            </v-icon>
+
+            <div
+              class="text-h6 font-weight-bold mt-2"
+            >
+              {{ item.title }}
+            </div>
+
+            <div
+              class="text-body-2 text-medium-emphasis"
+            >
+              {{ item.value }}
+            </div>
+
+          </div>
+        </v-col>
+
+      </v-row>
+
+    </v-container>
+  </v-sheet>
 </template>
 
-<script setup>
-defineProps({ items: Array })
-</script>
+<script setup lang="ts">
+import { TrustBarItems } from '~/data/trustBar';
+const trustItems= TrustBarItems
 
-<style scoped>
-.big { font-size: 24px; font-weight: bold; }
-.label { font-size: 13px; opacity: .7; }
-</style>
+
+</script>

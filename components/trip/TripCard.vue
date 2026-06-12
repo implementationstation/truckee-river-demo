@@ -18,7 +18,7 @@ defineProps<{
   >
 
     <!-- IMAGE -->
-    <NuxtLink :to="`/trips/${slug}`">
+    <NuxtLink :to="`${slug}`">
       <v-img
         :src="image"
         height="220"
@@ -46,7 +46,7 @@ defineProps<{
       <!-- META -->
       <div class="d-flex justify-space-between text-body-2 mb-2">
         <span>{{ duration }}</span>
-        <strong>{{ price }}</strong>
+        <strong class="ml-4">{{ price }}</strong>
       </div>
 
     </v-card-text>
@@ -54,7 +54,7 @@ defineProps<{
     <!-- CTA -->
     <v-card-actions>
       <v-btn
-        :to="`/trips/${slug}`"
+        :to="`${slug}`"
         color="primary"
         block
         rounded="xl"

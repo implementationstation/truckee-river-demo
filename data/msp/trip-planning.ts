@@ -29,11 +29,7 @@ const tripPlanning: TripPage = {
   },
 
   sections: [
-    {
-      id: 'choosing-river',
-      heading: 'What River is Right for your group?',
-      body: `When choosing your trip, consider the swimming and athletic ability, age, and adventurous nature of your group. For first timers or large groups, we recommend erring on the side of caution to ensure everyone has fun. Our guides will teach you proper safety techniques. We accommodate most group requests including special shuttle logistics, time changes, disability accommodations, VIP services, and more. Sorry, no pets.`
-    },
+    
     {
       id: 'how-to-reserve',
       heading: 'How To Make A Reservation',
@@ -42,30 +38,46 @@ const tripPlanning: TripPage = {
         {
           title: 'By Phone',
           description:
-            'Call 530.582.4900 during business hours (8:00 a.m. to 6:00 p.m. PST, March–October) to process your reservation over the phone.'
+            'Call 530.582.4900 during business hours (8:00 a.m. to 6:00 p.m. PST, March–October) to process your reservation over the phone.',
+            to: '',link: 'tel:5305824900',icon: 'mdi-phone'
         },
         {
           title: 'Online',
           description:
-            'Use our secure online booking system via "BOOK NOW" to reserve any single-day rafting trip.'
+            'Use our secure online booking system via "BOOK NOW" to reserve any single-day rafting trip.',
+            link: 'https://book.singenuity.com/338/activity/details/1452/rates',
+            icon: 'mdi-account', to: '',
         },
         {
           title: 'Via Email',
           description:
-            'Email info@raftirie.com. Payment is required to confirm all reservations. We can process orders online, over the phone, or by email.'
+            'Email info@raftirie.com. Payment is required to confirm all reservations. Email us to book this way.',
+            link: '', icon: 'mdi-email-arrow-right', to: '/contact',
         }
       ]
     },
+    
     {
-      id: 'reservation-info-needed',
-      heading: 'Information we will need from you',
+      id: 'packing-list',
+      heading: 'What to Bring',
+      body: 'There are a few important things to note. As a sidenote try to avoid cotton & heavy clothing items.',
       items: [
-        { title: 'Number of participants, their ages, and date/time of trip' },
-        { title: 'Phone number to reach you in Tahoe' },
-        { title: 'Current email address' },
-        { title: 'Credit card info (Visa, MC, AmEx, Discover, debit, or cash)' },
-        { title: 'All info is confidential' },
-        { title: 'Full payment required to confirm reservation' }
+        { title: 'Water shoes or Secured Sandals', description: 'Must stay on feet; no flip-flops or bare feet' },
+        { title: 'Swimsuit or Quick-Dry Clothing', 
+          description: 'Shorts/bathing suit, t-shirt (having shorts over bikini bottoms is most comfortable on the raft)' },
+        { title: 'Sunscreen' },
+        { title: 'Change of clothes', description: 'You can store this at the office/meeting location.' },
+        { title: 'Optional', description: 'Sunglasses with strap, baseball hat, extra sun layer, water (attachable bottle)' }
+      ]
+    },
+    
+    {
+      id: 'pricing-cancellations',
+      heading: 'Pricing and Cancellations',
+      items: [
+        { title: 'Half Day Truckee River Trip', description: 'Adults: $120, Youth (14 and under): $100', icon: 'mdi-cash-register' },
+        { title: 'Gratuities', description: 'Typically 15–18% for guides; included for large or corporate groups.', icon: 'mdi-heart' },
+        { title: 'Cancellations', description: 'No call/ no show receive no refund. Cancel with more than 48hours notice to receive a full refund. We will try reschedule your trip if notice is given within 48 hours before the booking. If no reschedule then 50% refund will be given.', icon: 'mdi-cancel'}
       ]
     },
     {
@@ -75,19 +87,6 @@ const tripPlanning: TripPage = {
         { title: 'Liability Forms', description: 'All participants must complete a waiver; minors require guardian signatures.' },
         { title: 'Check-In', description: 'Complete forms before arrival for faster check-in.' },
         { title: 'PDF Option', description: 'For large groups or technical issues, PDF waivers can be printed.' }
-      ]
-    },
-    {
-      id: 'what-to-wear',
-      heading: 'What to Wear and Bring',
-      body: `Bring a bathing suit, sunscreen, and secure shoes. Layers for warmth or sun protection are recommended. Towels or dry clothes are helpful. Safety gear and water are provided on the raft.`
-    },
-    {
-      id: 'pricing-cancellations',
-      heading: 'Pricing and Cancellations',
-      items: [
-        { title: 'Half Day Truckee River Trip', description: 'Adults: $120, Youth (14 and under): $100' },
-        { title: 'Gratuities', description: 'Typically 15–18% for guides; included for large or corporate groups.' }
       ]
     },
     {
@@ -102,31 +101,19 @@ const tripPlanning: TripPage = {
       ]
     },
     {
-      id: 'packing-list',
-      heading: 'What to Bring',
-      body: 'Closed-toe shoes are required. Bring sunscreen, change of clothes, and secure items. Avoid cotton clothing and heavy items.',
-      items: [
-        { title: 'Shoes', description: 'Must stay on feet; no flip-flops or bare feet' },
-        { title: 'Shorts/Bathing suit', description: 'T-shirt or cover-up recommended' },
-        { title: 'Sunscreen' },
-        { title: 'Change of clothes' },
-        { title: 'Optional', description: 'Sunglasses with strap, baseball hat, extra sun layer, water (attachable bottle)' }
-      ]
-    },
-    {
       id: 'rafting-photos',
       heading: 'Whitewater Rafting Photos',
-      body: `Photos of your adventure are available for purchase before or after most trips. Packages include 50–75 digital images. Start at $75; single photos $25. Bundling with a trip reservation gets 10% off. Available within 24–48 hours.`,
-      items: [
-        { title: 'Contact', description: 'Email or call 530.582.4900 if you have issues receiving your photos.' }
-      ]
+      body: `Photos of your adventure are available for purchase before or after most trips. Packages include 50–75 digital images. Start at $75; single photos $25. Bundling with a trip reservation gets 10% off. Available within 24–48 hours. Email or call 530.582.4900 if you have issues receiving your photos.`,
+     
     }
   ],
 
   importantNotes: [
-    'Information on reservations, pricing, and packing lists is essential before arrival.',
-    'Please ensure all forms are completed for a smoother check-in process.',
-    'Check for any traffic or road conditions if traveling to Truckee/Tahoe.'
+    'Trips operate rain or shine unless river or weather conditions are deemed unsafe by management.',
+    'River Flows & Rapid intensity may vary throughout the season.',
+    'Check for any traffic or road conditions if traveling from Truckee/Tahoe/beyond.',
+    'Guests are required to: Wear provided safety equipment & follow guide instructions at all times.',
+    'All guests receive a full safety orientation before launching. Our guides are trained in river safety, rescue procedures and trip management.'
   ]
 }
 

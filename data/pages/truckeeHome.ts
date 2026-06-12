@@ -13,12 +13,13 @@ export const truckeeHomePage = {
     secondaryAction: 'Read Trip Details',
   },
 
+
   sections: [
     {
-      label: 'The Whitewater Experience',
+      label: 'Boca-Floriston Gorge Rafting Trips',
       title: 'Half-Day Boca Run trip, twice a day.',
       intro:
-        'Nestled in the heart of the stunning Lake Tahoe area, our whitewater rafting trips on the Truckee River promise half-day adventures that are perfect for families and thrill-seekers alike.',
+        'Experience the most popular rafting section near Tahoe on a guided half-day adventure through fun Class II-III rapids, calm scenic stretches, and beautiful Sierra mountain views',
       cards: [
         { 
           title: 'Trip Overview', 

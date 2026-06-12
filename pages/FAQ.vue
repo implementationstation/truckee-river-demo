@@ -11,7 +11,7 @@
   ]"
 /> -->
 
-<ComparisonCards
+<!-- <ComparisonCards
   :items="[
     {
       title: 'Trip Information',
@@ -30,7 +30,7 @@
       cta: 'Book'
     }
   ]"
-/>
+/> -->
     <!-- <FAQ />
     <ItineraryTimeline />
     <TripHighlights />
@@ -39,7 +39,7 @@
     
 
 <!-- OLD FAQ HARDCODE -->
-    <!-- <h2 class="text-h3 mb-8">
+    <h2 class="text-h3 mb-8">
       Frequently Asked Questions
     </h2>
 
@@ -60,7 +60,7 @@
 
       </v-expansion-panel>
 
-    </v-expansion-panels> -->
+    </v-expansion-panels>
 
   </v-container>
 </div>

@@ -3,27 +3,29 @@
   <div><HeroHome/>
   <PageShell>
 
-    <ReasonBlock />
+      <!--
+  ========================
+  TRUST INDICATORS
+  ========================
+  -->
 
-    <!-- <SectionSplit
-  eyebrow="OUR STORY"
-  title="Built from a love of rivers."
+  <TrustBar />
+
+
+
+<SectionSplit
+  eyebrow="TRUCKEE RIVER RAFTING HALF DAY TOURS"
+  title="Boca to Floriston Gorge Run (4h)"
   :paragraphs="[
-    'What started as a passion for river travel grew into a mission to help more people experience the beauty of wild places.',
-    'For years we\'ve guided families, first-time rafters, and outdoor enthusiasts through scenic river corridors and unforgettable adventures.',
-    'Whether it\'s your first trip or your tenth, our goal remains the same: create a safe, memorable experience you\'ll want to do again.'
+    'Experience the most popular rafting section near Tahoe on a guided half-day adventure through fun Class II-III rapids, calm scenic stretches, and beautiful Sierra mountain views',
+    'This tour is perfect for first-timers, groups & families alike. ',
+    'You will arrive at our offices along the Truckee River, and from there we transport you, get you set up to hit the river, and take you back to the offices. This is about 4 hours in total.'
   ]"
-  image="/images/l-truckee-river-rafting-trip-view.webp"
-/> -->
-
-   <v-container>
-    <TestimonialGrid :items="testimonials"></TestimonialGrid>
-   </v-container>
-    
-
-
+  image="/images/l-guided-river-rafting-trips-tahoe.webp"
+/> 
+  
     <!--INFO CARD GRID HERE< -->
-    <SectionBlock
+    <!-- <SectionBlock
       v-for="section in page.sections"
       :key="section.title"
       :label="section.label"
@@ -31,14 +33,30 @@
       :intro="section.intro"
     >
       <InfoCardGrid :cards="section.cards" />
-    </SectionBlock>
+      <v-col cols="12" md="8">
+        
+        <v-img src="/images/l-exciting-truckee-river-rafting-experiences.webp" />
+      </v-col>
+    </SectionBlock> -->
+    <!--
+  ========================
+  WHY CHOOSE US
+  ========================
+    -->
+    <v-container>
+      <ReasonBlock />
+    </v-container>
 
-      <!--CALL TO ACTION< CUNTS-->
+    
 
-      <!-- <BaseCta variant="discover" /> -->
-            <BaseCta variant="book-trip" />
-                  <!-- <BaseCta variant="buy-photos" /> -->
+<!--TESTIMONIALS/REVIEWS-->
+   <v-container>
+    <TestimonialGrid :items="testimonials"></TestimonialGrid>
+   </v-container>
+    
   </PageShell>
+  <!--CALL TO ACTION< CUNTS-->
+  <CTA />
   </div>
 </template>
 
@@ -54,6 +72,11 @@ import HeroHome from '~/components/hero/HeroHome.vue';
 import WhyChooseUs from '~/components/about/WhyChooseUs.vue';
 import ReasonBlock from '~/components/shared/ReasonBlock.vue';
 import SectionSplit from '~/components/shared/SectionSplit.vue';
+import WhyGrid from '~/components/WhyGrid.vue';
+import TrustBar from '~/components/Snazzy/TrustBar.vue';
+import TripCard from '~/components/trip/TripCard.vue';
+import StickyBookingCTA from '~/components/Snazzy/StickyBookingCTA.vue';
+import CTA from '~/components/shared/CTA.vue';
 
 useSeoMeta({
   title: page.seo.title,

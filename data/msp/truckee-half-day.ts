@@ -12,6 +12,8 @@ export interface FeatureItem {
   title: string
   description?: string
   icon?: string
+  link?: string
+  to?: string
 }
 
 export interface ContentSection {

@@ -1,9 +1,9 @@
 <template>
   <section class="schedule-section">
-    <p class="eyebrow">Schedule</p>
-    <h2>Choose the run that fits your day.</h2>
+    <p class="eyebrow">WHITEWATER TRIP SCHEDULE</p>
+    <h2>Choose your preferred time</h2>
     <p class="intro">
-      Keep the options simple. Guests should understand the difference in ten seconds.
+     We offer a Morning Run & Afternoon Run down the Boca-Floriston Gorge route. This means one trip, served twice a day. The trip is geared towards first-timers & regular thrill seekers alike. Groups are encouraged.
     </p>
 
     <v-row class="cards">

@@ -1,7 +1,7 @@
 <template>
   <section class="included-section">
-    <p class="eyebrow">Included</p>
-    <h2>Everything guests need for the river.</h2>
+    <p class="eyebrow">WHATS INCLUDED</p>
+    <h2>We provide everything you need to handle the river, like a local.</h2>
 
     <v-row class="included-grid">
       <v-col

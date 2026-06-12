@@ -9,11 +9,11 @@
       :secondary-action="page.hero.secondaryAction"
     /> -->
 
-    <TripSnapshot :items="page.snapshot" />
-
-    <WhyGrid :items="whyChooseUs" />
-
-    <TripScheduleCards :trips="page.schedule" />
+    <!-- <TripSnapshot :items="page.snapshot" /> -->
+    <WhyGrid :items="quickFacts" />
+<TripScheduleCards :trips="page.schedule" />
+    <TripGalleryGrid />
+    
 
     <TripIncludedGrid :items="page.included" />
 
@@ -24,6 +24,8 @@
       :button-text="page.cta.buttonText"
     />
   </PageShell>
+
+  <CTA />
   </div>
 </template>
 
@@ -36,7 +38,9 @@ import TripScheduleCards from '~/components/trips/TripScheduleCards.vue';
 import TripIncludedGrid from '~/components/trips/TripIncludedGrid.vue';
 import TripBookingCTA from '~/components/trips/TripBookingCTA.vue';
 import WhyGrid from '~/components/WhyGrid.vue';
-import { whyChooseUs } from '~/data/why';
+import { quickFacts, whyChooseUs } from '~/data/why';
+import CTA from '~/components/shared/CTA.vue';
+import TripGalleryGrid from '~/components/trips/TripGalleryGrid.vue';
 
 
 

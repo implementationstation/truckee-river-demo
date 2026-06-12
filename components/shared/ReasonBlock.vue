@@ -24,7 +24,7 @@ const items = [
 </script>
 
 <template>
-  <Section
+  <section
     title="I.R.I.E River as your Guide"
     subtitle="Not all rafting trips are created equal"
   >
@@ -57,7 +57,7 @@ const items = [
         </VCard>
       </VCol>
     </VRow>
-  </Section>
+  </section>
 </template>
 
 <style scoped>
