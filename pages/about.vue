@@ -35,10 +35,12 @@ useSeoMeta({
         image="/images/l-truckee-river-rafting-trip-view.webp"
       />
     
-      <ValuesGrid /> 
-
+       
+      <TripsTripGalleryGrid />
+<ValuesGrid />
     <!-- <WhyChooseUs /> -->
-    <BookingCTA />
+    <!-- <BookingCTA /> -->
+     <Ddday27CTA />
   </PageShell>
   </div>
 </template>

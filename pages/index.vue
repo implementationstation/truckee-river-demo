@@ -1,6 +1,11 @@
 
 <template>
-  <div><HeroHome/>
+  <div>
+    
+    <HeroHome/>
+    <!-- <Ddday27Hero /><HeroHome/>
+     
+    <LandingFull />-->
   <PageShell>
 
       <!--
@@ -10,6 +15,11 @@
   -->
 
   <TrustBar />
+
+  
+  <Ddday27QuickFacts />
+  <Ddday27TripOverview />
+  
 
 
 
@@ -56,7 +66,7 @@
     
   </PageShell>
   <!--CALL TO ACTION< CUNTS-->
-  <CTA />
+  <Ddday27CTA />
   </div>
 </template>
 
@@ -77,6 +87,8 @@ import TrustBar from '~/components/Snazzy/TrustBar.vue';
 import TripCard from '~/components/trip/TripCard.vue';
 import StickyBookingCTA from '~/components/Snazzy/StickyBookingCTA.vue';
 import CTA from '~/components/shared/CTA.vue';
+import Landing1 from '~/components/ddday-27/hero/landing-1.vue';
+import LandingFull from '~/components/ddday-27/landing-full.vue';
 
 useSeoMeta({
   title: page.seo.title,

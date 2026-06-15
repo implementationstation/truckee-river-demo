@@ -349,7 +349,8 @@ useHead({
     <!-- =========================
     CTA SECTION
     ========================== -->
-    <v-sheet class="cta-section py-16">
+    <ddday27-c-t-a />
+    <!-- <v-sheet class="cta-section py-16">
       <v-container>
         <v-row justify="center">
           <v-col
@@ -399,7 +400,7 @@ useHead({
           </v-col>
         </v-row>
       </v-container>
-    </v-sheet>
+    </v-sheet> -->
   </div>
 </template>
 

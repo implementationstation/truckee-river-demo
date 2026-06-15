@@ -235,7 +235,7 @@ useHead({
   position: relative;
 /*CHANGED */
   background:
-    url('/images/l-guides-on-truckee-river-rafting-preparing-food.webp');
+    url('/images/l-california-whitewater-rafting.webp');
 
   background-size: cover;
   background-position: center;
@@ -251,7 +251,7 @@ useHead({
     linear-gradient(
       135deg,
       rgba(9, 16, 24, 0.88),
-      rgba(17, 37, 54, 0.72)
+      rgba(17, 37, 54, 0.62)
     );
 }
 
