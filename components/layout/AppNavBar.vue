@@ -28,9 +28,13 @@ const drawer = ref(false)
   <v-app-bar elevation="1" color="white" height="72">
     
     <!-- LOGO -->
-    <v-app-bar-title class="font-weight-bold">
-      Rafting Co.
-    </v-app-bar-title>
+      <v-img
+        class="mx-2"
+        src="/public/IRIE_web_logo.gif"
+        max-height="120"
+        max-width="120"
+        contain
+      ></v-img>
 
     <v-spacer />
 

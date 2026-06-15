@@ -6,7 +6,7 @@
       <p>{{ text }}</p>
     </div>
 
-    <v-btn size="large" rounded="xl">
+    <v-btn :href="href" size="large" rounded="xl">
       {{ buttonText }}
     </v-btn>
   </section>
@@ -18,6 +18,7 @@ defineProps<{
   title: string
   text: string
   buttonText: string
+  href: string
 }>()
 </script>
 

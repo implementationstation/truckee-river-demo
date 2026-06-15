@@ -33,7 +33,7 @@
 
 <script setup lang="ts">
 //Import the Page Object for ABOUT page
-import { truckeeHomePage as page } from '../../data/pages/truckeeHome'
+import { truckeeHomePage as page } from '~/data/pages/truckeeHome'
 
 useSeoMeta({
   title: page.seo.title,

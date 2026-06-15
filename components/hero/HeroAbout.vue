@@ -41,40 +41,7 @@ useHead({
               Sharing the Truckee River with visitors for generations.
             </p>
 
-            <!-- <div class="d-flex flex-wrap ga-3 mb-10">
-              <v-chip
-                color="white"
-                variant="flat"
-                class="font-weight-medium"
-              >
-                Reservation Info
-              </v-chip>
-
-              <v-chip
-                color="white"
-                variant="flat"
-                class="font-weight-medium"
-              >
-                Packing Lists
-              </v-chip>
-
-              <v-chip
-                color="white"
-                variant="flat"
-                class="font-weight-medium"
-              >
-                Pricing & Policies
-              </v-chip>
-
-              <v-chip
-                color="white"
-                variant="flat"
-                class="font-weight-medium"
-              >
-                Trip Photos
-              </v-chip>
-            </div> -->
-
+        
             <div class="d-flex flex-wrap ga-4">
               <v-btn
                 size="x-large"
@@ -107,116 +74,12 @@ useHead({
           </v-col>
         </v-row>
       </v-container>
-      <!-- =========================
-    FLOATING META CARDS
-    ========================== -->
-    <v-container class="meta-wrapper">
-      <v-row>
-        <v-col cols="6" md="3">
-          <v-card
-            rounded="xl"
-            elevation="6"
-            class="meta-card"
-          >
-            <v-card-text class="pa-6">
-              <v-icon
-                size="34"
-                color="primary"
-                class="mb-4"
-              >
-                mdi-weather-sunny
-              </v-icon>
-
-              <div class="text-caption text-medium-emphasis mb-1">
-                Season
-              </div>
-
-              <div class="text-h6 font-weight-bold">
-                summer
-              </div>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col cols="6" md="3">
-          <v-card
-            rounded="xl"
-            elevation="6"
-            class="meta-card"
-          >
-            <v-card-text class="pa-6">
-              <v-icon
-                size="34"
-                color="primary"
-                class="mb-4"
-              >
-                mdi-account-child
-              </v-icon>
-
-              <div class="text-caption text-medium-emphasis mb-1">
-                Minimum Age
-              </div>
-
-              <div class="text-h6 font-weight-bold">
-                5+
-              </div>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col cols="6" md="3">
-          <v-card
-            rounded="xl"
-            elevation="6"
-            class="meta-card"
-          >
-            <v-card-text class="pa-6">
-              <v-icon
-                size="34"
-                color="primary"
-                class="mb-4"
-              >
-                mdi-map-marker
-              </v-icon>
-
-              <div class="text-caption text-medium-emphasis mb-1">
-                Location
-              </div>
-
-              <div class="text-h6 font-weight-bold">
-                Tahoe / Truckee
-              </div>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col cols="6" md="3">
-          <v-card
-            rounded="xl"
-            elevation="6"
-            class="meta-card"
-          >
-            <v-card-text class="pa-6">
-              <v-icon
-                size="34"
-                color="primary"
-                class="mb-4"
-              >
-                mdi-lifebuoy
-              </v-icon>
-
-              <div class="text-caption text-medium-emphasis mb-1">
-                Support
-              </div>
-
-              <div class="text-h6 font-weight-bold">
-                530.582.4900
-              </div>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
+      <!-- 
+      =========================
+      UNLABELLED LABEL ....puta
+      ========================== 
+      -->
+    
     </v-sheet>
 </template>
 

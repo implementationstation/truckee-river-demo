@@ -22,6 +22,7 @@
       :title="page.cta.title"
       :text="page.cta.text"
       :button-text="page.cta.buttonText"
+      :href="page.cta.href"
     />
   </PageShell>
 

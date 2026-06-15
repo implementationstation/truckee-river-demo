@@ -18,6 +18,8 @@ useSeoMeta({
 
 <template>
   <div>
+    <!--
+    -->
     <HeroAbout />
      
   <PageShell>

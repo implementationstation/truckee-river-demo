@@ -119,5 +119,6 @@ export const tripsPage = {
     title: 'Book the Boca Run.',
     text: 'Keep the path simple: choose a time, confirm your group, and get ready for the river.',
     buttonText: 'Start Booking',
+    href: 'https://book.singenuity.com/338/'
   },
 }
