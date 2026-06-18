@@ -16,6 +16,12 @@
 
   <TrustBar />
     <Ddday27TripOverview />
+    <v-container>
+      <ReasonBlock />
+    </v-container>
+    <v-col cols="12" class="pa-3">
+      <BasicCarouselGalleryHome />
+      </v-col>
 <!-- <SectionSplit
   eyebrow="HALF DAY RIVER RAFTING"
   title="Boca to Floriston Gorge Run (4h)"
@@ -54,9 +60,7 @@
   WHY CHOOSE US
   ========================
     -->
-    <v-container>
-      <ReasonBlock />
-    </v-container>
+    
 
     
 
@@ -90,6 +94,7 @@ import StickyBookingCTA from '~/components/Snazzy/StickyBookingCTA.vue';
 import CTA from '~/components/shared/CTA.vue';
 import Landing1 from '~/components/ddday-27/hero/landing-1.vue';
 import LandingFull from '~/components/ddday-27/landing-full.vue';
+import BasicCarouselGalleryHome from '~/components/ddday-27/BasicCarouselGalleryHome.vue';
 
 useSeoMeta({
   title: page.seo.title,

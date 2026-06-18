@@ -12,7 +12,10 @@
     <!-- <TripSnapshot :items="page.snapshot" /> -->
     <WhyGrid :items="quickFacts" />
 <TripScheduleCards :trips="page.schedule" />
-    <TripGalleryGrid />
+    <!-- 
+    GALLERY PART OF THE TRIP PAGE
+    <TripGalleryGrid /> -->
+    <BasicCarouselGallery />
     
     <PricingInfoPlanning />
     <!-- <TripIncludedGrid :items="page.included" /> -->
@@ -43,6 +46,7 @@ import { quickFacts, whyChooseUs } from '~/data/why';
 import CTA from '~/components/shared/CTA.vue';
 import TripGalleryGrid from '~/components/trips/TripGalleryGrid.vue';
 import PricingInfoPlanning from '~/components/ddday-27/PricingInfoPlanning.vue';
+import BasicCarouselGallery from '~/components/ddday-27/BasicCarouselGallery.vue';
 
 
 

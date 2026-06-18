@@ -32,7 +32,7 @@ useSeoMeta({
           'For years we\'ve guided families, first-time rafters, and outdoor enthusiasts through scenic river corridors and unforgettable adventures.',
           'Whether it\'s your first trip or your tenth, our goal remains the same: create a safe, memorable experience you\'ll want to do again.'
         ]"
-        image="/images/l-truckee-river-rafting-trip-view.webp"
+        image="/images/compressed-irie/family-friendly-rafting-near-boca.webp"
       />
     
        

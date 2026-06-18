@@ -9,10 +9,10 @@ const lightbox = ref(false)
 const activeImage = ref(0)
 
 const images = [
-  '/images/l-truckee-river-rafting-trip-view.webp',
-  '/images/processed/guided-river-tour-near-boca.webp',
-  '/images/processed/truckee-river-half-day-scenic-group-rafting.webp',
-  '/images/l-family-river-rafting-experiences-on-truckee-river.webp'
+  '/images/compressed-irie/guided-family-rafting-trip-california.webp',
+  '/images/compressed-irie/fun-for-the-family-whitewater-rafting-truckee.webp',
+  '/images/compressed-irie/whitewater-rafting-boca-guided-tour.webp',
+  '/images/compressed-irie/rafting-adventure-for-groups-truckee.webp',
    
 ]
 </script>
@@ -21,7 +21,7 @@ const images = [
 <v-row>
     <!-- IMAGE GALLERY GRID -->
   <v-col cols="12">
-    <v-row no-gutters>
+    <v-row>
       <v-col
         v-for="(img, i) in images"
         :key="i"
@@ -31,6 +31,7 @@ const images = [
   :src="img"
   height="330"
   cover
+  rounded="xl"
   class="gallery-thumb cursor-pointer"
   @click="lightbox = true; activeImage = i + 1"
 >
@@ -54,7 +55,7 @@ const images = [
       style="position:absolute; z-index:10;"
       @click="lightbox = false"
     >
-      <v-icon color="white">mdi-close</v-icon>
+      <v-icon color="black">mdi-close</v-icon>
     </v-btn>
 
     <!-- IMAGE -->
@@ -70,7 +71,7 @@ const images = [
       style="position:absolute; left:20px; top:50%"
       @click="activeImage = (activeImage - 1 + images.length) % images.length"
     >
-      <v-icon color="white">mdi-chevron-left</v-icon>
+      <v-icon color="black">mdi-chevron-left</v-icon>
     </v-btn>
 
     <v-btn
@@ -78,7 +79,7 @@ const images = [
       style="position:absolute; right:20px; top:50%"
       @click="activeImage = (activeImage + 1) % images.length"
     >
-      <v-icon color="white">mdi-chevron-right</v-icon>
+      <v-icon color="black">mdi-chevron-right</v-icon>
     </v-btn>
 
   </v-card>
