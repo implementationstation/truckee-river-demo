@@ -14,8 +14,8 @@
 <TripScheduleCards :trips="page.schedule" />
     <TripGalleryGrid />
     
-
-    <TripIncludedGrid :items="page.included" />
+    <PricingInfoPlanning />
+    <!-- <TripIncludedGrid :items="page.included" /> -->
 
     <TripBookingCTA
       :eyebrow="page.cta.eyebrow"
@@ -42,6 +42,7 @@ import WhyGrid from '~/components/WhyGrid.vue';
 import { quickFacts, whyChooseUs } from '~/data/why';
 import CTA from '~/components/shared/CTA.vue';
 import TripGalleryGrid from '~/components/trips/TripGalleryGrid.vue';
+import PricingInfoPlanning from '~/components/ddday-27/PricingInfoPlanning.vue';
 
 
 

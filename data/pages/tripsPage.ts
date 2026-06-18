@@ -128,8 +128,8 @@ export const tripsPage = {
   cta: {
     eyebrow: 'Ready?',
     title: 'Book the Boca Run.',
-    text: 'Keep the path simple: choose a time, confirm your group, and get ready for the river.',
-    buttonText: 'Start Booking',
+    text: 'Keep the path simple: choose a time, confirm your group, and get ready for the river: We handle the rest.',
+    buttonText: 'Reserve Your Raft',
     href: 'https://book.singenuity.com/338/'
   },
 }

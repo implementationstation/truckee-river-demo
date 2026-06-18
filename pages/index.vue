@@ -15,14 +15,6 @@
   -->
 
   <TrustBar />
-
-  
-  <Ddday27QuickFacts />
-  <Ddday27TripOverview />
-  
-
-
-
 <SectionSplit
   eyebrow="TRUCKEE RIVER RAFTING HALF DAY TOURS"
   title="Boca to Floriston Gorge Run (4h)"
@@ -33,6 +25,14 @@
   ]"
   image="/images/l-guided-river-rafting-trips-tahoe.webp"
 /> 
+  <Ddday27TripOverview />
+  <Ddday27QuickFacts />
+  
+  
+
+
+
+
   
     <!--INFO CARD GRID HERE< -->
     <!-- <SectionBlock

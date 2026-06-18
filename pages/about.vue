@@ -23,7 +23,7 @@ useSeoMeta({
     <HeroAbout />
      
   <PageShell>
-    
+    <ValuesGrid />
       <SectionSplit
         eyebrow="OUR STORY"
         title="Built from a love of rivers."
@@ -37,7 +37,19 @@ useSeoMeta({
     
        
       <TripsTripGalleryGrid />
-<ValuesGrid />
+
+      <SectionSplit
+        reverse-on-desktop
+        eyebrow="WAYS WE CARE FOR THE ENVIRONMENT"
+        title="Environmental Stewardship"
+        :paragraphs="[
+          'The Truckee River is the head honcho to us. Having operated over 30 years along the Truckee and other Rivers, I.R.I.E Rafting takes environment care hand in hand with our operations.',
+          'We always employ a Leave-No-Trace principle and ensure all our guests are on board with our principles of keeping the environment clean, just because we love it and it is our duty to care.'
+
+        ]"
+        image="/images/processed/half-day-guided-whitewater-experience.webp" 
+      />
+
     <!-- <WhyChooseUs /> -->
     <!-- <BookingCTA /> -->
      
