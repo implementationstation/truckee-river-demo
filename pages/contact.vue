@@ -181,7 +181,7 @@
       </v-row>
 
     </v-container>
-
+    <Ddday27CTA />
   </div>
 </template>
 

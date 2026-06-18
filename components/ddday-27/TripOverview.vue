@@ -1,22 +1,24 @@
 <template>
 
     <section id="trip" class="section trip">
-<div>
-<p class="eyebrow">The signature run</p>
-<h2>Truckee River “Boca Run”</h2>
-<p>
-Start mellow, build confidence, then charge into the good stuff.
-This half-day guided trip rolls through beautiful canyon scenery before finishing
-with exciting Class III rapids.
-</p>
-</div>
+        <div>
+            <p class="eyebrow">The signature run</p>
+            <h2>Truckee River “Boca Run”</h2>
+            <p>
+            Start mellow, build confidence, then charge into the good stuff.
+            This half-day guided trip rolls through beautiful canyon scenery before finishing
+            with exciting Class III rapids.
+            </p>
+        </div>
 
-<div class="card">
-<h3>Daily Departures</h3>
-<p class="time">Morning + Afternoon</p>
-<p>Gear, shuttle, helmets, PFDs, paddles, and guide included.</p>
-</div>
-</section> 
+        <div class="card">
+            <h3>Daily Departures</h3>
+            <p class="time">Morning + Afternoon</p>
+            <p>09:30 | 13:30</p>
+            <p>Gear, shuttle, helmets, PFDs, paddles, and guide included.</p>
+            <p style="font-weight: bold;">Get yourself to the office and we take over the rest</p>
+        </div>
+    </section> 
 </template>
 
 

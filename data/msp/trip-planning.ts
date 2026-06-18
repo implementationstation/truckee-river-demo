@@ -17,6 +17,7 @@ const tripPlanning: TripPage = {
       'Information to help plan your next whitewater rafting adventure with I.R.I.E. Rafting Company'
   },
 
+
   meta: {
     difficulty: 'Varies by trip',
     duration: 'Varies',

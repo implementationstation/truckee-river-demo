@@ -28,14 +28,15 @@ useHead({
       <v-container class="position-relative z-2">
         <v-row align="center">
           <v-col cols="12" md="8" lg="7">
-            <div class="text-overline text-white mb-5 tracking">
+            <!-- EYEBROW -->
+            <div class="text-overline text-white mb-5 tracking eyebrow">
               Whitewater Rafting on Truckee River
             </div>
-
+            <!--TITLE-->
             <h1 class="hero-title mb-6">
-              Half Day Guided Whitewater Trips in Truckee
+              Local & Guided Whitewater Trips Based in Truckee
             </h1>
-
+            <!--SUBTITLE-->
             <p class="hero-subtitle mb-8">
               The time is now to experience our half day tour along the Truckee River, navigating through class II-III river rapids with the folks here at I.R.I.E. 
             </p>
@@ -80,16 +81,16 @@ useHead({
                 color="primary"
                 elevation="4"
                 rounded="xl"
-                href="tel:15305824900"
+                href=""
               >
                 <v-icon start>
-                  mdi-phone
+                  mdi-waves-arrow-right
                 </v-icon>
 
-                Call Now
+                Reserve Your Raft
               </v-btn>
 
-              <v-btn
+              <!-- <v-btn
                 size="x-large"
                 color="white"
                 variant="outlined"
@@ -101,7 +102,7 @@ useHead({
                 </v-icon>
 
                 Contact Us
-              </v-btn>
+              </v-btn> -->
             </div>
           </v-col>
         </v-row>

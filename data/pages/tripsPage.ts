@@ -84,6 +84,16 @@ export const tripsPage = {
     primaryAction: 'Book a Trip',
     secondaryAction: 'Prepare for Your Trip',
   },
+  //ADDED [ktag] june17
+  heroHome: {
+    eyebrow: "poes se eyebrow",
+    title: "",
+    subtitle: "",
+    primaryActionLabel: "",
+    primaryActionLink: "",
+     
+
+  },
 //SNAPSHOT 
   snapshot: [
     { label: 'Duration', value: '4 Hours Total' },

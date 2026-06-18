@@ -6,7 +6,9 @@
     <v-container>
 
       <v-row>
-
+        <v-col cols="12">
+          <h2>Why You Could You Trust Us</h2>
+        </v-col>
         <v-col
           v-for="item in trustItems"
           :key="item.title"

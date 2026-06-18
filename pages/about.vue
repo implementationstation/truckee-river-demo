@@ -40,7 +40,8 @@ useSeoMeta({
 <ValuesGrid />
     <!-- <WhyChooseUs /> -->
     <!-- <BookingCTA /> -->
-     <Ddday27CTA />
+     
   </PageShell>
+  <Ddday27CTA />
   </div>
 </template>

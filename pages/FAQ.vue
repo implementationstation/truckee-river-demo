@@ -63,6 +63,7 @@
     </v-expansion-panels>
 
   </v-container>
+  <Ddday27CTA />
 </div>
 </template>
 
