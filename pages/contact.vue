@@ -84,8 +84,9 @@
           <v-btn
   color="primary"
   size="large"
-  href="https://www.google.com/maps/dir/?api=1&destination=175+River+Road+Tahoe+City+CA"
+  href="https://www.google.com/maps/dir//IRIE+Rafting+Company+Inc,+7320+River+Rd,+Olympic+Valley,+CA+96146/@39.2369381,-120.2071612,17z/data=!4m16!1m7!3m6!1s0x809bdf86584f66e3:0x9da8e36911c47fb8!2sIRIE+Rafting+Company+Inc!8m2!3d39.2369381!4d-120.2071612!16s%2Fg%2F1vjdq9vm!4m7!1m0!1m5!1m1!1s0x809bdf86584f66e3:0x9da8e36911c47fb8!2m2!1d-120.2071735!2d39.2369299?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
   target="_blank"
+  rel="_noopener"
 >
   Get Directions
 </v-btn>
@@ -93,18 +94,12 @@
         </v-col>
 
         <!-- RIGHT: MAP -->
-        <v-col cols="12" md="7">
+        <v-col cols="12" md="6">
 
           <v-card rounded="xl" elevation="2" class="overflow-hidden position-relative">
 
   <!-- MAP -->
-  <iframe
-    src="https://www.google.com/maps?q=175+River+Road+Tahoe+City+CA&z=15&output=embed"
-    width="100%"
-    height="420"
-    style="border:0;"
-    loading="lazy"
-  />
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3090.2613689374634!2d-120.2071612!3d39.2369381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809bdf86584f66e3%3A0x9da8e36911c47fb8!2sIRIE%20Rafting%20Company%20Inc!5e0!3m2!1sen!2sus!4v1781823828969!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   <!-- OVERLAY CTA -->
   <div class="map-overlay">

@@ -17,6 +17,7 @@
             <p>09:30 | 13:30</p>
             <p>Gear, shuttle, helmets, PFDs, paddles, and guide included.</p>
             <p style="font-weight: bold;">Get yourself to the office and we take over the rest</p>
+            <v-btn href="https://book.singenuity.com/338/" class="primary btn" >Reserve Your Raft</v-btn>
         </div>
     </section> 
 </template>
@@ -28,6 +29,15 @@ font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
 color: #123;
 background: #f7efe1;
 }
+.heroLikeStyle {
+min-height: 92vh;
+padding: 28px clamp(20px, 5vw, 72px);
+color: white;
+background:
+linear-gradient(90deg, rgba(2, 33, 44, .92), rgba(2, 33, 44, .45)),
+url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80")
+center/cover;
+} 
 
 .hero {
 min-height: 92vh;

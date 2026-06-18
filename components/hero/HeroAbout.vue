@@ -98,7 +98,7 @@ useHead({
   position: relative;
 /* //CHANGED */
   background:
-    url('/images/l-lake-tahoe-river-rafting-guides.webp');
+    url('/images/compressed-irie/small-group-rafting-tour-truckee-river.webp');
 
   background-size: cover;
   background-position: center;

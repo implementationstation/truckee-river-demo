@@ -3,6 +3,11 @@
   <HeroFAQ/>
   
   <v-container class="py-16">
+    <v-col cols="12">
+      <h2 class="text-h3">
+      Frequently Asked Questions
+    </h2>
+    </v-col>
   <!-- <ItineraryTimeline
   :steps="[
     { time: '9:00 AM', title: 'Arrival', text: 'Meet guides' },
@@ -39,11 +44,10 @@
     
 
 <!-- OLD FAQ HARDCODE -->
-    <h2 class="text-h3 mb-8">
-      Frequently Asked Questions
-    </h2>
+    
 
-    <v-expansion-panels variant="inset">
+    <v-col cols="12" class="mt-3">
+      <v-expansion-panels variant="inset">
 
       <v-expansion-panel
         v-for="faq in faqs"
@@ -61,6 +65,7 @@
       </v-expansion-panel>
 
     </v-expansion-panels>
+    </v-col>
 
   </v-container>
   <Ddday27CTA />

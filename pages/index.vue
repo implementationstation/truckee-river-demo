@@ -15,18 +15,19 @@
   -->
 
   <TrustBar />
-<SectionSplit
-  eyebrow="TRUCKEE RIVER RAFTING HALF DAY TOURS"
+    <Ddday27TripOverview />
+<!-- <SectionSplit
+  eyebrow="HALF DAY RIVER RAFTING"
   title="Boca to Floriston Gorge Run (4h)"
   :paragraphs="[
     'Experience the most popular rafting section near Tahoe on a guided half-day adventure through fun Class II-III rapids, calm scenic stretches, and beautiful Sierra mountain views',
-    'This tour is perfect for first-timers, groups & families alike. ',
-    'You will arrive at our offices along the Truckee River, and from there we transport you, get you set up to hit the river, and take you back to the offices. This is about 4 hours in total.'
+    'This tour is perfect for first-timers, groups & families alike. Y',
+    
   ]"
   image="/images/l-guided-river-rafting-trips-tahoe.webp"
-/> 
-  <Ddday27TripOverview />
-  <Ddday27QuickFacts />
+/>  -->
+
+  <!-- <Ddday27QuickFacts /> -->
   
   
 

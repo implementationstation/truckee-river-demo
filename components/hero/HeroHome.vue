@@ -30,15 +30,15 @@ useHead({
           <v-col cols="12" md="8" lg="7">
             <!-- EYEBROW -->
             <div class="text-overline text-white mb-5 tracking eyebrow">
-              Whitewater Rafting on Truckee River
+              Guided Whitewater Experiences
             </div>
             <!--TITLE-->
             <h1 class="hero-title mb-6">
-              Local & Guided Whitewater Trips Based in Truckee
+              Boca-Floriston Gorge River Rafting
             </h1>
             <!--SUBTITLE-->
             <p class="hero-subtitle mb-8">
-              The time is now to experience our half day tour along the Truckee River, navigating through class II-III river rapids with the folks here at I.R.I.E. 
+              We can take you down the Truckee River twice a day, everyday. With over 30 years of local experience, we know how to have fun, safely. <br />Come see us. 
             </p>
 
             <!-- <div class="d-flex flex-wrap ga-3 mb-10">
@@ -236,7 +236,7 @@ useHead({
   position: relative;
 /*CHANGED */
   background:
-    url('/images/l-california-whitewater-rafting.webp');
+    url('/images/compressed-irie/guided-river-rafting-truckee-river.webp');
 
   background-size: cover;
   background-position: center;

@@ -1,7 +1,7 @@
 <template>
   <v-sheet
     color="surface"
-    class="py-6"
+    class="pb-6"
   >
     <v-container>
 

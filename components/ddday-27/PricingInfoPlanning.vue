@@ -20,7 +20,7 @@
         class="pa-3"
       >
         <div class="d-flex flex-column flex-md-row justify-space-between">
-          <div>
+          <div class="pa-3">
             <div class="text-overline mb-2 opacity-80">
               Half Day Trip Twice Per Day
             </div>

@@ -37,7 +37,7 @@ useHead({
             </div>
 
             <h1 class="hero-title mb-6">
-              Planning Your River Rafting | Truckee River
+              Planning Your River Rafting Experience | Truckee River
             </h1>
 
             <p class="hero-subtitle mb-8">
@@ -419,7 +419,7 @@ useHead({
   position: relative;
 
   background:
-    url('/images/processed/small-group-guided-rafters-enjoying-truckee-river.webp');
+    url('/images/compressed-irie/scenic-whitewater-rafting-near-tahoe.webp');
 
   background-size: cover;
   background-position: center;
