@@ -29,7 +29,7 @@ useHead({
       <v-container class="position-relative z-2">
         <v-row align="center">
           <v-col cols="12" md="8" lg="7">
-            <div class="text-overline text-white mb-5 tracking">
+            <div class="text-overline text-white mb-5 tracking eyebrow">
               ABOUT US
             </div>
 
@@ -113,8 +113,8 @@ useHead({
   background:
     linear-gradient(
       135deg,
-      rgba(9, 16, 24, 0.88),
-      rgba(17, 37, 54, 0.72)
+      rgba(9, 16, 24, 0.6),
+      rgba(17, 37, 54, 0.4)
     );
 }
 

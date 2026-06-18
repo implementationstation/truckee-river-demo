@@ -251,8 +251,8 @@ useHead({
   background:
     linear-gradient(
       135deg,
-      rgba(9, 16, 24, 0.88),
-      rgba(17, 37, 54, 0.62)
+      rgba(9, 16, 24, 0.5),
+      rgba(17, 37, 54, 0.4)
     );
 }
 

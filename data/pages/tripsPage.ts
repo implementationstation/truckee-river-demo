@@ -102,16 +102,17 @@ export const tripsPage = {
     { label: 'Youth', value: '$100' },
   ],
 
+  //HOME -- TRIPSCHEDULE [ktag]
   schedule: [
     {
       title: 'Morning Boca Run',
-      time: 'Departs around 9:00 AM',
+      time: 'Departs around 9:30 AM',
       text: 'Best for families, cooler weather, and getting your adventure done early.',
     },
     {
       title: 'Afternoon Boca Run',
       time: 'Departs around 1:30 PM',
-      text: 'Best for relaxed mornings, warmer sun, and visitors coming from Tahoe or Truckee.',
+      text: 'Best for relaxed mornings, warmer sun, and visitors coming from further away.',
     },
   ],
 

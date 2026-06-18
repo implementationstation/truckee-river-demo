@@ -1,10 +1,10 @@
 <template>
     <section id="book" class="booking">
 <p class="eyebrow">Ready to get wet?</p>
-<h2>Choose your launch. We’ll bring the river.</h2>
+<h2>Choose your launch day. We’ll show you the Truckee River.</h2>
 <p>Adult trips from $120 • Youth from $100</p>
 <a class="btn primary" href="https://book.singenuity.com/338/activity/details/1452/rates" target="_blank" rel="noopener">
-Book Your Trip
+Reserve Your Raft
 </a>
 </section>
 </template>

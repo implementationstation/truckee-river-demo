@@ -7,11 +7,13 @@ defineProps<{
 </script>
 
 <template>
-  <Section
+  <section
     title="Why Choose Us"
     subtitle="Not all rafting trips are created equal"
   >
     <v-row>
+      <!-- 
+      <h1>hi</h1> -->
       <v-col
         v-for="item in items"
         :key="item.title"
@@ -40,7 +42,7 @@ defineProps<{
         </v-card>
       </v-col>
     </v-row>
-  </Section>
+  </section>
 </template>
 
 <style scoped>

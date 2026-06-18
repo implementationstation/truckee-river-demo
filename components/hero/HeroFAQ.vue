@@ -28,7 +28,7 @@ useHead({
       <v-container class="position-relative z-2">
         <v-row align="center">
           <v-col cols="12" md="8" lg="7">
-            <div class="text-overline text-white mb-5 tracking">
+            <div class="text-overline text-white mb-5 tracking eyebrow">
               IRIE RAFTING COMPANY
             </div>
 
@@ -80,13 +80,14 @@ useHead({
                 color="primary"
                 elevation="4"
                 rounded="xl"
-                href="tel:15305824900"
+                href="https://book.singenuity.com/338/activity/details/1452/rates"
+                
               >
                 <v-icon start>
-                  mdi-phone
+                  mdi-waves-arrow-right
                 </v-icon>
 
-                Call Now
+                Book the Boca Trip
               </v-btn>
 
               <v-btn
@@ -94,13 +95,13 @@ useHead({
                 color="white"
                 variant="outlined"
                 rounded="xl"
-                href="mailto:info@raftirie.com"
+                to="/contact"
               >
                 <v-icon start>
-                  mdi-email-outline
+                  mdi-phone
                 </v-icon>
 
-                Contact Us
+                Call Us Now
               </v-btn>
             </div>
           </v-col>
@@ -139,8 +140,8 @@ useHead({
   background:
     linear-gradient(
       135deg,
-      rgba(9, 16, 24, 0.88),
-      rgba(17, 37, 54, 0.72)
+      rgba(9, 16, 24, 0.6),
+      rgba(17, 37, 54, 0.4)
     );
 }
 
