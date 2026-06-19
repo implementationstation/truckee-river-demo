@@ -269,12 +269,12 @@ const raftingTrip = {
 
   pricing: [
     {
-      label: 'Adult Ticket',
+      label: 'Adult Ticket (14+)',
       value: '$120',
       icon: 'mdi-account',
     },
     {
-      label: 'Youth Ticket',
+      label: 'Youth Ticket (5 - 14 years)',
       value: '$100',
       icon: 'mdi-account-child',
     },
