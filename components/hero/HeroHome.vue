@@ -81,7 +81,7 @@ useHead({
                 color="primary"
                 elevation="4"
                 rounded="xl"
-                href=""
+                href="https://book.singenuity.com/338/activity/details/1452/rates"
               >
                 <v-icon start>
                   mdi-waves-arrow-right
