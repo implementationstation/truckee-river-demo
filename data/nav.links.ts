@@ -16,7 +16,30 @@ export const navLinks: NavLink[] = [
     title: 'The Rafting Trip',
     to: '/trips'
   },
+   {
+    title: 'Preparation',
+    to: '/trip-planning'
+  },
+  {
+    title: 'About',
+    to: '/about'
+  },
+  {
+    title:'FAQs',
+    to: '/faq'
+  },
+  {
+    title: 'Contact',
+    to: '/contact'
+  },
+  ]
+  //BELOW ARE UNUSED LINKS AS WELL AS DROPDOWN FORMAT [ktag]
   // {
+  //   title: 'Book',
+  //   to: '/trips',
+  //   cta: true
+  // },
+   // {
   //   title: 'Whitewater Trips',
   //   children: [
   //     //{ title: 'All Trips', to: '/trips' },
@@ -35,25 +58,4 @@ export const navLinks: NavLink[] = [
   //     { title: 'og:Rafting Photos', to: '/trip-planning'}
   //   ]
   // },
-  {
-    title: 'Preparation',
-    to: '/trip-planning'
-  },
-  {
-    title: 'About',
-    to: '/about'
-  },
-  {
-    title:'FAQs',
-    to: '/faq'
-  },
-  {
-    title: 'Contact',
-    to: '/contact'
-  },
-  // {
-  //   title: 'Book',
-  //   to: '/trips',
-  //   cta: true
-  // }
-]
+
