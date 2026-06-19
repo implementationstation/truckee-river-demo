@@ -51,9 +51,9 @@ export const navLinks: NavLink[] = [
     title: 'Contact',
     to: '/contact'
   },
-  {
-    title: 'Book',
-    to: '/trips',
-    cta: true
-  }
+  // {
+  //   title: 'Book',
+  //   to: '/trips',
+  //   cta: true
+  // }
 ]

@@ -22,7 +22,7 @@ export const quickFacts: WhyItem[] = [
   },
   {
     title: "Rapid Difficulty",
-    description: "Beginner friendly - Class II-II rapids",
+    description: "Beginner friendly - Class II to III rapids. Fun trip overall, for all.",
     icon: "mdi-waves-arrow-right",
   }
 ]

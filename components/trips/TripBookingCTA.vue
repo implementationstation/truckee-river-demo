@@ -1,5 +1,5 @@
 <template>
-  <section class="booking-cta">
+  <section class="booking-cta konrads-coloration">
     <div>
       <p class="eyebrow">{{ eyebrow }}</p>
       <h2>{{ title }}</h2>
@@ -23,6 +23,13 @@ defineProps<{
 </script>
 
 <style scoped>
+/* HAHAHAHA */
+.konrads-coloration {
+  background-color: #ff6f61;
+}
+
+
+
 .booking-cta {
   margin-top: 104px;
   padding: 40px;

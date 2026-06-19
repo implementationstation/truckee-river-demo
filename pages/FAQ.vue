@@ -96,21 +96,11 @@ const faqs = [
   },
 
   {
-    question: 'What should I bring?',
-    answer: 'Bring sunscreen, water shoes, and quick-dry clothing.'
-  },
-
-  {
     question: 'Are trips family friendly?',
     answer: 'Yes, we offer family-friendly rafting adventures.'
   },
     //General Info
-  {
-    question: 
-        'What do I actually need to bring with?',
-    answer: 
-        'For many of our shorter trips, all you will need is appropriate footwear, sunscreen, your bathing suit and possibly a long sleeve non-cotton shirt for sun protection and/or warmth.'
-  },
+
   {
     question: 
         'Can I bring some other things too?',
@@ -119,7 +109,7 @@ const faqs = [
   },
   {
     question: 
-        'Peak Summer Essential Pack List',
+        'Whats essential for summer rafting?t',
     answer: 
         ' We highly recommend that you bring waterproof sunscreen with a high SPF, or a non-cotton sun shirt. You also can bring sunglasses but they should have some sort of tether or strap to keep them on your body should you go in the river. You can bring a baseball cap and wear it under your helmet if you would like the added shade. We have sunscreen and sunglass retaining straps for sale in our office if you forget.'
   },

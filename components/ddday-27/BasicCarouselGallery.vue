@@ -1,6 +1,6 @@
 
 <!-- THESE ARE HARDCODED FOR THE HOME PAGE I THINK -->
-<template><v-sheet class="overflow-hidden" rounded="xl">
+<template><v-sheet class="overflow-hidden my-3" rounded="xl">
   <v-carousel hide-delimiters>
     <v-carousel-item
       v-for="(item,i) in items"
