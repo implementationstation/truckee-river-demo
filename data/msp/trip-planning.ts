@@ -63,24 +63,45 @@ const tripPlanning: TripPage = {
       heading: 'What to Bring',
       body: 'There are a few important things to note. As a sidenote try to avoid cotton & heavy clothing items.',
       items: [
-        { title: 'Water shoes or Secured Sandals', description: 'Must stay on feet; no flip-flops or bare feet' },
+        { title: 'Water shoes or Secured Sandals', 
+          description: 'Must stay on feet; no flip-flops or bare feet',
+          icon: 'mdi-lock-check-outline', 
+        },
         { title: 'Swimsuit or Quick-Dry Clothing', 
-          description: 'Shorts/bathing suit, t-shirt (having shorts over bikini bottoms is most comfortable on the raft)' },
-        { title: 'Sunscreen' },
-        { title: 'Change of clothes', description: 'You can store this at the office/meeting location.' },
-        { title: 'Optional', description: 'Sunglasses with strap, baseball hat, extra sun layer, water (attachable bottle)' }
+          description: 'Shorts/bathing suit, t-shirt (having shorts over bikini bottoms is most comfortable on the raft)', 
+          icon: 'mdi-swim',
+        },
+
+        { title: 'Sunscreen',
+          description: 'Preferrably try bring a bio-degradable, waterfproof and high spf solution. ',
+          icon: 'mdi-shield-sun',
+         },
+        { title: 'Change of clothes', 
+          description: 'You can store this at the office/meeting location. Definitely great to have when you return.', 
+          icon: 'mdi-tshirt-crew',
+        },
+        { title: 'Optional', 
+          description: 'Sunglasses with strap, baseball hat, extra sun layer, water (attachable bottle)',
+          icon: 'mdi-emoticon-happy',
+        }
       ]
+    },
+    {
+      id: 'rafting-photos',
+      heading: 'Whitewater Rafting Photos',
+      body: `Photos of your adventure are available for purchase before or after most trips. Packages include 50–75 digital images. Start at $75; single photos $25. Bundling with a trip reservation gets 10% off. Available within 24–48 hours. Email or call 530.582.4900 if you have issues receiving your photos.`,
+     
     },
     
-    {
-      id: 'pricing-cancellations',
-      heading: 'Pricing and Cancellations',
-      items: [
-        { title: 'Half Day Truckee River Trip', description: 'Adults: $120, Youth (14 and under): $100', icon: 'mdi-cash-register' },
-        { title: 'Gratuities', description: 'Typically 15–18% for guides; included for large or corporate groups.', icon: 'mdi-heart' },
-        { title: 'Cancellations', description: 'No call/ no show receive no refund. Cancel with more than 48hours notice to receive a full refund. We will try reschedule your trip if notice is given within 48 hours before the booking. If no reschedule then 50% refund will be given.', icon: 'mdi-cancel'}
-      ]
-    },
+    // {
+    //   id: 'pricing-cancellations',
+    //   heading: 'Pricing and Cancellations',
+    //   items: [
+    //     { title: 'Half Day Truckee River Trip', description: 'Adults: $120, Youth (14 and under): $100', icon: 'mdi-cash-register' },
+    //     { title: 'Gratuities', description: 'Typically 15–18% for guides; included for large or corporate groups.', icon: 'mdi-heart' },
+    //     { title: 'Cancellations', description: 'No call/ no show receive no refund. Cancel with more than 48hours notice to receive a full refund. We will try reschedule your trip if notice is given within 48 hours before the booking. If no reschedule then 50% refund will be given.', icon: 'mdi-cancel'}
+    //   ]
+    // },
     {
       id: 'guest-release',
       heading: 'Rafting Guest Release of Liability',
@@ -94,19 +115,29 @@ const tripPlanning: TripPage = {
       id: 'discounts',
       heading: 'Discounts for IRIE Rafting Trips',
       items: [
-        { title: 'Military', description: '10% discount if no other discounts apply' },
-        { title: 'Educational/Non-Profit', description: '15% off per person, minimum 10; 1 adult free for youth groups' },
-        { title: 'Returning Guests', description: 'Additional 5% off for return trips in same season' },
-        { title: 'Returning Group Leaders', description: 'Same discounts as adult groups + 1 free adult' },
-        { title: 'Large Group Discounts', description: 'Call 530.582.4900 for groups 15+' }
+        { title: 'Military', 
+          description: '10% discount if no other discounts apply',
+          icon: 'mdi-shield-home-outline'
+        },
+        { title: 'Educational/Non-Profit', 
+          description: '15% off per person, minimum 10; 1 adult free for youth groups',
+          icon: 'mdi-school'
+        },
+        { title: 'Returning Guests', 
+          description: 'Additional 5% off for return trips in same season',
+          icon: 'mdi-book-plus-multiple'
+        },
+        { title: 'Returning Group Leaders', 
+          description: 'Same discounts as adult groups + 1 free adult',
+          icon: 'mdi-star-plus'
+        },
+        { title: 'Large Group Discounts', 
+          description: 'Call 530.582.4900 for groups 15+',
+          icon: 'mdi-account-group'
+        }
       ]
     },
-    {
-      id: 'rafting-photos',
-      heading: 'Whitewater Rafting Photos',
-      body: `Photos of your adventure are available for purchase before or after most trips. Packages include 50–75 digital images. Start at $75; single photos $25. Bundling with a trip reservation gets 10% off. Available within 24–48 hours. Email or call 530.582.4900 if you have issues receiving your photos.`,
-     
-    }
+    
   ],
 
   importantNotes: [

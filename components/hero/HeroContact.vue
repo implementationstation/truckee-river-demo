@@ -80,28 +80,28 @@ useHead({
                 color="primary"
                 elevation="4"
                 rounded="xl"
+                href="https://book.singenuity.com/338/activity/details/1452/rates"
+              >
+                <v-icon start>
+                  mdi-waves-arrow-right
+                </v-icon>
+
+                Reserve Your Raft
+              </v-btn>
+
+              <v-btn
+                size="x-large"
+                color="white"
+                variant="outlined"
+                rounded="xl"
                 href="tel:15305824900"
               >
                 <v-icon start>
                   mdi-phone
                 </v-icon>
 
-                Call Now
+                Call Us Now
               </v-btn>
-
-              <!-- <v-btn
-                size="x-large"
-                color="white"
-                variant="outlined"
-                rounded="xl"
-                href="mailto:info@raftirie.com"
-              >
-                <v-icon start>
-                  mdi-email-outline
-                </v-icon>
-
-                Contact Us
-              </v-btn> -->
             </div>
           </v-col>
         </v-row>

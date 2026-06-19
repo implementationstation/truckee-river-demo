@@ -48,13 +48,13 @@ useHead({
                 color="primary"
                 elevation="4"
                 rounded="xl"
-                href="tel:15305824900"
+                href="https://book.singenuity.com/338/activity/details/1452/rates"
               >
                 <v-icon start>
-                  mdi-phone
+                  mdi-waves-arrow-right
                 </v-icon>
 
-                Call Now
+                Reserve Your Raft
               </v-btn>
 
               <v-btn
@@ -62,13 +62,13 @@ useHead({
                 color="white"
                 variant="outlined"
                 rounded="xl"
-                href="mailto:info@raftirie.com"
+                href="tel:15305824900"
               >
                 <v-icon start>
-                  mdi-email-outline
+                  mdi-phone
                 </v-icon>
 
-                Contact Us
+                Call Us Now
               </v-btn>
             </div>
           </v-col>

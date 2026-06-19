@@ -31,7 +31,7 @@
       src: '/images/compressed-irie/guided-family-rafting-trip-california.webp',
     },
     {
-      src: '/images/compressed-irie/small-group-guided-rafting-tour.webp',
+      src: '/images/compressed-irie/fun-for-the-family-whitewater-rafting-truckee.webp',
     },
   ]
 </script>

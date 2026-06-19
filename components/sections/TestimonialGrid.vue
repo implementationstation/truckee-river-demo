@@ -2,10 +2,10 @@
   <section class="testimonials">
     <p class="eyebrow">Guest Reviews</p>
 
-    <h2>Good days on the river, remembered well.</h2>
+    <h2>Great days on the river, remembered forever.</h2>
 
     <p class="intro">
-      A few words from guests who booked, showed up, and had a great time.
+      Hear what some of our recent rafters have to say about us and the experience they had.
     </p>
 
     <v-row class="cards">

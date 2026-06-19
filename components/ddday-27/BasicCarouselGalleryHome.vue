@@ -12,6 +12,9 @@
 </template>
 <script setup>
   const items = [
+    {
+      src: '/images/compressed-irie/befunky_2026-4-5_5-52-11.webp',
+    },
   {
       src: '/images/compressed-irie/whitewater-experience-near-lake-tahoe.webp',
     },
@@ -19,15 +22,13 @@
       src: '/images/compressed-irie/guided-family-rafting-trip-california.webp',
     },
     {
-      src: '/images/compressed-irie/small-group-guided-rafting-tour.webp',
+      src: '/images/compressed-irie/fun-for-the-family-whitewater-rafting-truckee.webp',
     },  
   
     {
       src: '/images/compressed-irie/experienced-rafting-guides-truckee-river.webp',
     },
-    {
-      src: '/images/compressed-irie/befunky_2026-4-5_5-52-11.webp',
-    },
+    
     {
       src: '/images/compressed-irie/guided-family-rafting-adventure.webp',
     },

@@ -87,7 +87,7 @@ useHead({
                   mdi-waves-arrow-right
                 </v-icon>
 
-                Book the Boca Trip
+                Reserve Your Raft
               </v-btn>
 
               <v-btn

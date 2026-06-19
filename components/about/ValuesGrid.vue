@@ -46,8 +46,9 @@ const values = [
       >
         <v-card
           rounded="xl"
-          variant="outlined"
           height="100%"
+          elevation="2"
+          
         >
           <v-card-title class="">
               <v-icon size="60" class="ml-1 me-2" color="primary">{{ value.icon }}</v-icon>

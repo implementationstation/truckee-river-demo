@@ -87,22 +87,22 @@ useHead({
                   mdi-waves-arrow-right
                 </v-icon>
 
-                Book the Boca Trip
+                Reserve Your Raft
               </v-btn>
 
-              <!-- <v-btn
+              <v-btn
                 size="x-large"
                 color="white"
                 variant="outlined"
                 rounded="xl"
-                to="/contact"
+                to="tel:15305824900"
               >
                 <v-icon start>
                   mdi-phone
                 </v-icon>
 
                 Call Us Now
-              </v-btn> -->
+              </v-btn>
             </div>
           </v-col>
         </v-row>

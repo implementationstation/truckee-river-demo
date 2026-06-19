@@ -32,7 +32,7 @@ useSeoMeta({
           'For years we\'ve guided families, first-time rafters, and outdoor enthusiasts through scenic river corridors and unforgettable adventures.',
           'Whether it\'s your first trip or your tenth, our goal remains the same: create a safe, memorable experience you\'ll want to do again.'
         ]"
-        image="/images/compressed-irie/family-friendly-rafting-near-boca.webp"
+        image="/images/compressed-irie/lake-tahoe-whitewater-rafting-trip.webp"
       />
     
        
@@ -43,11 +43,11 @@ useSeoMeta({
         eyebrow="WAYS WE CARE FOR THE ENVIRONMENT"
         title="Environmental Stewardship"
         :paragraphs="[
-          'The Truckee River is the head honcho to us. Having operated over 30 years along the Truckee and other Rivers, I.R.I.E Rafting takes environment care hand in hand with our operations.',
+          'Having operated over 30 years along the Truckee and other Rivers, I.R.I.E Rafting takes environment care hand in hand with our operations.',
           'We always employ a Leave-No-Trace principle and ensure all our guests are on board with our principles of keeping the environment clean, just because we love it and it is our duty to care.'
 
         ]"
-        image="/images/processed/half-day-guided-whitewater-experience.webp" 
+        image="/images/compressed-irie/sierra-nevada-river-rafting-adventure-trip.webp" 
       />
 
     <!-- <WhyChooseUs /> -->
