@@ -28,7 +28,7 @@ import { footerSections, footerMeta } from '~/data/footer.links'
           >
             {{ footerMeta.cta.title }}
           </v-btn> -->
-          <v-img src="/IRIE_Web_Logo.gif" max-height="120" max-width="120"></v-img>
+          <v-img src="/public/IRIE_Web_Logo.gif" max-height="120" max-width="120"></v-img>
 
           <!-- SOCIALS -->
           <div class="mt-4 d-flex ga-2">
