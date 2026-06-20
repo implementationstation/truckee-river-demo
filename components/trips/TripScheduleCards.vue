@@ -3,7 +3,7 @@
     <p class="eyebrow">WHITEWATER TRIP SCHEDULE</p>
     <h2>Choose your preferred time</h2>
     <p class="intro">
-     We offer a Morning Run & Afternoon Run down the Boca-Floriston Gorge route. This means one trip, served twice a day. The Boca Run is geared towards first-timers & regular thrill seekers alike. Groups are encouraged. The total time from takeoff (IRIE Offices) to landing (Back at the offices-done with rafting) is 3.5 - 4 hours.
+     We offer a morning and afternoon trip down the Boca run. This trip is perfect for first-timers as well as thrill-seekers. The round trip time for the trip is approximately 3 hours.
     </p>
 
     <v-row class="cards">

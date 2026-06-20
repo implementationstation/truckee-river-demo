@@ -29,7 +29,7 @@ useHead({
         <v-row align="center">
           <v-col cols="12" md="8" lg="7">
             <div class="text-overline text-white mb-5 tracking eyebrow">
-              HALF DAY RIVER RAFTING TOURS
+              HALF DAY WHITEWATER RAFTING
             </div>
 
             <h1 class="hero-title mb-6">
@@ -37,7 +37,7 @@ useHead({
             </h1>
 
             <p class="hero-subtitle mb-8">
-              We offer a half day river rafting guided group tour twice a day. This run, know as the 'Boca Run' is perfect for families, groups and beginners alike.
+              Offered twice daily. Know as the 'Boca Run', this tour is perfect for families, groups and beginners alike.
             </p>
 
             <!-- <div class="d-flex flex-wrap ga-3 mb-10">

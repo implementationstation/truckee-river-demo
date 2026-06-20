@@ -178,7 +178,7 @@
               class="rounded-lg mb-6"
             >
               <v-card-title>
-                Discounts & Incentives
+                Discounts Available
               </v-card-title>
 
               <v-divider />
@@ -281,17 +281,18 @@ const raftingTrip = {
   ],
 
   included: [
-    'Professional rafting guide',
-    'Helmet & life jacket',
-    'Transportation shuttle',
+    'Professional raft guide in each raft',
+    'Helmet, personal floatation device & paddle',
+    'Transportation provided from our parking area',
     'Safety orientation',
+    'Wetsuit & Paddling Jacket (only when applicable)'
   ],
 
   notes: [
-    'Arrive 30 minutes early',
+    'Arrive 5-10 minutes early',
     'Wear quick-dry clothing',
     'Secure footwear required',
-    'No valuables on raft',
+    'No valuables on raft (including jewelry)',
   ],
 
   discounts: [
@@ -306,20 +307,20 @@ const raftingTrip = {
   ],
 
   gratuities:
-    'Guide gratuities are appreciated and help support our rafting staff.',
+    'In this industry gratuities are a common way of showing appreciation for a job well done. While our staff is compensated for their hardwork, anything extra means a lot to them.',
 
   cancellation: [
     {
       title: '48+ Hour Cancellation',
-      description: 'Eligible for refund minus processing fees.',
+      description: 'Eligible for 100% refund minus processing fees.',
     },
     {
       title: 'Less Than 48 Hours',
-      description: 'Partial refund or rescheduling may apply.',
+      description: 'Eligible for 50% refund minus processing fees.',
     },
     {
       title: 'No Shows',
-      description: 'No refunds available.',
+      description: 'Not eligible for a refund.',
     },
   ],
 }

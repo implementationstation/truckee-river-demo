@@ -6,23 +6,23 @@ export interface WhyItem {
 
 export const quickFacts: WhyItem[] = [
   {
-    title: "Built for Fun",
-    description: "Exciting, Family-Friendly experience led by experienced guides.",
+    title: "Half Day Fun",
+    description: "Travel 7 miles down the Truckee river through the Floriston-Gorge, with an experienced raft guide.",
     icon: "mdi-star"
   },
   {
     title: "Trip Pricing",
-    description: "Adults: $120 | Youth: $100",
+    description: "Adults: $120 | Youth: $100 (5 - 14)",
     icon: "mdi-cash",
   },
   {
     title: "Trip Duration",
-    description: "4 hours with transport",
+    description: "2 Hours on the river. Approximately 3 hours with transportation & safety orientation",
     icon: "mdi-clock",
   },
   {
     title: "Rapid Difficulty",
-    description: "Beginner friendly - Class II to III rapids. Fun trip overall, for all.",
+    description: "Starts mellow and finishes with class II-III rapids. Fun and exciting for the whole family. Minimum age is 5.",
     icon: "mdi-waves-arrow-right",
   }
 ]

@@ -106,13 +106,13 @@ export const tripsPage = {
   schedule: [
     {
       title: 'Morning Boca Run',
-      time: 'Departs around 9:30 AM',
-      text: 'Best for families, cooler weather, and getting your adventure done early.',
+      time: 'Meets at 9:00 AM',
+      text: 'Best for cooler weather, wildlife and getting your adventure done early. Typically less busy than the afternoon run. The morning trip is a guide favourite.',
     },
     {
       title: 'Afternoon Boca Run',
-      time: 'Departs around 1:30 PM',
-      text: 'Best for relaxed mornings, warmer sun, and visitors coming from further away.',
+      time: 'Meets at 1:30 PM',
+      text: 'Best for relaxed mornings and hot summer sun. The afternoon is great for visitors coming from further away. Get to North Tahoe early, and not stress about traffic.',
     },
   ],
 
