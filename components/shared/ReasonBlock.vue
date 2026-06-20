@@ -17,7 +17,7 @@ const items = [
   },
   {
     title: "All-Inclusive Trips",
-    description: "Gear, transport, safety-orientation and guidance handled by us: I.R.I.E.",
+    description: "Gear, transportion, safety-orientation and guidance are handled by us.",
     icon: "mdi-package-variant"
   }
 ]

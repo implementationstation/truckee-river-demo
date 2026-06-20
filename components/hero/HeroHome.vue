@@ -34,11 +34,11 @@ useHead({
             </div>
             <!--TITLE-->
             <h1 class="hero-title mb-6">
-              Boca-Floriston Gorge River Rafting
+              Truckee River Whitewater Rafting Tours
             </h1>
             <!--SUBTITLE-->
             <p class="hero-subtitle mb-8">
-              We can take you down the Truckee River twice a day, everyday. With over 30 years of local experience, we know how to have fun, safely. <br />Come see us. 
+              We offer trips down the truckee river gorge twice daily. <br />With over 30 years of local experience we know how to have fun, and do it safely.  
             </p>
 
             <!-- <div class="d-flex flex-wrap ga-3 mb-10">

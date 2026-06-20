@@ -21,7 +21,7 @@ export const footerSections: FooterSection[] = [
     ]
   },
   {
-    title: 'I.R.I.E River Raft Co.',
+    title: 'I.R.I.E Rafting Company',
     links: [
       { title: 'About', to: '/about' },
       { title: 'Contact', to: '/contact' },
@@ -31,6 +31,7 @@ export const footerSections: FooterSection[] = [
     title: 'Resources',
     links: [
       { title: 'FAQs', to: '/faq' },
+      { title: 'Preparation', to: '/trip-planning'}
 
     ]
   }

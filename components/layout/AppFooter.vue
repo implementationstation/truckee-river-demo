@@ -51,7 +51,7 @@ import { footerSections, footerMeta } from '~/data/footer.links'
           cols="6"
           md="2"
         >
-          <div class="font-weight-medium mb-2">
+          <div class="font-weight-bold mb-2">
             {{ section.title }}
           </div>
 

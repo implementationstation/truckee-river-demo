@@ -8,7 +8,7 @@ export const TrustBarItems: TrustItem[] = [
 
   {
     icon: 'mdi-star-circle',
-    value: '4.9★',
+    value: '4.6★',
     title: 'Average Rating'
   },
 
@@ -28,18 +28,14 @@ export const TrustBarItems: TrustItem[] = [
   {
     icon: 'mdi-shield-check',
     value: 'Safety',
-    title: 'First Approach'
+    title: 'Top Priority'
   },
 
-  {
-    icon: 'mdi-account-group',
-    value: '10k+',
-    title: 'Guests Served'
-  },
+  // {
+  //   icon: 'mdi-account-group',
+  //   value: '50000k+',
+  //   title: 'Guests Served'
+  // },
 
-  {
-    icon: 'mdi-kayaking',
-    value: 'Truckee',
-    title: 'River Experts'
-  }
+
 ]
