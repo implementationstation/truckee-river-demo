@@ -21,13 +21,14 @@ import { footerSections, footerMeta } from '~/data/footer.links'
             {{ footerMeta.tagline }}
           </div>
 
-          <v-btn
+          <!-- <v-btn
             :to="footerMeta.cta.to"
             color="primary"
             class="text-none"
           >
             {{ footerMeta.cta.title }}
-          </v-btn>
+          </v-btn> -->
+          <v-img src="/IRIE_Web_Logo.gif" max-height="120" max-width="120"></v-img>
 
           <!-- SOCIALS -->
           <div class="mt-4 d-flex ga-2">
