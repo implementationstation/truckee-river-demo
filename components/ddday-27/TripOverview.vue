@@ -14,7 +14,7 @@
         <div class="card">
             <h3>Daily Departures</h3>
             <p class="time">Morning | Afternoon</p>
-            <p>9:30 AM | 1:30 PM</p>
+            <p>9:00 AM | 1:30 PM</p>
             <p>Gear, shuttle, helmets, PFDs, paddles, guide, water and good vibes included.</p>
             <p style="font-weight: bold;">Get yourself to the office and we'll take it from there</p>
             <v-btn href="https://book.singenuity.com/338/" class="primary btn" >Reserve Your Raft</v-btn>
