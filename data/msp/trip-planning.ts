@@ -39,13 +39,13 @@ const tripPlanning: TripPage = {
         {
           title: 'By Phone',
           description:
-            'Call 530.582.4900 during business hours (8:00 a.m. to 6:00 p.m. PST, March–October) to process your reservation over the phone.',
+            'Call 530.582.4900 during business hours (8:30 a.m. to 6:00 p.m. PST, March–October) to process your reservation over the phone and answer any questions you may have.',
             to: '',link: 'tel:5305824900',icon: 'mdi-phone'
         },
         {
           title: 'Online',
           description:
-            'Use our secure online booking system via "BOOK NOW" to reserve any single-day rafting trip.',
+            'Use our secure online booking system via "Reserve Your Raft" to schedule any rafting trip. You will receive a confirmation email with all the important information you need.',
             link: 'https://book.singenuity.com/338/activity/details/1452/rates',
             icon: 'mdi-account', to: '',
         },
@@ -61,14 +61,14 @@ const tripPlanning: TripPage = {
     {
       id: 'packing-list',
       heading: 'What to Bring',
-      body: 'There are a few important things to note. As a sidenote try to avoid cotton & heavy clothing items.',
+      body: '',
       items: [
-        { title: 'Water shoes or Secured Sandals', 
-          description: 'Must stay on feet; no flip-flops or bare feet',
+        { title: 'Shoes that will stay on your feet!', 
+          description: 'Sandals with a backstrap, water-shoes or old tennis shoes. No barefeet. We sell water shoes at the office in case you need.',
           icon: 'mdi-lock-check-outline', 
         },
         { title: 'Swimsuit or Quick-Dry Clothing', 
-          description: 'Shorts/bathing suit, t-shirt (having shorts over bikini bottoms is most comfortable on the raft)', 
+          description: 'Shorts/bathing suit, t-shirt (having shorts over bikini bottoms is most comfortable on the raft). Avoid wearing cotton, blue jeans and heavy clothing.', 
           icon: 'mdi-swim',
         },
 
@@ -81,7 +81,7 @@ const tripPlanning: TripPage = {
           icon: 'mdi-tshirt-crew',
         },
         { title: 'Optional', 
-          description: 'Sunglasses with strap, baseball hat, extra sun layer, water (attachable bottle)',
+          description: 'Sunglasses with strap, baseball hat, extra sun layer, water (attachable bottle). These items and more are available at our river store in the office.',
           icon: 'mdi-emoticon-happy',
         }
       ]
@@ -109,32 +109,6 @@ const tripPlanning: TripPage = {
         { title: 'Liability Forms', description: 'All participants must complete a waiver; minors require guardian signatures.' },
         { title: 'Check-In', description: 'Complete forms before arrival for faster check-in.' },
         { title: 'PDF Option', description: 'For large groups or technical issues, PDF waivers can be printed.' }
-      ]
-    },
-    {
-      id: 'discounts',
-      heading: 'Discounts for IRIE Rafting Trips',
-      items: [
-        { title: 'Military', 
-          description: '10% discount if no other discounts apply',
-          icon: 'mdi-shield-home-outline'
-        },
-        { title: 'Educational/Non-Profit', 
-          description: '15% off per person, minimum 10; 1 adult free for youth groups',
-          icon: 'mdi-school'
-        },
-        { title: 'Returning Guests', 
-          description: 'Additional 5% off for return trips in same season',
-          icon: 'mdi-book-plus-multiple'
-        },
-        { title: 'Returning Group Leaders', 
-          description: 'Same discounts as adult groups + 1 free adult',
-          icon: 'mdi-star-plus'
-        },
-        { title: 'Large Group Discounts', 
-          description: 'Call 530.582.4900 for groups 15+',
-          icon: 'mdi-account-group'
-        }
       ]
     },
     

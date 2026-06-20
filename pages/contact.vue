@@ -44,10 +44,10 @@
                 <v-icon color="primary">mdi-map-marker</v-icon>
               </template>
               <v-list-item-title>
-                I.R.I.E River Rafting
+                I.R.I.E River Rafting Company
               </v-list-item-title>
               <v-list-item-subtitle>
-                175 River Rd, Tahoe City, CA 96145
+                7320 River Rd, Olympic Valley, CA 96146
               </v-list-item-subtitle>
             </v-list-item>
 
@@ -56,8 +56,7 @@
                 <v-icon color="primary">mdi-phone</v-icon>
               </template>
               <v-list-item-title>
-                <a href="tel:15305831111">(530) 583-1111</a> 
-                <br/> <a href="tel:15305824900">(530) 582-4900</a>
+                <a href="tel:15305824900">(530) 582-4900</a>
               </v-list-item-title>
               <v-list-item-subtitle>
                 Call anytime

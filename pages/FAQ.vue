@@ -92,12 +92,12 @@ const faqs = [
 
   {
     question: 'Do I need rafting experience?',
-    answer: 'No experience is required for most beginner-friendly trips.'
+    answer: 'No experience is required for most beginner-friendly trips, including the half day Boca Run.'
   },
 
   {
     question: 'Are trips family friendly?',
-    answer: 'Yes, we offer family-friendly rafting adventures.'
+    answer: 'Yes, we offer family-friendly rafting adventures. The half day Boca Run is family-friendly.'
   },
     //General Info
 
@@ -105,11 +105,11 @@ const faqs = [
     question: 
         'Can I bring some other things too?',
     answer: 
-        'If you would like to bring other items, you are welcome to, but please be sure that your items can secure in the raft to help cut down on the chance of litter in our beautiful rivers.'
+        'If you would like to bring other items, you are welcome to leave them in the shuttle vehicle, where they will remain safe and dry for the duration of your rafting trip. If you are bringing personal water bottles on the river, please be sure they can be secured to the raft to help cut down on the chance of litter in our beautiful rivers.'
   },
   {
     question: 
-        'Whats essential for summer rafting?t',
+        'Whats essential for summer rafting?',
     answer: 
         ' We highly recommend that you bring waterproof sunscreen with a high SPF, or a non-cotton sun shirt. You also can bring sunglasses but they should have some sort of tether or strap to keep them on your body should you go in the river. You can bring a baseball cap and wear it under your helmet if you would like the added shade. We have sunscreen and sunglass retaining straps for sale in our office if you forget.'
   },
@@ -117,13 +117,13 @@ const faqs = [
     question: 
         'What happens to my stuff when I arrive on the day?',
     answer: 
-        'Most guests find it helpful to bring a small backpack or tote bag to carry personal items onto the shuttle vehicle.  This will allow you to manage personal items such as towels, change of clothes, sunscreen, snacks, wallets, etc. These items may be safely left on the shuttle vehicle while you are rafting.'
+        'Most guests find it helpful to bring a small backpack or tote bag to carry personal items onto the shuttle vehicle.  This will allow you to manage personal items such as towels, sunscreen, snacks, etc. These items may be safely left on the shuttle vehicle while you are rafting. Change of clothes & valuables should be left in your vehicle at our office.'
   },
   {
     question: 
         'Is it a good idea to bring my phone? I need my camera',
     answer: 
-        'We discourage bringing any type of phone or camera on the raft. Even if they are waterproof, they do not float. I you do have one on the trip, the use of the it must not interfere with your ability to listen to your guide and paddle the raft.  We will not be responsible for the safety of such items. Pictures will be taken of your raft at certain points on most rivers and are available for purchase through an outside provider.'
+        'We discourage bringing any type of phone or camera on the raft. Even if they are waterproof, they do not float. I you do have one on the trip, the use of the it must not interfere with your ability to listen to your guide and paddle the raft.  We will not be responsible for the safety of such items. Pictures will be taken of your raft at certain points on most rivers and are available for purchase after your trip, or during the reservation process.'
   },
   {
     question: 
@@ -139,7 +139,7 @@ const faqs = [
   },
   {
     question: 'What should I NOT bring with me for this trip?',
-    answer: 'Please do not bring pets, valuables such as jewelry, expensive sunglasses or cameras, and try not to bring too much gear. Drivers stay with shuttle vehicles while you are on the river and we have never had issues with theft, however, we are not responsible for damage or the loss/theft of any personal gear from our vehicles, on the river or in camp. So please travel light, and have travel insurance or household insurance that covers your property when away from home.'
+    answer: 'Please do not bring pets, valuables such as jewelry, expensive sunglasses or cameras, and try not to bring too much gear. '
   }
 
 ]
