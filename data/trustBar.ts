@@ -8,19 +8,19 @@ export const TrustBarItems: TrustItem[] = [
 
   {
     icon: 'mdi-star-circle',
-    value: '4.6★',
-    title: 'Average Rating'
+    value: '4.9 ★',
+    title: 'Average Yelp Rating'
   },
 
   {
     icon: 'mdi-calendar',
-    value: '30+',
+    value: '30 +',
     title: 'Years Experience on Rapids'
   },
 
   {
     icon: 'mdi-account-hard-hat',
-    title: 'Certified Guides',
+    title: 'Experienced Guides',
     value: 'with a local flair',
 
   },

@@ -10,7 +10,7 @@
           v-for="item in trustItems"
           :key="item.title"
           cols="6"
-          md="2"
+          md="3"
         >
           <div class="text-center">
 

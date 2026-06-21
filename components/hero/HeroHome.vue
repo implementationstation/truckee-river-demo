@@ -348,3 +348,94 @@ useHead({
 
 
 </style>
+
+
+<!-- 
+[ktag]
+EXPLANATION
+
+This CSS shorthand:
+
+```css
+padding: 28px clamp(20px, 5vw, 72px);
+```
+
+means:
+
+```css
+padding-top: 28px;
+padding-bottom: 28px;
+padding-left: clamp(20px, 5vw, 72px);
+padding-right: clamp(20px, 5vw, 72px);
+```
+
+### How `clamp()` works
+
+```css
+clamp(minimum, preferred, maximum)
+```
+
+So:
+
+```css
+clamp(20px, 5vw, 72px)
+```
+
+means:
+
+* Never smaller than **20px**
+* Prefer **5vw** (5% of the viewport width)
+* Never larger than **72px**
+
+### Visual illustration
+
+```
+┌─────────────────────────────────────┐
+│                                     │ ← 28px top padding
+│   ← variable horizontal padding →   │
+│   Content                           │
+│   Content                           │
+│   Content                           │
+│                                     │ ← 28px bottom padding
+└─────────────────────────────────────┘
+```
+
+### Example values
+
+| Viewport Width | 5vw   | Result                 |
+| -------------- | ----- | ---------------------- |
+| 320px          | 16px  | 20px (minimum applies) |
+| 600px          | 30px  | 30px                   |
+| 1000px         | 50px  | 50px                   |
+| 1440px         | 72px  | 72px                   |
+| 2000px         | 100px | 72px (maximum applies) |
+
+### In plain English
+
+* Top and bottom padding are always **28px**.
+* Left and right padding grow with screen size.
+* On very small screens, they stay at **20px**.
+* On medium screens, they are **5% of the viewport width**.
+* On very large screens, they stop growing at **72px**.
+
+For example:
+
+**Mobile (320px wide)**
+
+```
+|--20px--[ Content ]--20px--|
+```
+
+**Tablet (800px wide)**
+
+```
+|--------40px--------[ Content ]--------40px--------|
+```
+
+**Large desktop (1800px wide)**
+
+```
+|--------------72px--------------[ Content ]--------------72px--------------|
+```
+
+This pattern is commonly used for responsive layouts because it keeps content from touching the screen edges on mobile while preventing excessively large margins on wide monitors. -->
