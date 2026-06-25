@@ -3,7 +3,7 @@
     <p class="eyebrow">WHITEWATER TRIP SCHEDULE</p>
     <h2>Choose your preferred time</h2>
     <p class="intro">
-     We offer a morning and afternoon trip down the Boca run. This trip is perfect for first-timers as well as thrill-seekers. The round trip time for the trip is approximately 3 hours.
+     We offer morning and afternoon trips on the Boca run. This trip is approximately 3 to 3.5 hours round trip; including travel, gear-up, safety orientation, and 2 hours rafting on the Truckee river.
     </p>
 
     <v-row class="cards">

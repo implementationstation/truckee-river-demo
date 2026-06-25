@@ -89,7 +89,7 @@ const tripPlanning: TripPage = {
     {
       id: 'rafting-photos',
       heading: 'Whitewater Rafting Photos',
-      body: `Photos of your adventure are available for purchase before or after most trips. Packages include 50–75 digital images. Start at $75; single photos $25. Bundling with a trip reservation gets 10% off. Available within 24–48 hours. Email or call 530.582.4900 if you have issues receiving your photos.`,
+      body: `Photos of your adventure are available for purchase before or after most trips.  Starting at $75 for a full package and single photos for $25 each. Prepurchased photos receive a discount. Available within 24–48 hours. Email or call 530.582.4900 if you have issues receiving your photos.`,
      
     },
     

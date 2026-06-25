@@ -21,20 +21,21 @@
       >
         <div class="d-flex flex-column flex-md-row justify-space-between">
           <div class="pa-3">
+            <!-- [ktag] 
             <div class="text-overline mb-2 opacity-80">
               Half Day Trip Twice Per Day
-            </div>
+            </div> -->
 
-            <h2>
-              Boca - Floriston Gorge Half Day Rafting
-            </h2>
+            <h3 class="text-headline-large">
+              Half Day Truckee Whitewater Trip - Boca Run
+            </h3>
 
             <!-- <div class="text-body-2 text-md-subtitle-1 mt-2 opacity-90">
               {{ trip.subtitle }}
             </div> -->
           </div>
 
-          <v-chip
+          <!-- <v-chip
             class="mt-2 mt-md-0 align-self-start"
             color=""
             text-color="primary"
@@ -42,6 +43,15 @@
           >
             {{ trip.duration }}
           </v-chip>
+
+          <v-chip
+            class="mt-2 mt-md-0 align-self-start"
+            color=""
+            text-color="primary"
+            size="large"
+          >
+            hello
+          </v-chip> -->
         </div>
       </v-sheet>
 
@@ -283,21 +293,21 @@ const raftingTrip = {
   included: [
     'Professional raft guide in each raft',
     'Helmet, personal floatation device & paddle',
-    'Transportation provided from our parking area',
+    'Transportation provided from our riverside office',
     'Safety orientation',
     'Wetsuit & Paddling Jacket (only when applicable)'
   ],
 
   notes: [
     'Arrive 5-10 minutes early',
-    'Wear quick-dry clothing',
+    'Wear quick-drying clothing',
     'Secure footwear required',
     'No valuables on raft (including jewelry)',
   ],
 
   discounts: [
     {
-      title: 'Military Discount',
+      title: 'Military/First Responder',
       description: '10% off eligible bookings',
     },
     {

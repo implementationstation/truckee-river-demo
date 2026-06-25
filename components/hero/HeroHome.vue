@@ -38,7 +38,7 @@ useHead({
             </h1>
             <!--SUBTITLE-->
             <p class="hero-subtitle mb-8">
-              We offer trips down the truckee river gorge twice daily. <br />With over 30 years of local experience we know how to have fun, and do it safely.  
+              We offer trips down the truckee river gorge twice daily. <br />With over 30 years of local experience we know how to have fun and do it safely.  
             </p>
 
             <!-- <div class="d-flex flex-wrap ga-3 mb-10">

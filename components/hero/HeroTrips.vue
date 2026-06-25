@@ -37,7 +37,7 @@ useHead({
             </h1>
 
             <p class="hero-subtitle mb-8">
-              Offered twice daily. Know as the 'Boca Run', this tour is perfect for families, groups and beginners alike.
+              Offered twice daily. Known as the 'Boca Run', this tour is perfect for families, groups, and beginners alike.
             </p>
 
             <!-- <div class="d-flex flex-wrap ga-3 mb-10">

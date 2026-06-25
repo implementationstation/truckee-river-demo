@@ -62,7 +62,7 @@ Meeting Time: Two whitewater rafting trips daily at 9 am and 1:30 pm
 
 Season To Go: Spring, Summer and fall (water permitting)
 
-Section: Bocca Reservoir to Floriston 
+Section: Boca Reservoir to Floriston 
 
 Length of Trip: 7 miles, about 2 hours on the water
 

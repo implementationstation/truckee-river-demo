@@ -107,12 +107,12 @@ export const tripsPage = {
     {
       title: 'Morning Boca Run',
       time: 'Meets at 9:00 AM',
-      text: 'Best for cooler weather, wildlife and getting your adventure done early. Typically less busy than the afternoon run. The morning trip is a guide favourite.',
+      text: 'Best for cooler weather, wildlife and getting your adventure done early. Typically less busy than the afternoon run. The morning trip is a guide favorite.',
     },
     {
       title: 'Afternoon Boca Run',
       time: 'Meets at 1:30 PM',
-      text: 'Best for relaxed mornings and hot summer sun. The afternoon is great for visitors coming from further away. Get to North Tahoe early, and not stress about traffic.',
+      text: "Best for relaxed mornings and hot summer sun. The afternoon is great for visitors coming from further away. Arrive in North Tahoe early for lunch and don't stress about traffic.",
     },
   ],
 
