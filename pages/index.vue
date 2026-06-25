@@ -76,32 +76,43 @@
 </template>
 
 <script setup lang="ts">
-import { truckeeHomePage as page } from '~/data/pages/truckeeHome'
-import InfoCardGrid from '~/components/page/InfoCardGrid.vue';
- import SectionBlock from '~/components/page/SectionBlock.vue';
-//import CallToAction from '~/components/sections/CallToAction.vue';
+import { truckeeHomePage as page } from '~/data/pages/truckeeHome';
 import { testimonials } from '~/data/testimonials';
-import BaseCta from '~/components/BaseCta.vue';
 import TestimonialGrid from '~/components/sections/TestimonialGrid.vue';
 import HeroHome from '~/components/hero/HeroHome.vue';
-import WhyChooseUs from '~/components/about/WhyChooseUs.vue';
 import ReasonBlock from '~/components/shared/ReasonBlock.vue';
-import SectionSplit from '~/components/shared/SectionSplit.vue';
-import WhyGrid from '~/components/WhyGrid.vue';
 import TrustBar from '~/components/Snazzy/TrustBar.vue';
-import TripCard from '~/components/trip/TripCard.vue';
-import StickyBookingCTA from '~/components/Snazzy/StickyBookingCTA.vue';
-import CTA from '~/components/shared/CTA.vue';
-import Landing1 from '~/components/ddday-27/hero/landing-1.vue';
-import LandingFull from '~/components/ddday-27/landing-full.vue';
 import BasicCarouselGalleryHome from '~/components/ddday-27/BasicCarouselGalleryHome.vue';
 
+// useSeoMeta({
+//   title: page.seo.title,
+//   description: page.seo.description,
+//   ogTitle: page.seo.title,
+//   ogDescription: page.seo.description,
+// })
+
 useSeoMeta({
-  title: page.seo.title,
-  description: page.seo.description,
-  ogTitle: page.seo.title,
-  ogDescription: page.seo.description,
+  title: 'Truckee Tahoe Guided Whitewater Rapid Rafting Trips',
+  description: 'Experience the most popular rafting section near Tahoe on a guided half-day adventure through fun Class II-III rapids, calm scenic stretches, and beautiful Sierra mountain views.',
+  ogTitle: 'Truckee Tahoe Guided Whitewater Rapid Rafting Trips',
+  ogDescription: 'Experience the most popular rafting section near Tahoe on a guided half-day adventure through fun Class II-III rapids, calm scenic stretches, and beautiful Sierra mountain views.',
+  ogImage: 'https://www.raftirie.com/images/compressed-irie/befunky_2026-4-5_5-52-11.webp', // Absolute URL, ideally 1200x630
+  ogUrl: 'https://raftirie.com',
+  twitterCard: 'summary_large_image',
+  // Add more as needed
+
 })
+
+// useSeoMeta({
+//   title: 'Your Page Title - Up to ~60 characters',
+//   description: 'A compelling 150-160 character description that appears in search results. Include your main keywords naturally.',
+//   ogTitle: 'Title for social shares',
+//   ogDescription: 'Description for social shares',
+//   ogImage: 'https://your-site.com/og-image.jpg', // Absolute URL, ideally 1200x630
+//   ogUrl: 'https://your-site.com/current-page',
+//   twitterCard: 'summary_large_image',
+//   // Add more as needed
+// })
 </script>
 
 <style scoped>

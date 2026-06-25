@@ -6,7 +6,7 @@ const tripPlanning: TripPage = {
   slug: 'trip-planning',
 
   seo: {
-    title: 'Trip Planning - IRIE Rafting',
+    title: 'Truckee Tahoe Guided Whitewater Rapid Rafting Trips',
     description:
       'Reservation info, pricing, packing lists, and photos to help plan your whitewater rafting adventure with IRIE Rafting.'
   },

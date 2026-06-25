@@ -13,9 +13,17 @@
 <script setup>
   const items = [
     {
-      src: '/images/compressed-irie/befunky_2026-4-5_5-52-11.webp',
+      src: '/images/compressed-irie/after-deployment/truckee-river-guided-whitewater-first.webp',
     },
-  {
+
+    //OFFICE by the RIver
+    {
+      src: '/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-second.webp'
+    },
+    {
+      src: '/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-fourth.webp'
+    },
+    {
       src: '/images/compressed-irie/whitewater-experience-near-lake-tahoe.webp',
     },
     {
@@ -23,7 +31,10 @@
     },
     {
       src: '/images/compressed-irie/fun-for-the-family-whitewater-rafting-truckee.webp',
-    },  
+    }, 
+    {
+      src: '/images/compressed-irie/after-deployment/rafting-through-sierra-river-rapids.webp'
+    }, 
   
     {
       src: '/images/compressed-irie/experienced-rafting-guides-truckee-river.webp',

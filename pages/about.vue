@@ -35,11 +35,20 @@ useSeoMeta({
         image="/images/compressed-irie/lake-tahoe-whitewater-rafting-trip.webp"
       />
     
-       
+       <SectionSplit 
+       reverse-on-desktop
+        eyebrow="RIVERSIDE OFFICE"
+        title="I.R.I.E Riverside Office"
+        :paragraphs="[
+          'Our private office is the meeting location fortrips. You arrive here and we transport you from the office to the launch spot and back.',
+          'For once you do not need to consider paying for or fearing about parking in California.'
+        ]"
+        image="/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-third.webp"
+       />
       <TripsTripGalleryGrid />
 
       <SectionSplit
-        reverse-on-desktop
+        
         eyebrow="WAYS WE CARE FOR THE ENVIRONMENT"
         title="Environmental Stewardship"
         :paragraphs="[

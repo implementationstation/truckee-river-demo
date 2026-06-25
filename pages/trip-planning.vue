@@ -7,15 +7,15 @@ import tripPlanning from '~/data/msp/trip-planning'
 
 const page = tripPlanning
 
-useHead({
-  title: page.seo.title,
-  meta: [
-    {
-      name: 'description',
-      content: page.seo.description
-    }
-  ]
-})
+// useHead({
+//   title: page.seo.title,
+//   meta: [
+//     {
+//       name: 'description',
+//       content: page.seo.description
+//     }
+//   ]
+// })
 </script>
 
 <template>
