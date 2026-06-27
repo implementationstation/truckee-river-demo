@@ -26,61 +26,56 @@ import type { OfficeSlide } from "@/types/office"
 
 export const officeSlides: OfficeSlide[] = [
   {
-    title: "I.R.I.E Riverside Headquarters",
+    title: "Visit Our River Headquarters",
     subtitle:
-      "Our riverside office is where every adventure begins. Meet your guides, check in, and take off onto the Truckee River.",
-    eyebrow: "THE MEETING LOCATION",
-    image: "/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-second.webp",
+      "Our riverside office is where every adventure begins. Meet your guides, check in, and get equipped before launching onto the Truckee River.",
+
+    image: "/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-third.webp",
 
     features: [
       {
         title: "Easy Parking",
-        description: "Private guest parking available.",
+        description: "Large free parking lot available.",
         icon: "mdi-parking",
       },
       {
-        title: "Secure Parking",
-        description: "Your vehicle is safe while you're on the river.",
-        icon: "mdi-eye-lock-outline",
+        title: "Professional Guides",
+        description: "Friendly certified rafting guides.",
+        icon: "mdi-account-group",
       },
       {
-        title: "Meet Your Guide",
-        description: "Get acquainted before heading out.",
-        icon: "mdi-handshake-outline",
+        title: "Quality Equipment",
+        description: "Modern boats and safety gear.",
+        icon: "mdi-kayaking",
       },
-      {
-        title: "Comfortable Meeting Point",
-        description: "Start your adventure comfortably.",
-        icon: "mdi-sofa",
-      }
     ],
   },
 
-  // {
-  //   title: "Gear & Safety",
-  //   subtitle:
-  //     "Every guest receives professionally maintained equipment and a complete safety briefing before departure.",
+  {
+    title: "Gear & Safety",
+    subtitle:
+      "Every guest receives professionally maintained equipment and a complete safety briefing before departure.",
 
-  //   image: "/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-second.webp",
+    image: "/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-second.webp",
 
-  //   features: [
-  //     {
-  //       title: "Life Jackets",
-  //       description: "USCG approved.",
-  //       icon: "mdi-life-jacket",
-  //     },
-  //     {
-  //       title: "Helmets",
-  //       description: "Comfortable fitted protection.",
-  //       icon: "mdi-hard-hat",
-  //     },
-  //     {
-  //       title: "Safety Briefing",
-  //       description: "Easy to understand instruction.",
-  //       icon: "mdi-shield-check",
-  //     },
-  //   ],
-  // },
+    features: [
+      {
+        title: "Life Jackets",
+        description: "USCG approved.",
+        icon: "mdi-life-jacket",
+      },
+      {
+        title: "Helmets",
+        description: "Comfortable fitted protection.",
+        icon: "mdi-hard-hat",
+      },
+      {
+        title: "Safety Briefing",
+        description: "Easy to understand instruction.",
+        icon: "mdi-shield-check",
+      },
+    ],
+  },
 ]
 // owww 27 [ktag]
 // export const officeSlides: OfficeSlide[] = [

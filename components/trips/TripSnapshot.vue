@@ -2,7 +2,7 @@
   <section class="snapshot">
     <v-row>
       <v-col
-        v-for="item in items"
+        v-for="item in officeItems"
         :key="item.label"
         cols="6"
         md="3"
@@ -18,11 +18,30 @@
 
 <script setup lang="ts">
 defineProps<{
-  items: {
+  items?: {
     label: string
     value: string
   }[]
 }>()
+
+const officeItems= [
+  {
+    label: 'Total Trips',
+    value: '1,234'
+  },
+  {
+    label: 'Active Trips',
+    value: '567'
+  },
+  {
+    label: 'Completed Trips',
+    value: '890'
+  },
+  {
+    label: 'Cancelled Trips',
+    value: '12'
+  }
+]
 </script>
 
 <style scoped>

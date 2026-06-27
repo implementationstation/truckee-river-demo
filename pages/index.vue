@@ -22,47 +22,9 @@
     <v-col cols="12" class="pa-3">
       <BasicCarouselGalleryHome />
       </v-col>
-<!-- <SectionSplit
-  eyebrow="HALF DAY RIVER RAFTING"
-  title="Boca to Floriston Gorge Run (4h)"
-  :paragraphs="[
-    'Experience the most popular rafting section near Tahoe on a guided half-day adventure through fun Class II-III rapids, calm scenic stretches, and beautiful Sierra mountain views',
-    'This tour is perfect for first-timers, groups & families alike. Y',
-    
-  ]"
-  image="/images/l-guided-river-rafting-trips-tahoe.webp"
-/>  -->
-
-  <!-- <Ddday27QuickFacts /> -->
-  
-  
-
-
-
-
-  
-    <!--INFO CARD GRID HERE< -->
-    <!-- <SectionBlock
-      v-for="section in page.sections"
-      :key="section.title"
-      :label="section.label"
-      :title="section.title"
-      :intro="section.intro"
-    >
-      <InfoCardGrid :cards="section.cards" />
-      <v-col cols="12" md="8">
-        
-        <v-img src="/images/l-exciting-truckee-river-rafting-experiences.webp" />
+      <v-col cols="12">
+        <OfficeShowcaseBentoBox :slides="officeSlides" />
       </v-col>
-    </SectionBlock> -->
-    <!--
-  ========================
-  WHY CHOOSE US
-  ========================
-    -->
-    
-
-    
 
 <!--TESTIMONIALS/REVIEWS-->
    <v-container>
@@ -76,13 +38,16 @@
 </template>
 
 <script setup lang="ts">
+//import SectionSplit from '~/components/shared/SectionSplit.vue';
 import { truckeeHomePage as page } from '~/data/pages/truckeeHome';
 import { testimonials } from '~/data/testimonials';
+import { officeSlides } from '~/data/ddday-27/OfficeMeeting';
 import TestimonialGrid from '~/components/sections/TestimonialGrid.vue';
 import HeroHome from '~/components/hero/HeroHome.vue';
 import ReasonBlock from '~/components/shared/ReasonBlock.vue';
 import TrustBar from '~/components/Snazzy/TrustBar.vue';
 import BasicCarouselGalleryHome from '~/components/ddday-27/BasicCarouselGalleryHome.vue';
+import OfficeShowcaseBentoBox from '~/components/ddday-27/OfficeShowcaseBentoBox.vue';
 
 // useSeoMeta({
 //   title: page.seo.title,

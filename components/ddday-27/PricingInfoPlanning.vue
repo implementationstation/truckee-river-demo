@@ -81,6 +81,7 @@
                 <v-list-item
                   v-for="price in trip.pricing"
                   :key="price.label"
+                  class="align-start"
                 >
                   <template #prepend>
                     <v-icon color="primary">
@@ -119,7 +120,7 @@
                   mdi-check-circle
                 </v-icon>
 
-                Included With Your Trip
+                Included Items
               </v-card-title>
 
               <v-divider />
@@ -128,6 +129,7 @@
                 <v-list-item
                   v-for="item in trip.included"
                   :key="item"
+                  class="align-start"
                 >
                   <template #prepend>
                     <v-icon color="success">
@@ -155,7 +157,7 @@
                   mdi-alert-circle
                 </v-icon>
 
-                Important Information
+                Important <br/>Information
               </v-card-title>
 
               <v-divider />
@@ -164,6 +166,7 @@
                 <v-list-item
                   v-for="note in trip.notes"
                   :key="note"
+                  class="align-start"
                 >
                   <template #prepend>
                     <v-icon color="warning">
@@ -197,6 +200,7 @@
                 <v-list-item
                   v-for="discount in trip.discounts"
                   :key="discount.title"
+                  class="align-start"
                 >
                   <template #prepend>
                     <v-icon color="success">
@@ -293,9 +297,9 @@ const raftingTrip = {
   included: [
     'Professional raft guide in each raft',
     'Helmet, personal floatation device & paddle',
-    'Transportation provided from our riverside office',
+    'Transportation from our riverside office',
     'Safety orientation',
-    'Wetsuit & Paddling Jacket (only when applicable)'
+    'Wetsuit & Paddling Jacket (when applicable)'
   ],
 
   notes: [
@@ -338,6 +342,22 @@ const trip = raftingTrip
 </script>
 
 <style scoped>
+.v-list-item-title,
+.v-list-item-subtitle {
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.v-list-item-title {
+  line-height: 1.4;
+}
+/*The icons to go to the top and centred*/
+.align-start {
+  align-items: flex-start;
+}
+
+
 .opacity-80 {
   opacity: 0.8;
 }
