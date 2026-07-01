@@ -4,7 +4,7 @@ const values = [
   {    
     icon: 'mdi mdi-lifebuoy',//search: [protect|shield]
     title: 'Safety First',
-    text: 'Professional guidance and preparation for every trip.'
+    text: 'Experienced guides, the best equipment and a commitment to guest safety and experience.'
   },
   {
     icon: 'mdi mdi-flower',//search: [plant]
@@ -12,14 +12,14 @@ const values = [
     text: 'We leave rivers and camps better than we found them.'
   },
   {
-    icon: 'mdi mdi-hiking',//search: [kayak]
-    title: 'Real Adventure',
-    text: 'Authentic outdoor experiences, not tourist attractions.'
+    icon: 'mdi mdi-weather-sunset',//search: [kayak]
+    title: 'Best Day Ever!',
+    text: 'Real outdoor experiences, escaping to the great outdoors is why we are all here.'
   },
   {
     icon: 'mdi mdi-treasure-chest',//search: [treasure]
     title: 'Great Memories',
-    text: 'The moments people remember long after the trip ends.'
+    text: 'The moments and memories you will remember long after the trip.'
   }
 ]
 </script>
@@ -27,12 +27,12 @@ const values = [
 <template>
   <v-container class="py-16">
     <div class="text-center mb-12">
-      <div class="text-overline">
+      <!-- <div class="text-overline">
         OUR VALUES
-      </div>
+      </div> -->
 
       <h2 class="text-h3 font-weight-bold">
-        What matters to us
+        What matters to Us
       </h2>
     </div>
 
