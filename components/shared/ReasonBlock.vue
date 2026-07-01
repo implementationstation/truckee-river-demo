@@ -12,11 +12,11 @@ const items = [
   },
   {
     title: "Perfect for Groups",
-    description: "Families, friends, and teams — we make it seamless.",
+    description: "The truckee is perfect for first time rafters. We specialize in taking young adventurers on the river.",
     icon: "mdi-account-group"
   },
   {
-    title: "All-Inclusive Trips",
+    title: "Great For Kids",
     description: "Gear, transportion, safety-orientation and guidance are handled by us.",
     icon: "mdi-package-variant"
   }
