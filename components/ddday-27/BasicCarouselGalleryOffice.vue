@@ -22,9 +22,6 @@
       src: '/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-third.webp'
     },
     {
-      src: '/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-fourth.webp'
-    },
-    {
       src: '/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-fifth.webp'
     },
     {

@@ -21,9 +21,6 @@
       src: '/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-second.webp'
     },
     {
-      src: '/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-fourth.webp'
-    },
-    {
       src: '/images/compressed-irie/whitewater-experience-near-lake-tahoe.webp',
     },
     {
