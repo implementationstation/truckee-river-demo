@@ -1,32 +1,20 @@
 
 <template>
   <div>
-    
     <HeroHome/>
-    <!-- <Ddday27Hero /><HeroHome/>
-     
-    <LandingFull />-->
-  <PageShell>
-
-      <!--
-  ========================
-  TRUST INDICATORS
-  ========================
-  -->
-
-  <TrustBar />
+    
+    <PageShell>
+    <!--  ITEM 1 Removed jun30 [ktag]<TrustBar /> -->
     <Ddday27TripOverview />
     <v-container>
       <ReasonBlock />
     </v-container>
     <v-col cols="12" class="pa-3">
       <BasicCarouselGalleryHome />
-      </v-col>
-      <v-col cols="12">
-        <OfficeShowcaseBentoBox :slides="officeSlides" />
-      </v-col>
-
-<!--TESTIMONIALS/REVIEWS-->
+    </v-col>
+    <v-col cols="12">
+      <OfficeShowcaseBentoBox :slides="officeSlides" />
+    </v-col>
    <v-container>
     <TestimonialGrid :items="testimonials"></TestimonialGrid>
    </v-container>
@@ -38,23 +26,13 @@
 </template>
 
 <script setup lang="ts">
-//import SectionSplit from '~/components/shared/SectionSplit.vue';
-import { truckeeHomePage as page } from '~/data/pages/truckeeHome';
 import { testimonials } from '~/data/testimonials';
 import { officeSlides } from '~/data/ddday-27/OfficeMeeting';
 import TestimonialGrid from '~/components/sections/TestimonialGrid.vue';
 import HeroHome from '~/components/hero/HeroHome.vue';
 import ReasonBlock from '~/components/shared/ReasonBlock.vue';
-import TrustBar from '~/components/Snazzy/TrustBar.vue';
 import BasicCarouselGalleryHome from '~/components/ddday-27/BasicCarouselGalleryHome.vue';
 import OfficeShowcaseBentoBox from '~/components/ddday-27/OfficeShowcaseBentoBox.vue';
-
-// useSeoMeta({
-//   title: page.seo.title,
-//   description: page.seo.description,
-//   ogTitle: page.seo.title,
-//   ogDescription: page.seo.description,
-// })
 
 useSeoMeta({
   title: 'Truckee Tahoe Guided Whitewater Rapid Rafting Trips',
@@ -65,19 +43,7 @@ useSeoMeta({
   ogUrl: 'https://raftirie.com',
   twitterCard: 'summary_large_image',
   // Add more as needed
-
 })
-
-// useSeoMeta({
-//   title: 'Your Page Title - Up to ~60 characters',
-//   description: 'A compelling 150-160 character description that appears in search results. Include your main keywords naturally.',
-//   ogTitle: 'Title for social shares',
-//   ogDescription: 'Description for social shares',
-//   ogImage: 'https://your-site.com/og-image.jpg', // Absolute URL, ideally 1200x630
-//   ogUrl: 'https://your-site.com/current-page',
-//   twitterCard: 'summary_large_image',
-//   // Add more as needed
-// })
 </script>
 
 <style scoped>
