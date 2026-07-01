@@ -7,7 +7,7 @@ const items = [
   },
   {
     title: "Safety First. Always.",
-    description: "Top-tier equipment + certified guides = peace of mind.",
+    description: "Top-tier equipment + experienced guides = peace of mind.",
     icon: "mdi-shield-check"
   },
   {
