@@ -26,7 +26,7 @@ import type { OfficeSlide } from "@/types/office"
 
 export const officeSlides: OfficeSlide[] = [
   {
-    title: "I.R.I.E Riverside Headquarters",
+    title: "I.R.I.E. Headquarters",
     subtitle:
       "Our riverside office is where every adventure begins. Meet your guides, check in, and take off onto the Truckee River.",
     eyebrow: "THE MEETING LOCATION",
