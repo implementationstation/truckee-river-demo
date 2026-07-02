@@ -15,7 +15,31 @@
     {
       src: '/images/compressed-irie/after-deployment/truckee-river-guided-whitewater-first.webp',
     },
-
+   
+    {
+      src: 'images/finalized-batch/irie (8).webp'
+    },
+    {
+      src: 'images/finalized-batch/irie (7).webp'
+    },
+    {
+      src: 'images/finalized-batch/irie (6).webp'
+    },
+    {
+      src: 'images/finalized-batch/irie (5).webp'
+    },
+    {
+      src: 'images/finalized-batch/irie (4).webp'
+    },
+    {
+      src: 'images/finalized-batch/irie (3).webp'
+    },
+    {
+      src: 'images/finalized-batch/irie (2).webp'
+    },
+    {
+      src: 'images/finalized-batch/irie (1).webp'
+    },
     //OFFICE by the RIver
     {
       src: '/images/compressed-irie/after-deployment/irie-river-rafting-riverside-office-second.webp'
