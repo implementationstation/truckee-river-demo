@@ -53,11 +53,8 @@ useSeoMeta({
         eyebrow="WAYS WE CARE FOR THE ENVIRONMENT"
         title="Environmental Stewardship"
         :paragraphs="[
-          'Having operated over 30 years along the Truckee and other Rivers, I.R.I.E Rafting takes environment care hand in hand with our operations.',
-          'No big corporations here. We live locally and play locally. When you frequent local businesses, you support an entire community.  Thank you for helping to make Lake Tahoe  and Truckee a place we can all call home.',
-          'We love our Lake Tahoe/Truckee community and believe in giving back to our local and global community. We are proud supporters of Adventure Risk Challenge, Tahoe Bikal, High Fives, the Zawadisha Fund, Project Great Outdoors and other local non-profit organizations and causes.',
-          'Our livelihood depends on keeping our rivers clean and protecting them so future generations can benefit both economically and recreationally. We try to do our part by recycling and using recycled products, serving organic food, supporting environmental organizations, participating in river clean-ups and practicing Leave No Trace outdoor ethics.'
-
+          'We\'re committed to clean rivers and environmental protection, ensuring future generations can enjoy these natural resources both recreationally and economically. We recycle, use recycled products, serve organic food, support environmental organizations, participate in river cleanups, and follow Leave No Trace outdoor ethics. ',
+          'As a unique outdoor outfitter, we incorporate on-river environmental education, sharing knowledge about local flora and fauna, geographical history, and conservation techniques. We believe connecting with nature is key to preserving it, and we’re dedicated to making wilderness access more inclusive for underrepresented and minority communities. '
         ]"
         image="/images/compressed-irie/sierra-nevada-river-rafting-adventure-trip.webp" 
       />
