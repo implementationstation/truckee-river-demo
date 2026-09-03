@@ -37,7 +37,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['vuetify-nuxt-module', '@nuxt/image'],
+  modules: ['vuetify-nuxt-module', '@nuxt/image', '@vercel/speed-insights'],
 
   css: ['@mdi/font/css/materialdesignicons.css'],
 
